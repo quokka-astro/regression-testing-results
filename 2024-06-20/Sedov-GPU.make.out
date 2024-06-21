@@ -1,0 +1,221 @@
+[  6%] Building CXX object fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  6%] Building CXX object fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
+[  6%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
+[ 12%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BlockMutex.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
+[ 12%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX.cpp.o
+[ 12%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_error_fi.cpp.o
+[ 12%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Version.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
+[ 12%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/null.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
+[ 18%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PODVector.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
+[ 18%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
+[ 25%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
+[ 25%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
+[ 25%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
+[ 25%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+[ 25%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParmParse.cpp.o
+[ 25%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_parmparse_fi.cpp.o
+[ 25%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Utility.cpp.o
+[ 25%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FileSystem.cpp.o
+[ 25%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Random.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParallelDescriptor.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_DistributionMapping.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_OpenMP.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ForkJoin.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParallelContext.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_VisMF.cpp.o
+[ 31%] Linking CXX static library libyaml-cpp.a
+[ 31%] Linking CXX static library libfmt.a
+[ 31%] Built target fmt
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_AsyncOut.cpp.o
+[ 31%] Built target yaml-cpp
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BackgroundThread.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Arena.cpp.o
+[ 31%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BArena.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_CArena.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PArena.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BLBackTrace.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_NFiles.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_parstream.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FabConv.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FPC.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_VectorIO.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IntConv.cpp.o
+[ 37%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Box.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxIterator.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IntVect.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IndexType.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Orientation.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Periodicity.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_RealBox.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_RealVect.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxList.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxArray.cpp.o
+[ 43%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxDomain.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FArrayBox.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IArrayBox.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BaseFab.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MultiFab.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MFCopyDescriptor.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_iMultiFab.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FabArrayBase.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MFIter.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_CoordSys.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Geometry.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MultiFabUtil.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BCRec.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PhysBCFunct.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BCUtil.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilCC_C.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilFC_C.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilND_C.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_NonLocalBC.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PlotFileUtil.cpp.o
+[ 56%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PlotFileDataImpl.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuControl.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuDevice.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuUtility.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuAsyncArray.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuElixir.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Machine.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MemPool.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser_Exe.cpp.o
+[ 62%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser_Y.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_parser.lex.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_parser.tab.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser_Exe.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser_Y.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_iparser.lex.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_iparser.tab.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BLProfiler.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_TinyProfiler.cpp.o
+[ 68%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MPMD.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_Mask.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_MultiMask.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_LO_BCTYPES.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_EdgeFluxRegister.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_AmrCore.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_Cluster.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_ErrorList.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_FillPatchUtil.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_FluxRegister.cpp.o
+[ 75%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_InterpBase.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_MFInterpolater.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_Interpolater.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_TagBox.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_AmrMesh.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_InterpFaceRegister.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLMG.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLinOp.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLaplacian.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_sync.cpp.o
+[ 81%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_sten.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLaplacian_misc.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeTensorLaplacian.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLTensorOp.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLTensorOp_grad.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLEBNodeFDLaplacian.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeABecLaplacian.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLCurlCurl.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/OpenBC/AMReX_OpenBC.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_TracerParticles.cpp.o
+[ 87%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleMPIUtil.cpp.o
+[ 93%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleUtil.cpp.o
+[ 93%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleBufferMap.cpp.o
+[ 93%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleCommunication.cpp.o
+[ 93%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleContainerBase.cpp.o
+[ 93%] Linking CUDA static library libamrex_3d.a
+[ 93%] Built target amrex_3d
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/test_hydro3d_blast.cpp.o
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/main.cpp.o
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/DiagBase.cpp.o
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/DiagFilter.cpp.o
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/DiagFramePlane.cpp.o
+[ 93%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/DiagPDF.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/GrackleDataReader.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/CloudyDataReader.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/TabulatedCooling.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/__/extern/Microphysics/interfaces/eos_data.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/__/extern/Microphysics/interfaces/network_initialization.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/extern_parameters.cpp.o
+[100%] Building CUDA object src/HydroBlast3D/CMakeFiles/test_hydro3d_blast.dir/__/GrackleLikeCooling.cpp.o
+[100%] Linking CUDA device code CMakeFiles/test_hydro3d_blast.dir/cmake_device_link.o
+[100%] Linking CXX executable test_hydro3d_blast
+[100%] Built target test_hydro3d_blast
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::begin()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::end()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("bool __gnu_cxx::operator !=<int *,     ::std::vector<int, ::std::allocator<int> > > (const  ::__gnu_cxx::__normal_iterator<T1, T2>  &, const  ::__gnu_cxx::__normal_iterator<T1, T2>  &)") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator *() const") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator ++()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::begin()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::end()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("bool __gnu_cxx::operator !=<int *,     ::std::vector<int, ::std::allocator<int> > > (const  ::__gnu_cxx::__normal_iterator<T1, T2>  &, const  ::__gnu_cxx::__normal_iterator<T1, T2>  &)") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator *() const") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator ++()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(79): warning #550-D: variable "x0" was set but never used
+   amrex::Real x0 = 
+               ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(80): warning #550-D: variable "y0" was set but never used
+   amrex::Real y0 = 
+               ^
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(81): warning #550-D: variable "z0" was set but never used
+   amrex::Real z0 = 
+               ^
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(79): warning #550-D: variable "x0" was set but never used
+   amrex::Real x0 = 
+               ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(80): warning #550-D: variable "y0" was set but never used
+   amrex::Real y0 = 
+               ^
+
+/home/bwibking/regression-tests/quokka/src/HydroBlast3D/test_hydro3d_blast.cpp(81): warning #550-D: variable "z0" was set but never used
+   amrex::Real z0 = 
+               ^
+
