@@ -1,0 +1,148 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Updating fae1dc8fb..5bdac9102
+Fast-forward
+ Tools/GNUMake/sites/Make.unknown | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Updating 5bdac9102..1f038e767
+Fast-forward
+ Src/Base/AMReX_BaseFwd.H                           |    4 +-
+ Src/Base/AMReX_FabArray.H                          |    9 +
+ Src/Base/AMReX_GpuDevice.H                         |    4 +
+ Src/Base/AMReX_GpuDevice.cpp                       |   13 +
+ Src/Base/AMReX_IntVect.H                           | 1032 +++++++++-----
+ Src/Base/AMReX_IntVect.cpp                         |   37 +-
+ Src/Base/AMReX_ParmParse.H                         |    4 +-
+ Src/Base/AMReX_TableData.H                         |  254 ++--
+ Src/Base/AMReX_TypeTraits.H                        |   23 +
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.H            |  134 ++
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp          | 1464 ++++++++++++++++++++
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_2D_K.H       |  308 ++++
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_3D_K.H       |  649 +++++++++
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_K.H          |  298 ++++
+ Src/Extern/HYPRE/CMakeLists.txt                    |    4 +
+ Src/Extern/HYPRE/Make.package                      |    6 +-
+ Tests/LinearSolvers/ABecLaplacian_C/GNUmakefile    |    5 +
+ Tests/LinearSolvers/ABecLaplacian_C/MyTest.H       |    7 +
+ Tests/LinearSolvers/ABecLaplacian_C/MyTest.cpp     |  131 ++
+ Tests/LinearSolvers/ABecLaplacian_C/inputs-mlhypre |   22 +
+ 20 files changed, 3971 insertions(+), 437 deletions(-)
+ create mode 100644 Src/Extern/HYPRE/AMReX_HypreMLABecLap.H
+ create mode 100644 Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp
+ create mode 100644 Src/Extern/HYPRE/AMReX_HypreMLABecLap_2D_K.H
+ create mode 100644 Src/Extern/HYPRE/AMReX_HypreMLABecLap_3D_K.H
+ create mode 100644 Src/Extern/HYPRE/AMReX_HypreMLABecLap_K.H
+ create mode 100644 Tests/LinearSolvers/ABecLaplacian_C/inputs-mlhypre
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 1f038e767..36f111b2c
+Fast-forward
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 36f111b2c..259db7cfb
+Fast-forward
+ Src/Amr/AMReX_AmrLevel.cpp                     |    9 +
+ Src/Amr/AMReX_Derive.H                         |   36 +
+ Src/Amr/AMReX_Derive.cpp                       |   62 ++
+ Src/Base/AMReX_FEIntegrator.H                  |   70 +-
+ Src/Base/AMReX_IntegratorBase.H                |  238 ++++--
+ Src/Base/AMReX_RKIntegrator.H                  |  116 ++-
+ Src/Base/AMReX_TimeIntegrator.H                |  140 ++--
+ Src/Extern/SUNDIALS/AMReX_SundialsIntegrator.H | 1066 ++++++++++--------------
+ Src/LinearSolvers/MLMG/AMReX_MLCGSolver.H      |    1 +
+ Src/LinearSolvers/MLMG/AMReX_MLMG.H            |    2 +-
+ Tools/GNUMake/Make.defs                        |    5 +-
+ Tools/GNUMake/comps/nvcc.mak                   |   16 +-
+ 12 files changed, 963 insertions(+), 798 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
