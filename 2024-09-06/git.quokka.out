@@ -1,0 +1,23 @@
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 384d62d..f145580
+Fast-forward
+ src/QuokkaSimulation.hpp                           |   9 +-
+ src/problems/RadDust/test_rad_dust.cpp             |  19 +-
+ src/problems/RadDustMG/test_rad_dust_MG.cpp        |   7 +-
+ .../test_radiation_marshak_Vaytet.cpp              |   4 +-
+ .../test_radhydro_pulse_MG_const_kappa.cpp         |   2 +-
+ .../test_radhydro_pulse_MG_int.cpp                 |   2 +-
+ .../test_radhydro_shock_multigroup.cpp             |   6 +-
+ src/radiation/radiation_system.hpp                 | 827 ++-------------------
+ src/radiation/source_terms_multi_group.hpp         | 647 ++++++++++++++++
+ src/radiation/source_terms_single_group.hpp        | 530 +++++++++++++
+ tests/radshock_dimensionless.in                    |   2 +
+ 11 files changed, 1262 insertions(+), 793 deletions(-)
+ create mode 100644 src/radiation/source_terms_multi_group.hpp
+ create mode 100644 src/radiation/source_terms_single_group.hpp
