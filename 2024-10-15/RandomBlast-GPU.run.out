@@ -1,0 +1,13 @@
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RandomBlast-GPU.ex: Unable to allocate UD send buffer pool
+Initializing AMReX (24.09)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
