@@ -1,0 +1,22 @@
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to allocate UD send buffer pool
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to alloc send buffer MR on mlx5_0: Cannot allocate memory
+avatargpu.anu.edu.au:rank0.RadhydroShell-GPU.ex: Unable to allocate UD send buffer pool
+Initializing AMReX (24.11-33-gc35aad273352)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (24.11-33-gc35aad273352) initialized
+Successfully read inputs file ... 
+Creating new distribution map on level: 0
+Writing plotfile RadhydroShell-GPU_plt00000
+
+Coarse STEP 1 at t = 0 (0%) starts ...
+	>> Using global timestep on this coarse step (estimated work ratio: 1).
+[Level 0 step 1] ADVANCE with time = 0.0000000000e+00 dt = 2.8034156977e+09
+	Radiation substeps: 7	dt: 400487956.8
