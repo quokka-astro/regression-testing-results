@@ -1301,3 +1301,44 @@ error: Your local changes to the following files would be overwritten by merge:
 	Src/Base/AMReX.cpp
 Please commit your changes or stash them before you merge.
 Aborting
+M	Src/Base/AMReX.H
+M	Src/Base/AMReX.cpp
+Your branch is behind 'origin/development' by 39 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Already on 'development'
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 45365582b..9643da452
+error: Your local changes to the following files would be overwritten by merge:
+	Src/Base/AMReX.H
+	Src/Base/AMReX.cpp
+Please commit your changes or stash them before you merge.
+Aborting
