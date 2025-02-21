@@ -1,0 +1,19 @@
+/home/bwibking/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /home/bwibking/regression-tests/quokka-benchmarks/RadhydroShell-GPU_plt03440 RadhydroShell-GPU_plt03440
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         1.273907366e-19              0.9999999949
+ x-GasMomentum                      2.549385113e-13              0.9999999998
+ y-GasMomentum                      2.554302949e-13              0.9999999998
+ z-GasMomentum                      2.551270259e-13              0.9999999998
+ gasEnergy                          5.011110858e-07                         1
+ gasInternalEnergy                  3.105151568e-10              0.9999999999
+ radEnergy-Group0                   2.285553074e-07              0.9999999638
+ x-RadFlux-Group0                       1589.005319              0.9999999968
+ y-RadFlux-Group0                       1589.021749              0.9999999968
+ z-RadFlux-Group0                       1589.024801              0.9999999968
+ x-RiemannSolverVelocity                          0                         0
+ y-RiemannSolverVelocity                          0                         0
+ z-RiemannSolverVelocity                          0                         0
