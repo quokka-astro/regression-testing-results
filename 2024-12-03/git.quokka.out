@@ -1,508 +1,0 @@
-Already up to date.
-Already up to date.
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Already up to date.
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 384d62d..f145580
-Fast-forward
- src/QuokkaSimulation.hpp                           |   9 +-
- src/problems/RadDust/test_rad_dust.cpp             |  19 +-
- src/problems/RadDustMG/test_rad_dust_MG.cpp        |   7 +-
- .../test_radiation_marshak_Vaytet.cpp              |   4 +-
- .../test_radhydro_pulse_MG_const_kappa.cpp         |   2 +-
- .../test_radhydro_pulse_MG_int.cpp                 |   2 +-
- .../test_radhydro_shock_multigroup.cpp             |   6 +-
- src/radiation/radiation_system.hpp                 | 827 ++-------------------
- src/radiation/source_terms_multi_group.hpp         | 647 ++++++++++++++++
- src/radiation/source_terms_single_group.hpp        | 530 +++++++++++++
- tests/radshock_dimensionless.in                    |   2 +
- 11 files changed, 1262 insertions(+), 793 deletions(-)
- create mode 100644 src/radiation/source_terms_multi_group.hpp
- create mode 100644 src/radiation/source_terms_single_group.hpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Already up to date.
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating f145580..4a7057f
-Fast-forward
- src/QuokkaSimulation.hpp                    |  56 +-
- src/radiation/radiation_system.cpp          |  10 -
- src/radiation/radiation_system.hpp          | 155 +++--
- src/radiation/source_terms_multi_group.hpp  | 850 +++++++++++++++++-----------
- src/radiation/source_terms_single_group.hpp | 100 ++--
- tests/RadDust.in                            |   1 +
- 6 files changed, 705 insertions(+), 467 deletions(-)
- delete mode 100644 src/radiation/radiation_system.cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Already up to date.
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 4a7057f..2d273a2
-Fast-forward
- .../RadMarshakDust/test_radiation_marshak_dust.cpp | 126 +++++++++---
- src/radiation/planck_integral.hpp                  |   9 +-
- src/radiation/radiation_system.hpp                 |  52 ++---
- src/radiation/source_terms_multi_group.hpp         | 221 +++++++++++++++------
- tests/RadMarshakDust.in                            |  14 +-
- 5 files changed, 298 insertions(+), 124 deletions(-)
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 2d273a2..5e5176c
-Fast-forward
- .devcontainer/Dockerfile        | 30 ++++++++++++++++++++++--------
- .devcontainer/devcontainer.json |  1 -
- src/simulation.hpp              |  2 +-
- 3 files changed, 23 insertions(+), 10 deletions(-)
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 5e5176c..a1632ff
-Fast-forward
- .github/CODEOWNERS | 29 +++++++++++++++++++++++++++++
- 1 file changed, 29 insertions(+)
- create mode 100644 .github/CODEOWNERS
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating a1632ff..aa2a618
-Fast-forward
- src/radiation/radiation_system.hpp          |  14 +-
- src/radiation/source_terms_multi_group.hpp  | 451 +++++++++++++++-------------
- src/radiation/source_terms_single_group.hpp |  16 +-
- 3 files changed, 261 insertions(+), 220 deletions(-)
-Updating aa2a618..4f4d128
-Fast-forward
- .devcontainer/cuda-container/Dockerfile            |   55 +
- .devcontainer/cuda-container/devcontainer.json     |   31 +
- .devcontainer/{ => gcc-container}/Dockerfile       |   10 +-
- .../{ => gcc-container}/devcontainer.json          |    2 +-
- .github/workflows/scorecard.yml                    |   73 +
- .pre-commit-config.yaml                            |    2 +-
- README.md                                          |    5 +-
- extern/fmt                                         |    2 +-
- extern/openPMD-api                                 |    2 +-
- extern/sedov/sedov.ipynb                           | 1351 ++++++-
- extern/yaml-cpp                                    |    2 +-
- paper/make_tarball.py                              |    2 +-
- scripts/mpirun-singleton-wrapper                   |    2 +
- src/CMakeLists.txt                                 |    5 +-
- src/QuokkaSimulation.hpp                           |   16 +-
- src/hydro/EOS.hpp                                  |   41 +-
- src/hydro/LLF.hpp                                  |    4 +-
- src/hydro/NSCBC_inflow.hpp                         |    9 +-
- src/hydro/NSCBC_outflow.hpp                        |    8 +-
- src/hydro/hydro_system.hpp                         |   28 +-
- src/hyperbolic_system.hpp                          |    4 +-
- src/linear_advection/AdvectionSimulation.hpp       |    4 +-
- src/linear_advection/linear_advection.hpp          |    4 +-
- src/math/quadrature.hpp                            |    4 +-
- src/problems/NSCBC/dQ_dx_inflow.ipynb              | 2208 ++++++++---
- src/problems/NSCBC/dQ_dx_outflow.ipynb             | 3923 +++++++++++++++-----
- src/problems/RadDustMG/test_rad_dust_MG.cpp        |   15 +-
- src/problems/RadMarshak/test_radiation_marshak.cpp |   12 +-
- .../RadMarshakCGS/test_radiation_marshak_cgs.cpp   |   12 +-
- .../test_radiation_matter_coupling.cpp             |   12 +-
- .../test_radiation_matter_coupling_rsla.cpp        |   12 +-
- src/problems/RadSuOlson/test_radiation_SuOlson.cpp |   12 +-
- .../test_radhydro_pulse_MG_int.cpp                 |    4 +-
- .../test_radhydro_shock_multigroup.cpp             |    4 +-
- src/problems/ShockCloud/boundary_conditions.ipynb  | 2786 ++++++++++----
- src/radiation/radiation_system.hpp                 |   86 +-
- src/radiation/source_terms_multi_group.hpp         |    4 +-
- src/util/CheckNaN.hpp                              |    4 +-
- src/util/fextract.cpp                              |    4 +-
- src/util/fextract.hpp                              |    4 +-
- 40 files changed, 8071 insertions(+), 2697 deletions(-)
- create mode 100644 .devcontainer/cuda-container/Dockerfile
- create mode 100644 .devcontainer/cuda-container/devcontainer.json
- rename .devcontainer/{ => gcc-container}/Dockerfile (71%)
- rename .devcontainer/{ => gcc-container}/devcontainer.json (96%)
- create mode 100644 .github/workflows/scorecard.yml
- create mode 100755 scripts/mpirun-singleton-wrapper
-M	extern/fmt
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 4f4d128..e69f403
-Fast-forward
- .ci/azure-pipelines-regression.yml                 |   2 +-
- extern/grackle_data_files                          |   2 +-
- src/QuokkaSimulation.hpp                           |  26 +-
- src/problems/CMakeLists.txt                        |   1 +
- src/problems/RadDustMG/test_rad_dust_MG.hpp        |   2 +-
- .../RadMarshakDust/test_radiation_marshak_dust.cpp |  89 ++-
- .../RadMarshakDust/test_radiation_marshak_dust.hpp |   2 +-
- src/problems/RadMarshakDustPE/CMakeLists.txt       |   8 +
- .../test_radiation_marshak_dust_and_PE.cpp         | 318 ++++++++
- .../test_radiation_marshak_dust_and_PE.hpp         |  24 +
- src/radiation/radiation_dust_system.hpp            | 867 +++++++++++++++++++++
- src/radiation/radiation_system.hpp                 |  96 ++-
- src/radiation/source_terms_multi_group.hpp         | 475 +++++------
- src/util/valarray.hpp                              |  30 +-
- tests/RadMarshakDust.in                            |   2 +-
- tests/RadMarshakDustPEcoupled.in                   |  37 +
- tests/RadMarshakDustPEdecoupled.in                 |  37 +
- 17 files changed, 1631 insertions(+), 387 deletions(-)
- create mode 100644 src/problems/RadMarshakDustPE/CMakeLists.txt
- create mode 100644 src/problems/RadMarshakDustPE/test_radiation_marshak_dust_and_PE.cpp
- create mode 100644 src/problems/RadMarshakDustPE/test_radiation_marshak_dust_and_PE.hpp
- create mode 100644 src/radiation/radiation_dust_system.hpp
- create mode 100644 tests/RadMarshakDustPEcoupled.in
- create mode 100644 tests/RadMarshakDustPEdecoupled.in
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating e69f403..5f84397
-Fast-forward
- .pre-commit-config.yaml                                              | 4 ++--
- src/QuokkaSimulation.hpp                                             | 2 +-
- src/problems/RadBeam/test_radiation_beam.cpp                         | 1 -
- src/problems/RadDust/test_rad_dust.cpp                               | 5 +++++
- src/problems/RadDustMG/test_rad_dust_MG.cpp                          | 5 +++++
- src/problems/RadForce/test_radiation_force.cpp                       | 1 -
- src/problems/RadMarshak/test_radiation_marshak.cpp                   | 1 -
- .../RadMarshakAsymptotic/test_radiation_marshak_asymptotic.cpp       | 1 -
- src/problems/RadMarshakCGS/test_radiation_marshak_cgs.cpp            | 1 -
- src/problems/RadMarshakDust/test_radiation_marshak_dust.cpp          | 5 +++--
- src/problems/RadMarshakDustPE/test_radiation_marshak_dust_and_PE.cpp | 2 +-
- src/problems/RadMarshakVaytet/test_radiation_marshak_Vaytet.cpp      | 1 -
- src/problems/RadMatterCoupling/test_radiation_matter_coupling.cpp    | 1 -
- .../RadMatterCouplingRSLA/test_radiation_matter_coupling_rsla.cpp    | 1 -
- src/problems/RadPulse/test_radiation_pulse.cpp                       | 1 -
- src/problems/RadShadow/test_radiation_shadow.cpp                     | 1 -
- src/problems/RadStreaming/test_radiation_streaming.cpp               | 1 -
- src/problems/RadStreamingY/test_radiation_streaming_y.cpp            | 1 -
- src/problems/RadSuOlson/test_radiation_SuOlson.cpp                   | 1 -
- src/problems/RadTophat/test_radiation_tophat.cpp                     | 1 -
- src/problems/RadTube/test_radiation_tube.cpp                         | 1 -
- src/problems/RadhydroBB/test_radhydro_bb.cpp                         | 1 -
- src/problems/RadhydroPulse/test_radhydro_pulse.cpp                   | 2 --
- src/problems/RadhydroPulseDyn/test_radhydro_pulse_dyn.cpp            | 2 --
- src/problems/RadhydroPulseGrey/test_radhydro_pulse_grey.cpp          | 2 --
- .../RadhydroPulseMGconst/test_radhydro_pulse_MG_const_kappa.cpp      | 2 --
- src/problems/RadhydroPulseMGint/test_radhydro_pulse_MG_int.cpp       | 2 --
- src/problems/RadhydroShell/test_radhydro_shell.cpp                   | 1 -
- src/problems/RadhydroShock/test_radhydro_shock.cpp                   | 1 -
- src/problems/RadhydroShockCGS/test_radhydro_shock_cgs.cpp            | 1 -
- .../RadhydroShockMultigroup/test_radhydro_shock_multigroup.cpp       | 1 -
- .../RadhydroUniformAdvecting/test_radhydro_uniform_advecting.cpp     | 1 -
- src/radiation/radiation_system.hpp                                   | 5 +++--
- 33 files changed, 20 insertions(+), 39 deletions(-)
-Updating files:  12% (4/33)Updating files:  15% (5/33)Updating files:  18% (6/33)Updating files:  21% (7/33)Updating files:  24% (8/33)Updating files:  27% (9/33)Updating files:  30% (10/33)Updating files:  33% (11/33)Updating files:  36% (12/33)Updating files:  39% (13/33)Updating files:  42% (14/33)Updating files:  45% (15/33)Updating files:  48% (16/33)Updating files:  51% (17/33)Updating files:  54% (18/33)Updating files:  57% (19/33)Updating files:  60% (20/33)Updating files:  63% (21/33)Updating files:  66% (22/33)Updating files:  69% (23/33)Updating files:  72% (24/33)Updating files:  75% (25/33)Updating files:  78% (26/33)Updating files:  81% (27/33)Updating files:  84% (28/33)Updating files:  87% (29/33)Updating files:  90% (30/33)Updating files:  93% (31/33)Updating files:  96% (32/33)Updating files: 100% (33/33)Updating files: 100% (33/33), done.
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 5f84397..30bc694
-Fast-forward
- extern/amrex                                 |  2 +-
- src/problems/RadTube/test_radiation_tube.cpp | 48 ++++++++++++++--------------
- 2 files changed, 25 insertions(+), 25 deletions(-)
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Already up to date.
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 30bc6945..18f6997c
-Fast-forward
- .pre-commit-config.yaml | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 18f6997c..781f834d
-Fast-forward
- src/math/interpolate.cpp                           |   8 +-
- src/problems/CMakeLists.txt                        |   2 +
- src/problems/RadLineCooling/CMakeLists.txt         |   7 +
- .../RadLineCooling/test_rad_line_cooling.cpp       | 287 ++++++++++++++++++
- .../RadLineCooling/test_rad_line_cooling.hpp       |  29 ++
- src/problems/RadLineCoolingMG/CMakeLists.txt       |   8 +
- .../RadLineCoolingMG/test_rad_line_cooling_MG.cpp  | 336 +++++++++++++++++++++
- .../RadLineCoolingMG/test_rad_line_cooling_MG.hpp  |  29 ++
- .../RadMarshakDust/test_radiation_marshak_dust.cpp |   2 -
- src/problems/RadhydroBB/test_radhydro_bb.cpp       |   9 -
- .../test_radhydro_pulse_MG_const_kappa.cpp         |   5 -
- src/radiation/radiation_dust_system.hpp            | 157 +++++++---
- src/radiation/radiation_system.hpp                 | 219 +++++++++-----
- src/radiation/source_terms_multi_group.hpp         |  20 +-
- src/radiation/source_terms_single_group.hpp        |  38 ++-
- tests/RadLineCooling.in                            |  26 ++
- tests/RadLineCoolingCoupled.in                     |  26 ++
- 17 files changed, 1044 insertions(+), 164 deletions(-)
- create mode 100644 src/problems/RadLineCooling/CMakeLists.txt
- create mode 100644 src/problems/RadLineCooling/test_rad_line_cooling.cpp
- create mode 100644 src/problems/RadLineCooling/test_rad_line_cooling.hpp
- create mode 100644 src/problems/RadLineCoolingMG/CMakeLists.txt
- create mode 100644 src/problems/RadLineCoolingMG/test_rad_line_cooling_MG.cpp
- create mode 100644 src/problems/RadLineCoolingMG/test_rad_line_cooling_MG.hpp
- create mode 100644 tests/RadLineCooling.in
- create mode 100644 tests/RadLineCoolingCoupled.in
-Updating files:  35% (6/17)Updating files:  41% (7/17)Updating files:  47% (8/17)Updating files:  52% (9/17)Updating files:  58% (10/17)Updating files:  64% (11/17)Updating files:  70% (12/17)Updating files:  76% (13/17)Updating files:  82% (14/17)Updating files:  88% (15/17)Updating files:  94% (16/17)Updating files: 100% (17/17)Updating files: 100% (17/17), done.
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 781f834d..7a8dc754
-Fast-forward
- .github/workflows/cmake-macos.yml | 4 ++--
- .github/workflows/cmake.yml       | 2 +-
- .github/workflows/intel.yml       | 2 +-
- 3 files changed, 4 insertions(+), 4 deletions(-)
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 7a8dc754..4ac04cdc
-Fast-forward
- extern/fmt            |  2 +-
- extern/openPMD-api    |  2 +-
- extern/yaml-cpp       |  2 +-
- scripts/make_movie.sh | 24 ++++++++++++++++++++++++
- 4 files changed, 27 insertions(+), 3 deletions(-)
- create mode 100644 scripts/make_movie.sh
-Updating 4ac04cdc..2e9e166a
-Fast-forward
- extern/amrex | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 2e9e166a..69cf0409
-Fast-forward
- .pre-commit-config.yaml                            |  2 +-
- src/QuokkaSimulation.hpp                           | 47 ++++++++++++++++
- src/hydro/EOS.hpp                                  | 19 +++++--
- src/hydro/NSCBC_inflow.hpp                         |  2 +-
- src/physics_info.hpp                               | 13 +++++
- src/problems/Advection/test_advection.cpp          |  1 +
- src/problems/Advection2D/test_advection2d.cpp      |  8 ++-
- .../test_advection_semiellipse.cpp                 |  1 +
- src/problems/BinaryOrbitCIC/binary_orbit.cpp       |  2 +-
- src/problems/Cooling/test_cooling.cpp              |  2 +-
- src/problems/FCQuantities/test_fc_quantities.cpp   |  2 +-
- src/problems/HydroBlast2D/test_hydro2d_blast.cpp   |  2 +-
- src/problems/HydroBlast3D/test_hydro3d_blast.cpp   |  2 +-
- src/problems/HydroContact/test_hydro_contact.cpp   |  2 +-
- src/problems/HydroHighMach/test_hydro_highmach.cpp |  2 +-
- .../HydroKelvinHelmholz/test_hydro2d_kh.cpp        |  2 +-
- src/problems/HydroLeblanc/test_hydro_leblanc.cpp   |  3 +-
- src/problems/HydroQuirk/test_quirk.cpp             |  2 +-
- .../HydroRichtmeyerMeshkov/test_hydro2d_rm.cpp     |  2 +-
- src/problems/HydroSMS/test_hydro_sms.cpp           |  2 +-
- .../HydroShocktube/test_hydro_shocktube.cpp        |  2 +-
- .../HydroShocktubeCMA/test_hydro_shocktube_cma.cpp |  2 +-
- src/problems/HydroShuOsher/test_hydro_shuosher.cpp |  2 +-
- src/problems/HydroVacuum/test_hydro_vacuum.cpp     |  2 +-
- src/problems/HydroWave/test_hydro_wave.cpp         |  2 +-
- src/problems/NSCBC/channel.cpp                     |  2 +-
- src/problems/NSCBC/vortex.cpp                      |  4 +-
- src/problems/ODEIntegration/test_ode.cpp           |  1 -
- src/problems/PassiveScalar/test_scalars.cpp        |  2 +-
- src/problems/PopIII/popiii.cpp                     |  1 +
- .../PrimordialChem/test_primordial_chem.cpp        |  1 +
- src/problems/RadBeam/test_radiation_beam.cpp       |  6 +-
- src/problems/RadDust/test_rad_dust.cpp             | 10 ++--
- src/problems/RadDustMG/test_rad_dust_MG.cpp        | 12 ++--
- src/problems/RadForce/test_radiation_force.cpp     |  6 +-
- .../RadLineCooling/test_rad_line_cooling.cpp       | 19 +++++--
- .../RadLineCoolingMG/test_rad_line_cooling_MG.cpp  | 16 +++---
- src/problems/RadMarshak/test_radiation_marshak.cpp |  9 ++-
- .../test_radiation_marshak_asymptotic.cpp          | 14 +----
- .../RadMarshakCGS/test_radiation_marshak_cgs.cpp   |  8 +--
- .../RadMarshakDust/test_radiation_marshak_dust.cpp | 17 +++---
- .../test_radiation_marshak_dust_and_PE.cpp         | 13 +++--
- .../test_radiation_marshak_Vaytet.cpp              |  6 +-
- .../test_radiation_matter_coupling.cpp             |  8 +--
- .../test_radiation_matter_coupling_rsla.cpp        | 11 ++--
- src/problems/RadPulse/test_radiation_pulse.cpp     | 10 ++--
- src/problems/RadShadow/test_radiation_shadow.cpp   | 13 ++---
- .../RadStreaming/test_radiation_streaming.cpp      | 10 ++--
- .../RadStreamingY/test_radiation_streaming_y.cpp   | 12 ++--
- src/problems/RadSuOlson/test_radiation_SuOlson.cpp | 11 ++--
- src/problems/RadTophat/test_radiation_tophat.cpp   | 10 ++--
- src/problems/RadTube/test_radiation_tube.cpp       |  6 +-
- src/problems/RadhydroBB/test_radhydro_bb.cpp       | 10 ++--
- src/problems/RadhydroPulse/test_radhydro_pulse.cpp | 12 ++--
- .../RadhydroPulseDyn/test_radhydro_pulse_dyn.cpp   | 15 ++---
- .../RadhydroPulseGrey/test_radhydro_pulse_grey.cpp | 15 ++---
- .../test_radhydro_pulse_MG_const_kappa.cpp         | 12 ++--
- .../test_radhydro_pulse_MG_int.cpp                 | 12 ++--
- src/problems/RadhydroShell/test_radhydro_shell.cpp | 18 +++---
- src/problems/RadhydroShock/test_radhydro_shock.cpp | 12 ++--
- .../RadhydroShockCGS/test_radhydro_shock_cgs.cpp   | 11 ++--
- .../test_radhydro_shock_multigroup.cpp             |  6 +-
- .../test_radhydro_uniform_advecting.cpp            | 12 ++--
- src/problems/RandomBlast/blast.cpp                 |  6 +-
- src/problems/RayleighTaylor2D/test_hydro2d_rt.cpp  |  2 +-
- src/problems/RayleighTaylor3D/test_hydro3d_rt.cpp  |  2 +-
- src/problems/ShockCloud/cloud.cpp                  |  2 +-
- .../SphericalCollapse/spherical_collapse.cpp       |  4 +-
- src/problems/StarCluster/star_cluster.cpp          |  4 +-
- src/radiation/radiation_system.hpp                 | 48 +++++++++++++---
- src/simulation.hpp                                 | 64 +++++++++++++++++++---
- tests/RadStreamingY.in                             |  2 +-
- tests/RadTube.in                                   |  4 +-
- tests/SphericalCollapse.in                         |  2 -
- tests/radshock.in                                  |  4 +-
- tests/radshock_dimensionless.in                    |  3 +-
- 76 files changed, 401 insertions(+), 247 deletions(-)
-Updating files:   9% (7/76)Updating files:  10% (8/76)Updating files:  11% (9/76)Updating files:  13% (10/76)Updating files:  14% (11/76)Updating files:  15% (12/76)Updating files:  17% (13/76)Updating files:  18% (14/76)Updating files:  19% (15/76)Updating files:  21% (16/76)Updating files:  22% (17/76)Updating files:  23% (18/76)Updating files:  25% (19/76)Updating files:  26% (20/76)Updating files:  27% (21/76)Updating files:  28% (22/76)Updating files:  30% (23/76)Updating files:  31% (24/76)Updating files:  32% (25/76)Updating files:  34% (26/76)Updating files:  35% (27/76)Updating files:  36% (28/76)Updating files:  38% (29/76)Updating files:  39% (30/76)Updating files:  40% (31/76)Updating files:  42% (32/76)Updating files:  43% (33/76)Updating files:  44% (34/76)Updating files:  46% (35/76)Updating files:  47% (36/76)Updating files:  48% (37/76)Updating files:  50% (38/76)Updating files:  51% (39/76)Updating files:  52% (40/76)Updating files:  53% (41/76)Updating files:  55% (42/76)Updating files:  56% (43/76)Updating files:  57% (44/76)Updating files:  59% (45/76)Updating files:  60% (46/76)Updating files:  61% (47/76)Updating files:  63% (48/76)Updating files:  64% (49/76)Updating files:  65% (50/76)Updating files:  67% (51/76)Updating files:  68% (52/76)Updating files:  69% (53/76)Updating files:  71% (54/76)Updating files:  72% (55/76)Updating files:  73% (56/76)Updating files:  75% (57/76)Updating files:  76% (58/76)Updating files:  77% (59/76)Updating files:  78% (60/76)Updating files:  80% (61/76)Updating files:  81% (62/76)Updating files:  82% (63/76)Updating files:  84% (64/76)Updating files:  85% (65/76)Updating files:  86% (66/76)Updating files:  88% (67/76)Updating files:  89% (68/76)Updating files:  90% (69/76)Updating files:  92% (70/76)Updating files:  93% (71/76)Updating files:  94% (72/76)Updating files:  96% (73/76)Updating files:  97% (74/76)Updating files:  98% (75/76)Updating files: 100% (76/76)Updating files: 100% (76/76), done.
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 69cf0409..89c5ad23
-Fast-forward
- extern/Microphysics | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
-Updating 89c5ad23..e470861f
-Fast-forward
- src/CMakeLists.txt                           |   1 +
- src/QuokkaSimulation.hpp                     |   4 +-
- src/io/projection.cpp                        | 581 +++++++++++++++++++++++++++
- src/io/projection.hpp                        | 113 ++++++
- src/linear_advection/AdvectionSimulation.hpp |   4 +-
- src/problems/NSCBC/channel.cpp               |   2 +-
- src/problems/ShockCloud/cloud.cpp            |  25 +-
- src/simulation.hpp                           | 106 +----
- 8 files changed, 726 insertions(+), 110 deletions(-)
- create mode 100644 src/io/projection.cpp
- create mode 100644 src/io/projection.hpp
-Already up to date.
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Already up to date.
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating e470861f..ec76a04b
-Fast-forward
- .github/workflows/clang-tidy-comments.yml | 2 +-
- .github/workflows/clang-tidy.yml          | 4 ++--
- 2 files changed, 3 insertions(+), 3 deletions(-)
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating ec76a04b..3f282b4d
-Fast-forward
- scripts/summit-1node.bsub    | 41 -----------------------------------------
- scripts/summit-4096node.bsub | 40 ----------------------------------------
- scripts/summit-512node.bsub  | 40 ----------------------------------------
- scripts/summit-64node.bsub   | 40 ----------------------------------------
- scripts/summit-8node.bsub    | 40 ----------------------------------------
- scripts/summit.profile       | 43 -------------------------------------------
- 6 files changed, 244 deletions(-)
- delete mode 100644 scripts/summit-1node.bsub
- delete mode 100644 scripts/summit-4096node.bsub
- delete mode 100644 scripts/summit-512node.bsub
- delete mode 100644 scripts/summit-64node.bsub
- delete mode 100644 scripts/summit-8node.bsub
- delete mode 100644 scripts/summit.profile
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 3f282b4d..83d3bf95
-Fast-forward
- .github/pull_request_template.md | 6 ++----
- CMakeLists.txt                   | 4 ++--
- 2 files changed, 4 insertions(+), 6 deletions(-)
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 83d3bf95..d8509736
-Fast-forward
- .github/workflows/clang-tidy-comments.yml          | 2 +-
- .github/workflows/clang-tidy.yml                   | 4 ++--
- .pre-commit-config.yaml                            | 2 +-
- src/problems/BinaryOrbitCIC/particle_orbit_plot.py | 5 ++---
- 4 files changed, 6 insertions(+), 7 deletions(-)
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating d8509736..09f15891
-Fast-forward
- src/CMakeLists.txt | 14 +++++++++-----
- 1 file changed, 9 insertions(+), 5 deletions(-)
-M	extern/Microphysics
-M	extern/amrex
-M	extern/fmt
-M	extern/grackle_data_files
-M	extern/openPMD-api
-M	extern/yaml-cpp
-Your branch is up to date with 'origin/development'.
-Already on 'development'
-Updating 09f15891..06470346
-Fast-forward
- extern/amrex       | 2 +-
- extern/fmt         | 2 +-
- extern/openPMD-api | 2 +-
- extern/yaml-cpp    | 2 +-
- 4 files changed, 4 insertions(+), 4 deletions(-)
-Already up to date.
