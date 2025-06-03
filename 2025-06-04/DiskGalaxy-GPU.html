@@ -1,0 +1,146 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-06-04 / DiskGalaxy-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="RadhydroShell-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-06-04</a> / DiskGalaxy-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="DiskGalaxy-GPU.DiskGalaxy.in">DiskGalaxy.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 422.922 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /home/bwibking/regression-tests/quokka/builddir -j 16 --  disk_galaxy</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 121.486 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.in  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="DiskGalaxy-GPU.run.out">execution output</a>
+</li>
+<li><a href="DiskGalaxy-GPU.err.out">execution stderr</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/home/bwibking/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200
+</tt>
+<tt>/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.517657755e-28</td><td class='highlight'>0.00177275446</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.650088385e-21</td><td class='highlight'>0.001444222308</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.418626818e-21</td><td class='highlight'>0.00206630806</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.334650316e-22</td><td class='highlight'>0.002716015994</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>3.378470132e-14</td><td class='highlight'>0.001780320446</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>7.03006328e-15</td><td class='highlight'>0.001760432121</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>17256.9581</td><td class='highlight'>0.002467786575</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>19719.24502</td><td class='highlight'>0.002802578167</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>16444.35998</td><td class='highlight'>0.002323465975</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>275.017621</td><td class='highlight'>0.0002557759202</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>19725675250.0</td><td class='highlight'>1.150810501e-05</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>8.607247695e-28</td><td class='highlight'>0.002122761418</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>9.483749208e-21</td><td class='highlight'>0.001830018639</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.185997696e-20</td><td class='highlight'>0.002156990496</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>3.090404163e-21</td><td class='highlight'>0.003400195261</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.668837708e-13</td><td class='highlight'>0.002092730336</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>3.706705864e-14</td><td class='highlight'>0.002128271903</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>30360.4146</td><td class='highlight'>0.002723423629</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>49110.0535</td><td class='highlight'>0.003331429882</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>24744.64614</td><td class='highlight'>0.001955878935</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>941.6375933</td><td class='highlight'>0.0007671864314</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>87247963750.0</td><td class='highlight'>4.248457518e-05</td></tr>
+<tr class='special'><td colspan=3>level = 2</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>4.930667769e-27</td><td class='highlight'>0.003185447466</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.30963814e-20</td><td class='highlight'>0.002638544749</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>7.706722093e-20</td><td class='highlight'>0.004850850021</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.621768895e-20</td><td class='highlight'>0.003993893193</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>8.056173226e-13</td><td class='highlight'>0.003943981805</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.318505517e-13</td><td class='highlight'>0.002312851044</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>107266.5369</td><td class='highlight'>0.00757879929</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>176327.2026</td><td class='highlight'>0.007925573476</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>131266.2679</td><td class='highlight'>0.004892761346</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>90253.67383</td><td class='highlight'>0.004661706869</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>283368718700.0</td><td class='highlight'>0.0001208088907</td></tr>
+<tr class='special'><td colspan=3>level = 3</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.753395971e-26</td><td class='highlight'>0.003565416843</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.617523836e-19</td><td class='highlight'>0.003603598025</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.311728355e-19</td><td class='highlight'>0.005044013898</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>6.685314834e-20</td><td class='highlight'>0.003869493036</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>2.300377158e-12</td><td class='highlight'>0.005221374836</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>5.239314049e-13</td><td class='highlight'>0.003644514662</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>955141.9812</td><td class='highlight'>0.0260824334</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>651898.5418</td><td class='highlight'>0.01205653701</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>1715839.169</td><td class='highlight'>0.01876850482</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>635547.3265</td><td class='highlight'>0.0199648648</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>472051518600.0</td><td class='highlight'>0.0001828278285</td></tr>
+<tr class='special'><td colspan=3>level = 4</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.31366355e-25</td><td class='highlight'>0.006425215433</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.179306028e-18</td><td class='highlight'>0.009252011</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>7.091273998e-19</td><td class='highlight'>0.006453514397</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.19679498e-19</td><td class='highlight'>0.004932754656</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>6.963939991e-12</td><td class='highlight'>0.007059453562</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.00345185e-12</td><td class='highlight'>0.002692596356</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>2393549.304</td><td class='highlight'>0.03959539471</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>2003352.557</td><td class='highlight'>0.02374272044</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>7179384.516</td><td class='highlight'>0.05902408431</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>1655524.44</td><td class='highlight'>0.04600741023</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>1150012467000.0</td><td class='highlight'>0.0004149645386</td></tr>
+<tr class='special'><td colspan=3>level = 5</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>5.649209238e-25</td><td class='highlight'>0.007061579089</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.628898132e-18</td><td class='highlight'>0.01430561994</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>4.267244724e-18</td><td class='highlight'>0.01136214833</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.22947234e-18</td><td class='highlight'>0.01207118059</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.082877765e-11</td><td class='highlight'>0.02026031097</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>4.252760069e-12</td><td class='highlight'>0.07660369481</td></tr>
+<tr><td class='highlight'>x-RiemannSolverVelocity</td><td class='highlight'>15230502.0</td><td class='highlight'>0.1656666384</td></tr>
+<tr><td class='highlight'>y-RiemannSolverVelocity</td><td class='highlight'>8678074.816</td><td class='highlight'>0.07873582315</td></tr>
+<tr><td class='highlight'>z-RiemannSolverVelocity</td><td class='highlight'>52245083.32</td><td class='highlight'>0.2613353477</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>4183340.94</td><td class='highlight'>0.1008566048</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>1501552021000.0</td><td class='highlight'>0.0005203270158</td></tr>
+<tr><td class='highlight'>tracer_particles_position_x</td><td class='highlight'>2.27249676e+19</td><td class='highlight'>0.000548088527</td></tr>
+<tr><td class='highlight'>tracer_particles_position_y</td><td class='highlight'>2.28019288e+19</td><td class='highlight'>0.000550456094</td></tr>
+<tr><td class='highlight'>tracer_particles_position_z</td><td class='highlight'>3.31801999e+19</td><td class='highlight'>0.00239996024</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp0</td><td class='highlight'>62898.6553</td><td class='highlight'>0.0142626818</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp1</td><td class='highlight'>990451.582</td><td class='highlight'>0.229784295</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp2</td><td class='highlight'>1057744.07</td><td class='highlight'>1.10612901</td></tr>
+<tr><td>tracer_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='DiskGalaxy-GPU_plt00200.temperature.XY.png' BORDER=0></div></body>
+</html>

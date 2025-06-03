@@ -1,0 +1,95 @@
+/home/bwibking/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         1.517657755e-28             0.00177275446
+ x-GasMomentum                      1.650088385e-21            0.001444222308
+ y-GasMomentum                      2.418626818e-21             0.00206630806
+ z-GasMomentum                      4.334650316e-22            0.002716015994
+ gasEnergy                          3.378470132e-14            0.001780320446
+ gasInternalEnergy                   7.03006328e-15            0.001760432121
+ x-RiemannSolverVelocity                 17256.9581            0.002467786575
+ y-RiemannSolverVelocity                19719.24502            0.002802578167
+ z-RiemannSolverVelocity                16444.35998            0.002323465975
+ temperature                             275.017621           0.0002557759202
+ gpot                               1.972567525e+10           1.150810501e-05
+ level = 1
+ gasDensity                         8.607247695e-28            0.002122761418
+ x-GasMomentum                      9.483749208e-21            0.001830018639
+ y-GasMomentum                      1.185997696e-20            0.002156990496
+ z-GasMomentum                      3.090404163e-21            0.003400195261
+ gasEnergy                          1.668837708e-13            0.002092730336
+ gasInternalEnergy                  3.706705864e-14            0.002128271903
+ x-RiemannSolverVelocity                 30360.4146            0.002723423629
+ y-RiemannSolverVelocity                 49110.0535            0.003331429882
+ z-RiemannSolverVelocity                24744.64614            0.001955878935
+ temperature                            941.6375933           0.0007671864314
+ gpot                               8.724796375e+10           4.248457518e-05
+ level = 2
+ gasDensity                         4.930667769e-27            0.003185447466
+ x-GasMomentum                       4.30963814e-20            0.002638544749
+ y-GasMomentum                      7.706722093e-20            0.004850850021
+ z-GasMomentum                      1.621768895e-20            0.003993893193
+ gasEnergy                          8.056173226e-13            0.003943981805
+ gasInternalEnergy                  1.318505517e-13            0.002312851044
+ x-RiemannSolverVelocity                107266.5369             0.00757879929
+ y-RiemannSolverVelocity                176327.2026            0.007925573476
+ z-RiemannSolverVelocity                131266.2679            0.004892761346
+ temperature                            90253.67383            0.004661706869
+ gpot                               2.833687187e+11           0.0001208088907
+ level = 3
+ gasDensity                         1.753395971e-26            0.003565416843
+ x-GasMomentum                      1.617523836e-19            0.003603598025
+ y-GasMomentum                      2.311728355e-19            0.005044013898
+ z-GasMomentum                      6.685314834e-20            0.003869493036
+ gasEnergy                          2.300377158e-12            0.005221374836
+ gasInternalEnergy                  5.239314049e-13            0.003644514662
+ x-RiemannSolverVelocity                955141.9812              0.0260824334
+ y-RiemannSolverVelocity                651898.5418             0.01205653701
+ z-RiemannSolverVelocity                1715839.169             0.01876850482
+ temperature                            635547.3265              0.0199648648
+ gpot                               4.720515186e+11           0.0001828278285
+ level = 4
+ gasDensity                          1.31366355e-25            0.006425215433
+ x-GasMomentum                      1.179306028e-18               0.009252011
+ y-GasMomentum                      7.091273998e-19            0.006453514397
+ z-GasMomentum                       4.19679498e-19            0.004932754656
+ gasEnergy                          6.963939991e-12            0.007059453562
+ gasInternalEnergy                   1.00345185e-12            0.002692596356
+ x-RiemannSolverVelocity                2393549.304             0.03959539471
+ y-RiemannSolverVelocity                2003352.557             0.02374272044
+ z-RiemannSolverVelocity                7179384.516             0.05902408431
+ temperature                             1655524.44             0.04600741023
+ gpot                               1.150012467e+12           0.0004149645386
+ level = 5
+ gasDensity                         5.649209238e-25            0.007061579089
+ x-GasMomentum                      4.628898132e-18             0.01430561994
+ y-GasMomentum                      4.267244724e-18             0.01136214833
+ z-GasMomentum                       4.22947234e-18             0.01207118059
+ gasEnergy                          4.082877765e-11             0.02026031097
+ gasInternalEnergy                  4.252760069e-12             0.07660369481
+ x-RiemannSolverVelocity                   15230502              0.1656666384
+ y-RiemannSolverVelocity                8678074.816             0.07873582315
+ z-RiemannSolverVelocity                52245083.32              0.2613353477
+ temperature                             4183340.94              0.1008566048
+ gpot                               1.501552021e+12           0.0005203270158
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 tracer_particles
+
+-----------------------------------------------------------------------
+tracer_particles
+tracer_particles_position_x         2.27249676e+19        5.48088527e-04        
+tracer_particles_position_y         2.28019288e+19        5.50456094e-04        
+tracer_particles_position_z         3.31801999e+19        2.39996024e-03        
+tracer_particles_real_comp0         6.28986553e+04        1.42626818e-02        
+tracer_particles_real_comp1         9.90451582e+05        2.29784295e-01        
+tracer_particles_real_comp2         1.05774407e+06        1.10612901e+00        
+tracer_particles_id                 0.00000000e+00        0.00000000e+00        
+tracer_particles_cpu                0.00000000e+00        0.00000000e+00        
+
+ PARTICLES DISAGREE to relative tolerance 0
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 CIC_particles
+FAIL - Particle data headers do not agree. 
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 StochasticStellarPop_particles
+FAIL - Particle data headers do not agree. 
