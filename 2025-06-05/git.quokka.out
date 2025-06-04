@@ -1,0 +1,37 @@
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Updating 2e9fa17d..3a2ead96
+Fast-forward
+ .gitignore                                         |   4 +
+ extern/agora_data/AgoraGalaxy_particles_LOW.tar.gz | Bin 0 -> 23511040 bytes
+ extern/agora_data/README.txt                       | 120 ++++++
+ extern/agora_data/create_amrex_particles.py        |  60 +++
+ extern/agora_data/filter_particles.py              |  41 +++
+ extern/agora_data/vcirc.tar.gz                     | Bin 0 -> 225280 bytes
+ regression/quokka-tests.ini                        |  20 +
+ src/problems/CMakeLists.txt                        |   1 +
+ src/problems/DiskGalaxy/CMakeLists.txt             |  10 +
+ src/problems/DiskGalaxy/ascent_actions.yaml        |  55 +++
+ src/problems/DiskGalaxy/galaxy.cpp                 | 404 +++++++++++++++++++++
+ src/problems/DiskGalaxy/plot_disk.py               |  36 ++
+ src/problems/DiskGalaxy/plot_faceon.py             |  36 ++
+ src/problems/DiskGalaxy/plot_phase.py              |  42 +++
+ tests/DiskGalaxy.in                                |  63 ++++
+ 15 files changed, 892 insertions(+)
+ create mode 100644 extern/agora_data/AgoraGalaxy_particles_LOW.tar.gz
+ create mode 100644 extern/agora_data/README.txt
+ create mode 100644 extern/agora_data/create_amrex_particles.py
+ create mode 100644 extern/agora_data/filter_particles.py
+ create mode 100644 extern/agora_data/vcirc.tar.gz
+ create mode 100644 src/problems/DiskGalaxy/CMakeLists.txt
+ create mode 100644 src/problems/DiskGalaxy/ascent_actions.yaml
+ create mode 100644 src/problems/DiskGalaxy/galaxy.cpp
+ create mode 100644 src/problems/DiskGalaxy/plot_disk.py
+ create mode 100644 src/problems/DiskGalaxy/plot_faceon.py
+ create mode 100644 src/problems/DiskGalaxy/plot_phase.py
+ create mode 100644 tests/DiskGalaxy.in
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
