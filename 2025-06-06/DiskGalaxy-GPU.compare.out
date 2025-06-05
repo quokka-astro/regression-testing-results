@@ -1,0 +1,101 @@
+/home/bwibking/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200
+
+ WARNING: number of variables do not match
+ WARNING: variable x-RiemannSolverVelocity not found in plotfile 2
+ WARNING: variable y-RiemannSolverVelocity not found in plotfile 2
+ WARNING: variable z-RiemannSolverVelocity not found in plotfile 2
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         8.652752867e-29            0.001010715768
+ x-GasMomentum                      7.801911691e-22           0.0006828540224
+ y-GasMomentum                       1.60548646e-21            0.001371616981
+ z-GasMomentum                      5.189535865e-22            0.003251672311
+ gasEnergy                          1.493776907e-14           0.0007871614857
+ gasInternalEnergy                  3.854734644e-15           0.0009652827314
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                            57.67288238           5.363777966e-05
+ gpot                               1.527917373e+10           8.913983098e-06
+ level = 1
+ gasDensity                         7.186180697e-28            0.001772290942
+ x-GasMomentum                      6.346828326e-21             0.00122470701
+ y-GasMomentum                      1.320228112e-20             0.00240111722
+ z-GasMomentum                       4.10789073e-21            0.004519677639
+ gasEnergy                          1.248127785e-13            0.001565158114
+ gasInternalEnergy                  2.816392397e-14            0.001617082397
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                            156.5144793           0.0001275180448
+ gpot                               8.741853862e+10           4.256763501e-05
+ level = 2
+ gasDensity                         5.440675683e-27            0.003514936999
+ x-GasMomentum                      4.636015757e-20            0.002838367082
+ y-GasMomentum                      1.031320185e-19            0.006491449258
+ z-GasMomentum                      2.768737203e-20            0.006818505834
+ gasEnergy                          9.757438698e-13            0.004776853675
+ gasInternalEnergy                  1.908507633e-13            0.003347800835
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                             111788.639            0.005774012784
+ gpot                               5.672985598e+10           2.418570053e-05
+ level = 3
+ gasDensity                          2.57515638e-26             0.00523641327
+ x-GasMomentum                       1.78862354e-19             0.00398478224
+ y-GasMomentum                      4.775609134e-19             0.01042001271
+ z-GasMomentum                      8.074390704e-20            0.004673496968
+ gasEnergy                          4.469821791e-12             0.01014556023
+ gasInternalEnergy                  4.548737605e-13            0.003164143386
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                            275528.0645             0.00865534371
+ gpot                               2.718680481e+11           0.0001052958055
+ level = 4
+ gasDensity                         6.251607494e-26            0.003057702633
+ x-GasMomentum                      4.665581532e-19            0.003660289242
+ y-GasMomentum                      1.083499391e-18            0.009860539757
+ z-GasMomentum                      3.806017352e-19            0.004473449359
+ gasEnergy                          1.035517769e-11             0.01049720361
+ gasInternalEnergy                  5.040915748e-13            0.001352646006
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                            1684849.362             0.04682235664
+ gpot                               1.136306435e+12            0.000410018925
+ level = 5
+ gasDensity                          1.48760654e-25             0.00185952596
+ x-GasMomentum                      2.037898709e-18            0.006298130476
+ y-GasMomentum                      2.485691591e-18            0.006618508754
+ z-GasMomentum                      2.301244566e-18            0.006567897009
+ gasEnergy                          2.511181512e-11             0.01246114169
+ gasInternalEnergy                   7.31247437e-13             0.01317174131
+ x-RiemannSolverVelocity   < variable not present in both files >            
+ y-RiemannSolverVelocity   < variable not present in both files >            
+ z-RiemannSolverVelocity   < variable not present in both files >            
+ temperature                            3314568.463             0.07991127817
+ gpot                               1.610257774e+12           0.0005579963998
+ WARNING: not all variables present in both files
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 tracer_particles
+
+-----------------------------------------------------------------------
+tracer_particles
+tracer_particles_position_x         3.70761359e+18        8.94214903e-05        
+tracer_particles_position_y         2.34381792e+18        5.65815670e-05        
+tracer_particles_position_z         3.51401871e+18        2.54172826e-04        
+tracer_particles_real_comp0         2.73194508e+05        6.19486428e-02        
+tracer_particles_real_comp1         7.79734736e+04        1.80898087e-02        
+tracer_particles_real_comp2         9.50571355e+04        9.94053839e-02        
+tracer_particles_id                 0.00000000e+00        0.00000000e+00        
+tracer_particles_cpu                0.00000000e+00        0.00000000e+00        
+
+ PARTICLES DISAGREE to relative tolerance 0
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 CIC_particles
+FAIL - Particle data headers do not agree. 
+/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 StochasticStellarPop_particles
+FAIL - Particle data headers do not agree. 

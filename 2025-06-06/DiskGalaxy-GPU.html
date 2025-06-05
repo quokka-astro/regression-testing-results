@@ -1,0 +1,147 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-06-06 / DiskGalaxy-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="RadhydroShell-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-06-06</a> / DiskGalaxy-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="DiskGalaxy-GPU.DiskGalaxy.in">DiskGalaxy.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 319.410 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /home/bwibking/regression-tests/quokka/builddir -j 16 --  disk_galaxy</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 106.757 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.in  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="DiskGalaxy-GPU.run.out">execution output</a>
+</li>
+<li><a href="DiskGalaxy-GPU.err.out">execution stderr</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/home/bwibking/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200
+</tt>
+<tt>/home/bwibking/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /home/bwibking/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt00200 DiskGalaxy-GPU_plt00200 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>8.652752867e-29</td><td class='highlight'>0.001010715768</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>7.801911691e-22</td><td class='highlight'>0.0006828540224</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.60548646e-21</td><td class='highlight'>0.001371616981</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>5.189535865e-22</td><td class='highlight'>0.003251672311</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.493776907e-14</td><td class='highlight'>0.0007871614857</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>3.854734644e-15</td><td class='highlight'>0.0009652827314</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>57.67288238</td><td class='highlight'>5.363777966e-05</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>15279173730.0</td><td class='highlight'>8.913983098e-06</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>7.186180697e-28</td><td class='highlight'>0.001772290942</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>6.346828326e-21</td><td class='highlight'>0.00122470701</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.320228112e-20</td><td class='highlight'>0.00240111722</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.10789073e-21</td><td class='highlight'>0.004519677639</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.248127785e-13</td><td class='highlight'>0.001565158114</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>2.816392397e-14</td><td class='highlight'>0.001617082397</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>156.5144793</td><td class='highlight'>0.0001275180448</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>87418538620.0</td><td class='highlight'>4.256763501e-05</td></tr>
+<tr class='special'><td colspan=3>level = 2</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>5.440675683e-27</td><td class='highlight'>0.003514936999</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.636015757e-20</td><td class='highlight'>0.002838367082</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.031320185e-19</td><td class='highlight'>0.006491449258</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.768737203e-20</td><td class='highlight'>0.006818505834</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>9.757438698e-13</td><td class='highlight'>0.004776853675</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.908507633e-13</td><td class='highlight'>0.003347800835</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>111788.639</td><td class='highlight'>0.005774012784</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>56729855980.0</td><td class='highlight'>2.418570053e-05</td></tr>
+<tr class='special'><td colspan=3>level = 3</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>2.57515638e-26</td><td class='highlight'>0.00523641327</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.78862354e-19</td><td class='highlight'>0.00398478224</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>4.775609134e-19</td><td class='highlight'>0.01042001271</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>8.074390704e-20</td><td class='highlight'>0.004673496968</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.469821791e-12</td><td class='highlight'>0.01014556023</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>4.548737605e-13</td><td class='highlight'>0.003164143386</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>275528.0645</td><td class='highlight'>0.00865534371</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>271868048100.0</td><td class='highlight'>0.0001052958055</td></tr>
+<tr class='special'><td colspan=3>level = 4</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>6.251607494e-26</td><td class='highlight'>0.003057702633</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.665581532e-19</td><td class='highlight'>0.003660289242</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.083499391e-18</td><td class='highlight'>0.009860539757</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>3.806017352e-19</td><td class='highlight'>0.004473449359</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.035517769e-11</td><td class='highlight'>0.01049720361</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>5.040915748e-13</td><td class='highlight'>0.001352646006</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>1684849.362</td><td class='highlight'>0.04682235664</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>1136306435000.0</td><td class='highlight'>0.000410018925</td></tr>
+<tr class='special'><td colspan=3>level = 5</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.48760654e-25</td><td class='highlight'>0.00185952596</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>2.037898709e-18</td><td class='highlight'>0.006298130476</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.485691591e-18</td><td class='highlight'>0.006618508754</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.301244566e-18</td><td class='highlight'>0.006567897009</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>2.511181512e-11</td><td class='highlight'>0.01246114169</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>7.31247437e-13</td><td class='highlight'>0.01317174131</td></tr>
+<tr><td>x-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>y-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>z-RiemannSolverVelocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>3314568.463</td><td class='highlight'>0.07991127817</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>1610257774000.0</td><td class='highlight'>0.0005579963998</td></tr>
+<tr><td class='highlight'>tracer_particles_position_x</td><td class='highlight'>3.70761359e+18</td><td class='highlight'>8.94214903e-05</td></tr>
+<tr><td class='highlight'>tracer_particles_position_y</td><td class='highlight'>2.34381792e+18</td><td class='highlight'>5.6581567e-05</td></tr>
+<tr><td class='highlight'>tracer_particles_position_z</td><td class='highlight'>3.51401871e+18</td><td class='highlight'>0.000254172826</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp0</td><td class='highlight'>273194.508</td><td class='highlight'>0.0619486428</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp1</td><td class='highlight'>77973.4736</td><td class='highlight'>0.0180898087</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp2</td><td class='highlight'>95057.1355</td><td class='highlight'>0.0994053839</td></tr>
+<tr><td>tracer_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+<p>variables differ in files</p>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='DiskGalaxy-GPU_plt00200.temperature.XY.png' BORDER=0></div></body>
+</html>
