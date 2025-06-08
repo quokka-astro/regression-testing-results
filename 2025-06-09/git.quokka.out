@@ -1,0 +1,79 @@
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Updating 2e9fa17d..3a2ead96
+Fast-forward
+ .gitignore                                         |   4 +
+ extern/agora_data/AgoraGalaxy_particles_LOW.tar.gz | Bin 0 -> 23511040 bytes
+ extern/agora_data/README.txt                       | 120 ++++++
+ extern/agora_data/create_amrex_particles.py        |  60 +++
+ extern/agora_data/filter_particles.py              |  41 +++
+ extern/agora_data/vcirc.tar.gz                     | Bin 0 -> 225280 bytes
+ regression/quokka-tests.ini                        |  20 +
+ src/problems/CMakeLists.txt                        |   1 +
+ src/problems/DiskGalaxy/CMakeLists.txt             |  10 +
+ src/problems/DiskGalaxy/ascent_actions.yaml        |  55 +++
+ src/problems/DiskGalaxy/galaxy.cpp                 | 404 +++++++++++++++++++++
+ src/problems/DiskGalaxy/plot_disk.py               |  36 ++
+ src/problems/DiskGalaxy/plot_faceon.py             |  36 ++
+ src/problems/DiskGalaxy/plot_phase.py              |  42 +++
+ tests/DiskGalaxy.in                                |  63 ++++
+ 15 files changed, 892 insertions(+)
+ create mode 100644 extern/agora_data/AgoraGalaxy_particles_LOW.tar.gz
+ create mode 100644 extern/agora_data/README.txt
+ create mode 100644 extern/agora_data/create_amrex_particles.py
+ create mode 100644 extern/agora_data/filter_particles.py
+ create mode 100644 extern/agora_data/vcirc.tar.gz
+ create mode 100644 src/problems/DiskGalaxy/CMakeLists.txt
+ create mode 100644 src/problems/DiskGalaxy/ascent_actions.yaml
+ create mode 100644 src/problems/DiskGalaxy/galaxy.cpp
+ create mode 100644 src/problems/DiskGalaxy/plot_disk.py
+ create mode 100644 src/problems/DiskGalaxy/plot_faceon.py
+ create mode 100644 src/problems/DiskGalaxy/plot_phase.py
+ create mode 100644 tests/DiskGalaxy.in
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 3a2ead96..a241f133
+Fast-forward
+ extern/amrex             |  2 +-
+ src/.clang-tidy          |  2 +-
+ src/QuokkaSimulation.hpp | 32 +++++++++++++++++++++
+ src/simulation.hpp       | 74 +++++++++++++++++++++++-------------------------
+ 4 files changed, 70 insertions(+), 40 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating a241f133..e3cd77d3
+Fast-forward
+ .devcontainer/cuda-container/Dockerfile |  8 ++++----
+ .devcontainer/gcc-container/Dockerfile  | 10 +++++-----
+ 2 files changed, 9 insertions(+), 9 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating e3cd77d3..50bfeaac
+Fast-forward
+ src/simulation.hpp | 117 ++++++++++++++++++++++-------------------------------
+ 1 file changed, 48 insertions(+), 69 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 50bfeaac..687de7bf
+Fast-forward
+ CMakeLists.txt                               |   7 +-
+ src/cooling/GrackleLikeCooling.hpp           |  75 +++++-----
+ src/cooling/TabulatedCooling.hpp             |  69 +++++----
+ src/math/ODEIntegrate.hpp                    |  26 ++--
+ src/particles/particle_creation.hpp          |  17 ++-
+ src/particles/particle_deposition.hpp        |  26 +++-
+ src/problems/ODEIntegration/test_ode.cpp     |  30 ++--
+ src/problems/ParticleSF/test_particle_SF.cpp | 209 ++++++++++++++++-----------
+ src/problems/ParticleSF/test_particle_SF.hpp |  12 --
+ tests/ParticleSF.in                          |  35 ++---
+ 10 files changed, 281 insertions(+), 225 deletions(-)
+ delete mode 100644 src/problems/ParticleSF/test_particle_SF.hpp
