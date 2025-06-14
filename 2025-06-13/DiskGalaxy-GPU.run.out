@@ -1,0 +1,15 @@
+Initializing AMReX (25.06-5-g403e977ab987)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (25.06-5-g403e977ab987) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+Using derived variables:
+	temperature
+	gpot
+
+Reading resampled cooling tables...
+Initializing resampled cooling.
+resampled_table_file: ./CloudyData_UVB=HM2012_resampled.h5.
