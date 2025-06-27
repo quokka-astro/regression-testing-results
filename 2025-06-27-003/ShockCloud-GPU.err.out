@@ -1,0 +1,25 @@
+HDF5-DIAG: Error detected in HDF5 (1.10.10) thread 1:
+  #000: ../../../src/H5F.c line 412 in H5Fopen(): unable to open file
+    major: File accessibility
+    minor: Unable to open file
+  #001: ../../../src/H5Fint.c line 1655 in H5F_open(): unable to open file: time = Sat Jun 28 00:44:05 2025
+, name = '/home/bwibking/regression-tests/quokka/extern/cooling/isrf_1000Go_grains.h5', tent_flags = 0
+    major: File accessibility
+    minor: Unable to open file
+  #002: ../../../src/H5FD.c line 722 in H5FD_open(): open failed
+    major: Virtual File Layer
+    minor: Unable to initialize object
+  #003: ../../../src/H5FDsec2.c line 351 in H5FD__sec2_open(): unable to open file: name = '/home/bwibking/regression-tests/quokka/extern/cooling/isrf_1000Go_grains.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0
+    major: File accessibility
+    minor: Unable to open file
+0::Assertion `file_id != h5_error' failed, file "/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/cooling/CloudyDataReader.cpp", line 60, Msg: "Failed to open Grackle data file!" !!!
+SIGABRT
+See Backtrace.0 file for details
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 6.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
