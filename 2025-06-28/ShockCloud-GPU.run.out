@@ -1,0 +1,22 @@
+Initializing AMReX (25.06-5-g403e977ab987)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (25.06-5-g403e977ab987) initialized
+Successfully read inputs file ... 
+Using derived variables:
+	pressure
+	entropy
+	nH
+	temperature
+	cooling_length
+	cloud_fraction
+	lab_velocity_x
+	mass
+	velocity_mag
+	c_s
+
+Reading cloudy-cooling-tools tables...
+Initializing Cloudy cooling.
+cloudy_table_file: /home/bwibking/regression-tests/quokka/extern/cooling/isrf_1000Go_grains.h5.
