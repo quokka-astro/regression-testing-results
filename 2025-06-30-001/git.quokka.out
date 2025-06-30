@@ -1,0 +1,42 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 0a63d7e9..254b6f03
+Fast-forward
+ .ci/azure-pipelines-regression.yml                |  4 ++--
+ .devcontainer/cuda-azp-agent-in-docker/Dockerfile |  2 +-
+ .devcontainer/cuda-azp-agent-in-docker/build.sh   |  3 +++
+ inputs/ShockCloud_64_regression.in                |  2 +-
+ regression/quokka-tests.ini                       | 12 ++++++------
+ 5 files changed, 13 insertions(+), 10 deletions(-)
+ mode change 100644 => 100755 .devcontainer/cuda-azp-agent-in-docker/build.sh
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
