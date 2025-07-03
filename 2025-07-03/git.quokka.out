@@ -1,0 +1,77 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 0a63d7e9..254b6f03
+Fast-forward
+ .ci/azure-pipelines-regression.yml                |  4 ++--
+ .devcontainer/cuda-azp-agent-in-docker/Dockerfile |  2 +-
+ .devcontainer/cuda-azp-agent-in-docker/build.sh   |  3 +++
+ inputs/ShockCloud_64_regression.in                |  2 +-
+ regression/quokka-tests.ini                       | 12 ++++++------
+ 5 files changed, 13 insertions(+), 10 deletions(-)
+ mode change 100644 => 100755 .devcontainer/cuda-azp-agent-in-docker/build.sh
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Updating 254b6f03..25c58174
+Fast-forward
+ inputs/ShockCloud_64_regression.in | 4 ++--
+ regression/quokka-tests.ini        | 1 +
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 25c58174..2aa24039
+Fast-forward
+ .github/workflows/codeql.yml          |  6 +--
+ .github/workflows/scorecard.yml       |  2 +-
+ src/particles/particle_deposition.hpp | 93 +++++++++++++++++++----------------
+ 3 files changed, 55 insertions(+), 46 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 2aa24039..0ae53633
+Fast-forward
+ .pre-commit-config.yaml | 2 +-
+ docs/requirements.txt   | 2 +-
+ extern/amrex            | 2 +-
+ extern/fmt              | 2 +-
+ extern/openPMD-api      | 2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 0ae53633..f9ed6049
+Fast-forward
+ docs/requirements.txt                 |  2 +-
+ src/particles/particle_deposition.hpp | 73 +++++++++++++++++++++++++++++++----
+ src/simulation.hpp                    |  3 +-
+ 3 files changed, 68 insertions(+), 10 deletions(-)
