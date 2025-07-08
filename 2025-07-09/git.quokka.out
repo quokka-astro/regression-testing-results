@@ -1,0 +1,211 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 0a63d7e9..254b6f03
+Fast-forward
+ .ci/azure-pipelines-regression.yml                |  4 ++--
+ .devcontainer/cuda-azp-agent-in-docker/Dockerfile |  2 +-
+ .devcontainer/cuda-azp-agent-in-docker/build.sh   |  3 +++
+ inputs/ShockCloud_64_regression.in                |  2 +-
+ regression/quokka-tests.ini                       | 12 ++++++------
+ 5 files changed, 13 insertions(+), 10 deletions(-)
+ mode change 100644 => 100755 .devcontainer/cuda-azp-agent-in-docker/build.sh
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Your branch is up to date with 'origin/development'.
+Switched to branch 'development'
+Updating 254b6f03..25c58174
+Fast-forward
+ inputs/ShockCloud_64_regression.in | 4 ++--
+ regression/quokka-tests.ini        | 1 +
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 25c58174..2aa24039
+Fast-forward
+ .github/workflows/codeql.yml          |  6 +--
+ .github/workflows/scorecard.yml       |  2 +-
+ src/particles/particle_deposition.hpp | 93 +++++++++++++++++++----------------
+ 3 files changed, 55 insertions(+), 46 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 2aa24039..0ae53633
+Fast-forward
+ .pre-commit-config.yaml | 2 +-
+ docs/requirements.txt   | 2 +-
+ extern/amrex            | 2 +-
+ extern/fmt              | 2 +-
+ extern/openPMD-api      | 2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 0ae53633..f9ed6049
+Fast-forward
+ docs/requirements.txt                 |  2 +-
+ src/particles/particle_deposition.hpp | 73 +++++++++++++++++++++++++++++++----
+ src/simulation.hpp                    |  3 +-
+ 3 files changed, 68 insertions(+), 10 deletions(-)
+Updating f9ed6049..1a8ea2f1
+Fast-forward
+ inputs/SN.in                          |  4 ++--
+ src/particles/PhysicsParticles.hpp    | 25 ++++++++++++++++++-------
+ src/particles/particle_deposition.hpp | 28 ++++++++++++----------------
+ src/simulation.hpp                    |  9 ++++++++-
+ 4 files changed, 40 insertions(+), 26 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 1a8ea2f1..08524a3f
+Fast-forward
+ inputs/hydro_wave.in                         |   2 +
+ scripts/python/plot_face_velocities.py       | 664 +++++++++++++++++++++++++++
+ src/QuokkaSimulation.hpp                     |  43 +-
+ src/hydro/NSCBC_inflow.hpp                   |   7 +
+ src/hydro/NSCBC_outflow.hpp                  |  35 ++
+ src/hydro/hydro_system.hpp                   |  32 +-
+ src/linear_advection/AdvectionSimulation.hpp |  49 +-
+ src/linear_advection/linear_advection.hpp    |  21 +-
+ src/simulation.hpp                           | 172 ++++++-
+ 9 files changed, 981 insertions(+), 44 deletions(-)
+ create mode 100755 scripts/python/plot_face_velocities.py
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 08524a3f..eb546860
+Fast-forward
+ src/physics_info.hpp                                          |  1 +
+ src/problems/Advection/test_advection.cpp                     |  1 +
+ src/problems/Advection2D/test_advection2d.cpp                 |  1 +
+ .../AdvectionSemiellipse/test_advection_semiellipse.cpp       |  1 +
+ src/problems/BinaryOrbitCIC/binary_orbit.cpp                  |  2 +-
+ src/problems/Cooling/test_cooling.cpp                         |  1 +
+ src/problems/DiskGalaxy/galaxy.cpp                            |  2 +-
+ src/problems/FCQuantities/test_fc_quantities.cpp              |  1 +
+ src/problems/GravRadParticle3D/test_grav_rad_particle_3D.cpp  |  2 +-
+ src/problems/HydroBlast2D/test_hydro2d_blast.cpp              |  1 +
+ src/problems/HydroBlast3D/test_hydro3d_blast.cpp              |  1 +
+ src/problems/HydroContact/test_hydro_contact.cpp              |  1 +
+ src/problems/HydroHighMach/test_hydro_highmach.cpp            |  1 +
+ src/problems/HydroKelvinHelmholz/test_hydro2d_kh.cpp          |  1 +
+ src/problems/HydroLeblanc/test_hydro_leblanc.cpp              |  1 +
+ src/problems/HydroQuirk/test_quirk.cpp                        |  1 +
+ src/problems/HydroRichtmeyerMeshkov/test_hydro2d_rm.cpp       |  1 +
+ src/problems/HydroSMS/test_hydro_sms.cpp                      |  1 +
+ src/problems/HydroShocktube/test_hydro_shocktube.cpp          |  1 +
+ src/problems/HydroShocktubeCMA/test_hydro_shocktube_cma.cpp   |  1 +
+ src/problems/HydroShuOsher/test_hydro_shuosher.cpp            |  1 +
+ src/problems/HydroVacuum/test_hydro_vacuum.cpp                |  1 +
+ src/problems/HydroWave/test_hydro_wave.cpp                    |  1 +
+ src/problems/NSCBC/channel.cpp                                |  1 +
+ src/problems/NSCBC/vortex.cpp                                 |  1 +
+ src/problems/ParticleAccretion/test_particle_accretion.cpp    |  2 +-
+ src/problems/ParticleCreation/particle_creation_from_cell.cpp |  2 +-
+ src/problems/ParticleSF/test_particle_SF.cpp                  |  2 +-
+ src/problems/ParticleSink/test_particle_sink.cpp              |  2 +-
+ .../ParticleSinkFormation/test_particle_sink_formation.cpp    |  2 +-
+ src/problems/PassiveScalar/test_scalars.cpp                   |  1 +
+ src/problems/PopIII/popiii.cpp                                |  2 +-
+ src/problems/PrimordialChem/test_primordial_chem.cpp          |  1 +
+ src/problems/RadBeam/test_radiation_beam.cpp                  |  1 +
+ src/problems/RadDust/test_rad_dust.cpp                        |  1 +
+ src/problems/RadDustMG/test_rad_dust_MG.cpp                   |  1 +
+ src/problems/RadForce/test_radiation_force.cpp                |  1 +
+ src/problems/RadLineCooling/test_rad_line_cooling.cpp         |  1 +
+ src/problems/RadLineCoolingMG/test_rad_line_cooling_MG.cpp    |  1 +
+ src/problems/RadMarshak/test_radiation_marshak.cpp            |  1 +
+ .../test_radiation_marshak_asymptotic.cpp                     |  1 +
+ src/problems/RadMarshakCGS/test_radiation_marshak_cgs.cpp     |  1 +
+ src/problems/RadMarshakDust/test_radiation_marshak_dust.cpp   |  1 +
+ .../RadMarshakDustPE/test_radiation_marshak_dust_and_PE.cpp   |  1 +
+ .../RadMarshakVaytet/test_radiation_marshak_Vaytet.cpp        |  1 +
+ .../RadMatterCoupling/test_radiation_matter_coupling.cpp      |  1 +
+ .../test_radiation_matter_coupling_rsla.cpp                   |  1 +
+ src/problems/RadParticle/test_radparticle.cpp                 |  1 +
+ src/problems/RadParticle2D/test_radparticle_2D.cpp            |  1 +
+ src/problems/RadShadow/test_radiation_shadow.cpp              |  1 +
+ src/problems/RadStreaming/test_radiation_streaming.cpp        |  1 +
+ src/problems/RadStreamingY/test_radiation_streaming_y.cpp     |  1 +
+ src/problems/RadSuOlson/test_radiation_SuOlson.cpp            |  1 +
+ src/problems/RadTophat/test_radiation_tophat.cpp              |  1 +
+ src/problems/RadTube/test_radiation_tube.cpp                  |  1 +
+ src/problems/RadhydroBB/test_radhydro_bb.cpp                  |  1 +
+ src/problems/RadhydroPulse/test_radhydro_pulse.cpp            |  2 ++
+ src/problems/RadhydroPulseDyn/test_radhydro_pulse_dyn.cpp     |  2 ++
+ src/problems/RadhydroPulseGrey/test_radhydro_pulse_grey.cpp   |  2 ++
+ .../test_radhydro_pulse_MG_const_kappa.cpp                    |  2 ++
+ .../RadhydroPulseMGint/test_radhydro_pulse_MG_int.cpp         |  2 ++
+ src/problems/RadhydroShell/test_radhydro_shell.cpp            |  1 +
+ src/problems/RadhydroShock/test_radhydro_shock.cpp            |  1 +
+ src/problems/RadhydroShockCGS/test_radhydro_shock_cgs.cpp     |  1 +
+ .../test_radhydro_shock_multigroup.cpp                        |  1 +
+ .../test_radhydro_uniform_advecting.cpp                       |  1 +
+ src/problems/RandomBlast/blast.cpp                            |  1 +
+ src/problems/RayleighTaylor2D/test_hydro2d_rt.cpp             |  1 +
+ src/problems/RayleighTaylor3D/test_hydro3d_rt.cpp             |  1 +
+ src/problems/ResampledCoolingTest/test_resampled_cooling.cpp  |  1 +
+ src/problems/SN/test_SN.cpp                                   |  1 +
+ src/problems/ShockCloud/cloud.cpp                             |  1 +
+ src/problems/SphericalCollapse/spherical_collapse.cpp         |  2 +-
+ src/problems/StarCluster/star_cluster.cpp                     |  2 +-
+ src/simulation.hpp                                            | 11 +++++------
+ 75 files changed, 84 insertions(+), 17 deletions(-)
+Updating files:  69% (52/75)Updating files:  70% (53/75)Updating files:  72% (54/75)Updating files:  73% (55/75)Updating files:  74% (56/75)Updating files:  76% (57/75)Updating files:  77% (58/75)Updating files:  78% (59/75)Updating files:  80% (60/75)Updating files:  81% (61/75)Updating files:  82% (62/75)Updating files:  84% (63/75)Updating files:  85% (64/75)Updating files:  86% (65/75)Updating files:  88% (66/75)Updating files:  89% (67/75)Updating files:  90% (68/75)Updating files:  92% (69/75)Updating files:  93% (70/75)Updating files:  94% (71/75)Updating files:  96% (72/75)Updating files:  97% (73/75)Updating files:  98% (74/75)Updating files: 100% (75/75)Updating files: 100% (75/75), done.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating eb546860..1dc64806
+Fast-forward
+ .github/workflows/codeql.yml    | 6 +++---
+ .github/workflows/scorecard.yml | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 1dc64806..18906124
+Fast-forward
+ .pre-commit-config.yaml                            |   3 +
+ extern/weno_weights.ipynb                          | 213 +++++++++++++++
+ inputs/KelvinHelmholz_512.in                       |  24 ++
+ inputs/radshock.in                                 |  10 +-
+ inputs/radshockMG.in                               |  10 +-
+ inputs/radshock_dimensionless.in                   |   8 +-
+ src/QuokkaSimulation.hpp                           |  36 +--
+ src/hyperbolic_system.hpp                          | 293 +++++++++++++++++----
+ src/linear_advection/AdvectionSimulation.hpp       |   5 +-
+ src/physics_info.hpp                               |   6 +-
+ src/physics_numVars.hpp                            |   2 -
+ src/problems/Advection/test_advection.cpp          |   2 +-
+ .../test_advection_semiellipse.cpp                 |   2 +-
+ src/simulation.hpp                                 |  28 +-
+ 14 files changed, 514 insertions(+), 128 deletions(-)
+ create mode 100644 extern/weno_weights.ipynb
+ create mode 100644 inputs/KelvinHelmholz_512.in
