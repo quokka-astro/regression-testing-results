@@ -1,0 +1,77 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         4.876944396e-28             0.00442209306
+ x-GasMomentum                      7.440609399e-21            0.005616090834
+ y-GasMomentum                      9.833420837e-21            0.006090494611
+ z-GasMomentum                      1.456120675e-21              0.0129472425
+ gasEnergy                          1.115966243e-13            0.004422003426
+ gasInternalEnergy                  2.760175502e-14            0.005062729191
+ temperature                            42156.22656             0.02736183967
+ gpot                               7.939682769e+10           4.625664039e-05
+ level = 1
+ gasDensity                         3.137287959e-27            0.005902389106
+ x-GasMomentum                      3.657273166e-20            0.005373693592
+ y-GasMomentum                       7.07453082e-20            0.009702299538
+ z-GasMomentum                      9.528678603e-21             0.01645803605
+ gasEnergy                          6.498080972e-13            0.006072585276
+ gasInternalEnergy                  1.929322796e-13            0.008184204927
+ temperature                             897059.605              0.1356428401
+ gpot                               2.230457103e+11           0.0001081580803
+ level = 2
+ gasDensity                         1.820248028e-26            0.009251989756
+ x-GasMomentum                      1.879179864e-19            0.008831696835
+ y-GasMomentum                      3.696818695e-19             0.01649941807
+ z-GasMomentum                      5.520500958e-20             0.02457925369
+ gasEnergy                          4.007566736e-12             0.01506419796
+ gasInternalEnergy                   1.32326503e-12             0.02187078101
+ temperature                             37995832.6              0.3938527204
+ gpot                               3.754372185e+11           0.0001590678283
+ level = 3
+ gasDensity                         6.359283329e-26            0.009695876973
+ x-GasMomentum                      7.087361076e-19             0.01054224909
+ y-GasMomentum                      1.135183338e-18             0.01804606648
+ z-GasMomentum                      4.235181525e-19             0.03777702198
+ gasEnergy                           1.25060076e-11             0.01922394912
+ gasInternalEnergy                  3.525444449e-12             0.02011086657
+ temperature                            246218146.2              0.5488564738
+ gpot                               1.043515868e+12           0.0004016343629
+ level = 4
+ gasDensity                         5.113236188e-25             0.01910985492
+ x-GasMomentum                       4.76750882e-18             0.01911272825
+ y-GasMomentum                      4.010174809e-18             0.02233671196
+ z-GasMomentum                       2.32699097e-18              0.0331270429
+ gasEnergy                          4.116357134e-11             0.02352547863
+ gasInternalEnergy                  1.135007097e-11             0.02699066795
+ temperature                            374994395.5              0.7252712474
+ gpot                                1.92617522e+12           0.0006918486087
+ level = 5
+ gasDensity                         3.545841684e-24             0.02929432692
+ x-GasMomentum                      2.337631946e-17             0.02610436891
+ y-GasMomentum                      2.456806272e-17             0.04053123608
+ z-GasMomentum                      1.288241149e-17             0.03458707366
+ gasEnergy                          2.366909483e-10             0.06383305223
+ gasInternalEnergy                  6.450360627e-12              0.2381046879
+ temperature                            533303657.4              0.8061212556
+ gpot                               3.752932198e+12            0.001283441097
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000 tracer_particles
+
+-----------------------------------------------------------------------
+tracer_particles
+tracer_particles_position_x         1.93972105e+20        5.02461561e-03        
+tracer_particles_position_y         1.87299001e+20        4.84922573e-03        
+tracer_particles_position_z         1.36048619e+20        1.05727555e-02        
+tracer_particles_real_comp0         2.59950128e+06        3.72303607e-01        
+tracer_particles_real_comp1         1.42312255e+06        2.00497528e-01        
+tracer_particles_real_comp2         3.20611390e+06        9.95021671e-01        
+tracer_particles_id                 0.00000000e+00        0.00000000e+00        
+tracer_particles_cpu                0.00000000e+00        0.00000000e+00        
+
+ PARTICLES DISAGREE to relative tolerance 0
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000 CIC_particles
+FAIL - Particle data headers do not agree. 
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000 StochasticStellarPop_particles
+FAIL - Particle data headers do not agree. 
