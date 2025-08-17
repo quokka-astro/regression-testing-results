@@ -1,0 +1,412 @@
+Initializing AMReX (25.08-2-ge6dfad939fc5)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (25.08-2-ge6dfad939fc5) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+Using derived variables:
+	temperature
+	gpot
+
+Reading resampled cooling tables...
+Initializing resampled cooling.
+resampled_table_file: ./CloudyData_UVB=HM2012_resampled.h5.
+	Density range: 2.3368215933e-34 to 2.3368215933000003e-20 g/cm^3 (30 steps).
+	Specific energy range: 2418246265.9451904 to 2.022491441386058e+17 erg/g (200 steps).
+Creating new distribution map on level: 0
+Creating new distribution map on level: 1
+Creating new distribution map on level: 2
+Creating new distribution map on level: 3
+Creating new distribution map on level: 4
+Creating new distribution map on level: 5
+Creating new distribution map on level: 1
+Creating new distribution map on level: 2
+Creating new distribution map on level: 3
+Creating new distribution map on level: 4
+Creating new distribution map on level: 5
+Creating new distribution map on level: 4
+Creating new distribution map on level: 5
+
+Reading particles from ASCII file ./AgoraGalaxy_particles_LOW.txt...
+Redistributing from processor 0 to 0
+Total number of particles: 212500
+
+Writing checkpoint DiskGalaxy-GPU_chk00000
+Doing Poisson solve...
+
+MLMG: Initial rhs               = 5.840739431e-28
+MLMG: Initial residual (resid0) = 5.840739431e-28
+MLMG: Final Iter. 4 resid, resid/bnorm = 1.034082224e-33, 1.770464573e-06
+MLMG: Timers: Solve = 0.068793631 Iter = 0.058128556 Bottom = 0.00173752
+MLMG: Initial rhs               = 5.840739431e-28
+MLMG: Initial residual (resid0) = 1.475942477e-30
+MLMG: Final Iter. 3 resid, resid/bnorm = 4.531342137e-34, 7.758165197e-07
+MLMG: Timers: Solve = 0.074457128 Iter = 0.066185969 Bottom = 0.00339661
+OpenBCSolver time = 0.169026042
+
+Writing plotfile DiskGalaxy-GPU_plt00000
+
+[Warning] [Performance] The grid blocking factor (16) is too small for reasonable performance. It should be 32 (or greater) when running on GPUs, and 16 (or greater) when running on CPUs.
+
+[Warning] [Performance] The maximum grid size (64) is too small for reasonable performance. It should be 128 (or greater) when running on GPUs, and 64 (or greater) when running on CPUs.
+
+Coarse STEP 1 at t = 0 (0%) starts ...
+...[level 0] estimated hydro timestep: 3.238609e+14
+...[level 0] 	hydro timestep limited at cell [65, 62, 63] with signal speed = 2.679690e+07
+...[level 0] 	cell density = 1.110514e-27, |v| = 1.995725e+07, cs = 6.839652e+06
+...[level 0] estimated particle timestep: 5.939256e+14
+...[level 0] 	max particle velocity: 2.435341e+07
+...[level 0] 	particle timestep limited at position [1.766445e+22, 4.706940e+23, -6.091529e+20]
+...[level 0] timestep limited by HYDRO
+...[level 1] estimated hydro timestep: 1.627542e+14
+...[level 1] 	hydro timestep limited at cell [132, 129, 127] with signal speed = 2.666128e+07
+...[level 1] 	cell density = 6.564646e-28, |v| = 1.840395e+07, cs = 8.257328e+06
+...[level 1] estimated particle timestep: 2.276683e+14
+...[level 1] 	max particle velocity: 3.176576e+07
+...[level 1] 	particle timestep limited at position [-2.367095e+23, -3.746944e+22, 1.980610e+22]
+...[level 1] timestep limited by HYDRO
+...[level 2] estimated hydro timestep: 8.163641e+13
+...[level 2] 	hydro timestep limited at cell [260, 247, 256] with signal speed = 2.657659e+07
+...[level 2] 	cell density = 4.572511e-28, |v| = 1.692374e+07, cs = 9.652849e+06
+...[level 2] estimated particle timestep: 9.404707e+13
+...[level 2] 	max particle velocity: 3.844913e+07
+...[level 2] 	particle timestep limited at position [1.167379e+23, 1.102024e+22, 9.880221e+21]
+...[level 2] timestep limited by HYDRO
+...[level 3] estimated hydro timestep: 3.840512e+13
+...[level 3] 	hydro timestep limited at cell [514, 521, 513] with signal speed = 2.824645e+07
+...[level 3] 	cell density = 4.874868e-28, |v| = 1.851767e+07, cs = 9.728788e+06
+...[level 3] estimated particle timestep: 4.135524e+13
+...[level 3] 	max particle velocity: 4.371911e+07
+...[level 3] 	particle timestep limited at position [2.076533e+22, -2.600484e+22, 6.217540e+22]
+...[level 3] timestep limited by HYDRO
+...[level 4] estimated hydro timestep: 1.930137e+13
+...[level 4] 	hydro timestep limited at cell [1037, 1010, 1021] with signal speed = 2.810186e+07
+...[level 4] 	cell density = 7.604094e-28, |v| = 2.044683e+07, cs = 7.655030e+06
+...[level 4] estimated particle timestep: 1.824241e+13
+...[level 4] 	max particle velocity: 4.955524e+07
+...[level 4] 	particle timestep limited at position [1.254589e+22, 3.108485e+20, 3.514213e+22]
+...[level 4] timestep limited by PARTICLES
+...[level 5] estimated hydro timestep: 1.098047e+13
+...[level 5] 	hydro timestep limited at cell [2075, 2029, 2045] with signal speed = 2.469858e+07
+...[level 5] 	cell density = 4.848268e-26, |v| = 2.317886e+07, cs = 1.519728e+06
+...[level 5] estimated particle timestep: 7.079485e+12
+...[level 5] 	max particle velocity: 6.384696e+07
+...[level 5] 	particle timestep limited at position [5.304266e+21, 1.417229e+21, 1.655883e+21]
+...[level 5] timestep limited by PARTICLES
+...coarse timestep set by level 5
+[Level 0 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+	cooling substeps (per cell): avg 1.0000090599060059, max 3
+[Level 0 step 1] Advanced 2097152 cells
+[Level 1 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.0002975463867188, max 3
+	cooling substeps (per cell): avg 1.0003280639648438, max 4
+[Level 1 step 1] Advanced 262144 cells
+[Level 2 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.0016975402832031, max 4
+	cooling substeps (per cell): avg 1.0015449523925781, max 4
+[Level 2 step 1] Advanced 262144 cells
+[Level 3 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.010223388671875, max 4
+	cooling substeps (per cell): avg 1.0076217651367188, max 3
+[Level 3 step 1] Advanced 262144 cells
+[Level 4 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.0251329210069444, max 4
+	cooling substeps (per cell): avg 1.0130683051215277, max 5
+[Level 4 step 1] Advanced 589824 cells
+[Level 5 step 1] ADVANCE with time = 0.0000000000e+00 dt = 7.0794845597e+12
+	cooling substeps (per cell): avg 1.0915679931640625, max 5
+	cooling substeps (per cell): avg 1.0430965423583984, max 3
+[Level 5 step 1] Advanced 1048576 cells
+>>>Particle creation:
+	Time: 0 - Created 0 particles at level 5
+
+
+Coarse STEP 2 at t = 7.07948456e+12 (0.1123727708%) starts ...
+...[level 0] estimated hydro timestep: 3.240666e+14
+...[level 0] 	hydro timestep limited at cell [62, 65, 64] with signal speed = 2.677989e+07
+...[level 0] 	cell density = 1.110409e-27, |v| = 1.995733e+07, cs = 6.822563e+06
+...[level 0] estimated particle timestep: 5.940151e+14
+...[level 0] 	max particle velocity: 2.434974e+07
+...[level 0] 	particle timestep limited at position [1.760772e+22, 4.708544e+23, -6.368268e+20]
+...[level 0] timestep limited by HYDRO
+...[level 1] estimated hydro timestep: 1.627697e+14
+...[level 1] 	hydro timestep limited at cell [132, 129, 127] with signal speed = 2.665874e+07
+...[level 1] 	cell density = 6.562603e-28, |v| = 1.840482e+07, cs = 8.253922e+06
+...[level 1] estimated particle timestep: 2.276715e+14
+...[level 1] 	max particle velocity: 3.176531e+07
+...[level 1] 	particle timestep limited at position [-2.366785e+23, -3.765938e+22, 1.992245e+22]
+...[level 1] timestep limited by HYDRO
+...[level 2] estimated hydro timestep: 8.163464e+13
+...[level 2] 	hydro timestep limited at cell [251, 264, 255] with signal speed = 2.657716e+07
+...[level 2] 	cell density = 4.693191e-28, |v| = 1.703716e+07, cs = 9.540004e+06
+...[level 2] estimated particle timestep: 9.404518e+13
+...[level 2] 	max particle velocity: 3.844991e+07
+...[level 2] 	particle timestep limited at position [1.167410e+23, 1.115636e+22, 9.644517e+21]
+...[level 2] timestep limited by HYDRO
+...[level 3] estimated hydro timestep: 3.839836e+13
+...[level 3] 	hydro timestep limited at cell [502, 509, 510] with signal speed = 2.825143e+07
+...[level 3] 	cell density = 5.031348e-28, |v| = 1.866332e+07, cs = 9.588109e+06
+...[level 3] estimated particle timestep: 4.134444e+13
+...[level 3] 	max particle velocity: 4.373053e+07
+...[level 3] 	particle timestep limited at position [2.079576e+22, -2.569769e+22, 6.219891e+22]
+...[level 3] timestep limited by HYDRO
+...[level 4] estimated hydro timestep: 1.934300e+13
+...[level 4] 	hydro timestep limited at cell [1035, 1008, 1021] with signal speed = 2.804137e+07
+...[level 4] 	cell density = 7.857798e-28, |v| = 2.054030e+07, cs = 7.501069e+06
+...[level 4] estimated particle timestep: 1.826479e+13
+...[level 4] 	max particle velocity: 4.949454e+07
+...[level 4] 	particle timestep limited at position [1.245651e+22, 1.223487e+20, 3.542393e+22]
+...[level 4] timestep limited by PARTICLES
+...[level 5] estimated hydro timestep: 9.582156e+12
+...[level 5] 	hydro timestep limited at cell [2011, 2058, 2052] with signal speed = 2.830283e+07
+...[level 5] 	cell density = 4.534134e-28, |v| = 1.837107e+07, cs = 9.931757e+06
+...[level 5] estimated particle timestep: 7.074691e+12
+...[level 5] 	max particle velocity: 6.389022e+07
+...[level 5] 	particle timestep limited at position [5.500448e+21, 1.339591e+21, 1.255880e+21]
+...[level 5] timestep limited by PARTICLES
+...coarse timestep set by level 5
+[Level 0 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+[Level 0 step 2] Advanced 2097152 cells
+[Level 1 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0003013610839844, max 3
+	cooling substeps (per cell): avg 1.0003280639648438, max 4
+[Level 1 step 2] Advanced 262144 cells
+[Level 2 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0017242431640625, max 4
+	cooling substeps (per cell): avg 1.0012435913085938, max 4
+[Level 2 step 2] Advanced 262144 cells
+[Level 3 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0063858032226562, max 4
+	cooling substeps (per cell): avg 1.0048294067382812, max 3
+[Level 3 step 2] Advanced 262144 cells
+[Level 4 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0055592854817708, max 5
+	cooling substeps (per cell): avg 1.0072835286458333, max 4
+[Level 4 step 2] Advanced 589824 cells
+[Level 5 step 2] ADVANCE with time = 7.0794845597e+12 dt = 7.0746913451e+12
+	cooling substeps (per cell): avg 1.0024356842041016, max 3
+	cooling substeps (per cell): avg 1.0029268264770508, max 5
+[Level 5 step 2] Advanced 1048576 cells
+>>>Particle creation:
+	Time: 7.07948456e+12 - Created 0 particles at level 5
+
+
+Coarse STEP 3 at t = 1.41541759e+13 (0.2246694588%) starts ...
+...[level 0] estimated hydro timestep: 3.241605e+14
+...[level 0] 	hydro timestep limited at cell [62, 65, 63] with signal speed = 2.677213e+07
+...[level 0] 	cell density = 1.110484e-27, |v| = 1.995783e+07, cs = 6.814301e+06
+...[level 0] estimated particle timestep: 5.941045e+14
+...[level 0] 	max particle velocity: 2.434608e+07
+...[level 0] 	particle timestep limited at position [1.755103e+22, 4.710147e+23, -6.644819e+20]
+...[level 0] timestep limited by HYDRO
+...[level 1] estimated hydro timestep: 1.627821e+14
+...[level 1] 	hydro timestep limited at cell [132, 129, 127] with signal speed = 2.665671e+07
+...[level 1] 	cell density = 6.560950e-28, |v| = 1.840566e+07, cs = 8.251054e+06
+...[level 1] estimated particle timestep: 2.276747e+14
+...[level 1] 	max particle velocity: 3.176486e+07
+...[level 1] 	particle timestep limited at position [-2.366475e+23, -3.784918e+22, 2.003871e+22]
+...[level 1] timestep limited by HYDRO
+...[level 2] estimated hydro timestep: 8.163845e+13
+...[level 2] 	hydro timestep limited at cell [251, 264, 255] with signal speed = 2.657592e+07
+...[level 2] 	cell density = 4.811698e-28, |v| = 1.714711e+07, cs = 9.428813e+06
+...[level 2] estimated particle timestep: 9.404338e+13
+...[level 2] 	max particle velocity: 3.845064e+07
+...[level 2] 	particle timestep limited at position [1.167438e+23, 1.129237e+22, 9.408958e+21]
+...[level 2] timestep limited by HYDRO
+...[level 3] estimated hydro timestep: 3.840039e+13
+...[level 3] 	hydro timestep limited at cell [502, 509, 513] with signal speed = 2.824993e+07
+...[level 3] 	cell density = 5.133138e-28, |v| = 1.875374e+07, cs = 9.496193e+06
+...[level 3] estimated particle timestep: 4.133380e+13
+...[level 3] 	max particle velocity: 4.374178e+07
+...[level 3] 	particle timestep limited at position [2.082609e+22, -2.539064e+22, 6.222213e+22]
+...[level 3] timestep limited by HYDRO
+...[level 4] estimated hydro timestep: 1.928385e+13
+...[level 4] 	hydro timestep limited at cell [1005, 1018, 1026] with signal speed = 2.812739e+07
+...[level 4] 	cell density = 5.668885e-28, |v| = 1.906098e+07, cs = 9.066411e+06
+...[level 4] estimated particle timestep: 1.828737e+13
+...[level 4] 	max particle velocity: 4.943342e+07
+...[level 4] 	particle timestep limited at position [1.236701e+22, -6.603249e+19, 3.570493e+22]
+...[level 4] timestep limited by PARTICLES
+...[level 5] estimated hydro timestep: 9.519321e+12
+...[level 5] 	hydro timestep limited at cell [2055, 2010, 2043] with signal speed = 2.848965e+07
+...[level 5] 	cell density = 4.610523e-28, |v| = 1.777469e+07, cs = 1.071496e+07
+...[level 5] estimated particle timestep: 7.075162e+12
+...[level 5] 	max particle velocity: 6.388596e+07
+...[level 5] 	particle timestep limited at position [5.693755e+21, 1.261405e+21, 8.547595e+20]
+...[level 5] timestep limited by PARTICLES
+...coarse timestep set by level 5
+[Level 0 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+[Level 0 step 3] Advanced 2097152 cells
+[Level 1 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.000274658203125, max 3
+	cooling substeps (per cell): avg 1.0003318786621094, max 3
+[Level 1 step 3] Advanced 262144 cells
+[Level 2 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.0017204284667969, max 4
+	cooling substeps (per cell): avg 1.0012588500976562, max 4
+[Level 2 step 3] Advanced 262144 cells
+[Level 3 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.0055007934570312, max 4
+	cooling substeps (per cell): avg 1.0049552917480469, max 4
+[Level 3 step 3] Advanced 262144 cells
+[Level 4 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.0061272515190973, max 5
+	cooling substeps (per cell): avg 1.007478502061632, max 4
+[Level 4 step 3] Advanced 589824 cells
+[Level 5 step 3] ADVANCE with time = 1.4154175905e+13 dt = 7.0751624184e+12
+	cooling substeps (per cell): avg 1.001032829284668, max 3
+	cooling substeps (per cell): avg 1.005448341369629, max 5
+[Level 5 step 3] Advanced 1048576 cells
+>>>Particle creation:
+	Time: 1.41541759e+13 - Created 0 particles at level 5
+
+
+Coarse STEP 4 at t = 2.122933832e+13 (0.3369736242%) starts ...
+...[level 0] estimated hydro timestep: 3.242180e+14
+...[level 0] 	hydro timestep limited at cell [62, 65, 63] with signal speed = 2.676738e+07
+...[level 0] 	cell density = 1.110569e-27, |v| = 1.995852e+07, cs = 6.808869e+06
+...[level 0] estimated particle timestep: 5.941939e+14
+...[level 0] 	max particle velocity: 2.434241e+07
+...[level 0] 	particle timestep limited at position [1.749434e+22, 4.711750e+23, -6.921391e+20]
+...[level 0] timestep limited by HYDRO
+...[level 1] estimated hydro timestep: 1.627928e+14
+...[level 1] 	hydro timestep limited at cell [132, 129, 127] with signal speed = 2.665495e+07
+...[level 1] 	cell density = 6.560094e-28, |v| = 1.840685e+07, cs = 8.248102e+06
+...[level 1] estimated particle timestep: 2.276780e+14
+...[level 1] 	max particle velocity: 3.176440e+07
+...[level 1] 	particle timestep limited at position [-2.366164e+23, -3.803898e+22, 2.015498e+22]
+...[level 1] timestep limited by HYDRO
+...[level 2] estimated hydro timestep: 8.166549e+13
+...[level 2] 	hydro timestep limited at cell [251, 264, 255] with signal speed = 2.656712e+07
+...[level 2] 	cell density = 4.923751e-28, |v| = 1.724573e+07, cs = 9.321396e+06
+...[level 2] estimated particle timestep: 9.404167e+13
+...[level 2] 	max particle velocity: 3.845134e+07
+...[level 2] 	particle timestep limited at position [1.167465e+23, 1.142839e+22, 9.173367e+21]
+...[level 2] timestep limited by HYDRO
+...[level 3] estimated hydro timestep: 3.840493e+13
+...[level 3] 	hydro timestep limited at cell [502, 509, 513] with signal speed = 2.824659e+07
+...[level 3] 	cell density = 5.209231e-28, |v| = 1.881960e+07, cs = 9.426993e+06
+...[level 3] estimated particle timestep: 4.132333e+13
+...[level 3] 	max particle velocity: 4.375286e+07
+...[level 3] 	particle timestep limited at position [2.085632e+22, -2.508345e+22, 6.224507e+22]
+...[level 3] timestep limited by HYDRO
+...[level 4] estimated hydro timestep: 1.921418e+13
+...[level 4] 	hydro timestep limited at cell [1018, 1005, 1026] with signal speed = 2.822937e+07
+...[level 4] 	cell density = 5.503645e-28, |v| = 1.903132e+07, cs = 9.198050e+06
+...[level 4] estimated particle timestep: 1.831019e+13
+...[level 4] 	max particle velocity: 4.937182e+07
+...[level 4] 	particle timestep limited at position [1.227732e+22, -2.544303e+20, 3.598535e+22]
+...[level 4] timestep limited by PARTICLES
+...[level 5] estimated hydro timestep: 9.572748e+12
+...[level 5] 	hydro timestep limited at cell [2050, 2076, 2053] with signal speed = 2.833064e+07
+...[level 5] 	cell density = 5.794265e-28, |v| = 1.931402e+07, cs = 9.016628e+06
+...[level 5] estimated particle timestep: 7.081081e+12
+...[level 5] 	max particle velocity: 6.383257e+07
+...[level 5] 	particle timestep limited at position [5.884286e+21, 1.182647e+21, 4.526291e+20]
+...[level 5] timestep limited by PARTICLES
+...coarse timestep set by level 5
+[Level 0 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+[Level 0 step 4] Advanced 2097152 cells
+[Level 1 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.0002593994140625, max 3
+	cooling substeps (per cell): avg 1.00030517578125, max 3
+[Level 1 step 4] Advanced 262144 cells
+[Level 2 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.0016021728515625, max 3
+	cooling substeps (per cell): avg 1.001220703125, max 3
+[Level 2 step 4] Advanced 262144 cells
+[Level 3 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.0054435729980469, max 4
+	cooling substeps (per cell): avg 1.0045928955078125, max 3
+[Level 3 step 4] Advanced 262144 cells
+[Level 4 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.006010267469618, max 4
+	cooling substeps (per cell): avg 1.0070631239149306, max 4
+[Level 4 step 4] Advanced 589824 cells
+[Level 5 step 4] ADVANCE with time = 2.1229338323e+13 dt = 7.0810807011e+12
+	cooling substeps (per cell): avg 1.0016794204711914, max 2
+	cooling substeps (per cell): avg 1.0058507919311523, max 4
+[Level 5 step 4] Advanced 1048576 cells
+>>>Particle creation:
+	Time: 2.122933832e+13 - Created 0 particles at level 5
+
+
+Coarse STEP 5 at t = 2.831041902e+13 (0.4493717305%) starts ...
+...[level 0] estimated hydro timestep: 3.242559e+14
+...[level 0] 	hydro timestep limited at cell [62, 65, 63] with signal speed = 2.676426e+07
+...[level 0] 	cell density = 1.110708e-27, |v| = 1.995932e+07, cs = 6.804933e+06
+...[level 0] estimated particle timestep: 5.942834e+14
+...[level 0] 	max particle velocity: 2.433875e+07
+...[level 0] 	particle timestep limited at position [1.743760e+22, 4.713354e+23, -7.198195e+20]
+...[level 0] timestep limited by HYDRO
+...[level 1] estimated hydro timestep: 1.628014e+14
+...[level 1] 	hydro timestep limited at cell [132, 129, 127] with signal speed = 2.665354e+07
+...[level 1] 	cell density = 6.560003e-28, |v| = 1.840841e+07, cs = 8.245127e+06
+...[level 1] estimated particle timestep: 2.276814e+14
+...[level 1] 	max particle velocity: 3.176394e+07
+...[level 1] 	particle timestep limited at position [-2.365852e+23, -3.822892e+22, 2.027134e+22]
+...[level 1] timestep limited by HYDRO
+...[level 2] estimated hydro timestep: 8.170583e+13
+...[level 2] 	hydro timestep limited at cell [251, 264, 255] with signal speed = 2.655400e+07
+...[level 2] 	cell density = 5.029368e-28, |v| = 1.733477e+07, cs = 9.219236e+06
+...[level 2] estimated particle timestep: 9.404005e+13
+...[level 2] 	max particle velocity: 3.845200e+07
+...[level 2] 	particle timestep limited at position [1.167490e+23, 1.156450e+22, 8.937564e+21]
+...[level 2] timestep limited by HYDRO
+...[level 3] estimated hydro timestep: 3.841248e+13
+...[level 3] 	hydro timestep limited at cell [502, 509, 513] with signal speed = 2.824104e+07
+...[level 3] 	cell density = 5.278203e-28, |v| = 1.887722e+07, cs = 9.363826e+06
+...[level 3] estimated particle timestep: 4.131301e+13
+...[level 3] 	max particle velocity: 4.376379e+07
+...[level 3] 	particle timestep limited at position [2.088649e+22, -2.477590e+22, 6.226776e+22]
+...[level 3] timestep limited by HYDRO
+...[level 4] estimated hydro timestep: 1.924432e+13
+...[level 4] 	hydro timestep limited at cell [1005, 1029, 1026] with signal speed = 2.818517e+07
+...[level 4] 	cell density = 4.720609e-28, |v| = 1.841398e+07, cs = 9.771188e+06
+...[level 4] estimated particle timestep: 1.833326e+13
+...[level 4] 	max particle velocity: 4.930969e+07
+...[level 4] 	particle timestep limited at position [1.218737e+22, -4.429849e+20, 3.626540e+22]
+...[level 4] timestep limited by PARTICLES
+...[level 5] estimated hydro timestep: 9.538574e+12
+...[level 5] 	hydro timestep limited at cell [2085, 2056, 2043] with signal speed = 2.843215e+07
+...[level 5] 	cell density = 3.566581e-28, |v| = 1.617012e+07, cs = 1.226202e+07
+...[level 5] estimated particle timestep: 7.092752e+12
+...[level 5] 	max particle velocity: 6.372753e+07
+...[level 5] 	particle timestep limited at position [6.072134e+21, 1.103304e+21, 4.953967e+19]
+...[level 5] timestep limited by PARTICLES
+...coarse timestep set by level 5
+[Level 0 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+	cooling substeps (per cell): avg 1.0000076293945312, max 2
+[Level 0 step 5] Advanced 2097152 cells
+[Level 1 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0002593994140625, max 3
+	cooling substeps (per cell): avg 1.00030517578125, max 3
+[Level 1 step 5] Advanced 262144 cells
+[Level 2 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0016021728515625, max 3
+	cooling substeps (per cell): avg 1.001220703125, max 3
+[Level 2 step 5] Advanced 262144 cells
+[Level 3 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0053939819335938, max 4
+	cooling substeps (per cell): avg 1.0044937133789062, max 3
+[Level 3 step 5] Advanced 262144 cells
+[Level 4 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0061170789930556, max 4
+	cooling substeps (per cell): avg 1.0069444444444444, max 4
+[Level 4 step 5] Advanced 589824 cells
+[Level 5 step 5] ADVANCE with time = 2.8310419024e+13 dt = 7.0927518503e+12
+	cooling substeps (per cell): avg 1.0019950866699219, max 2
+	cooling substeps (per cell): avg 1.0057544708251953, max 4
+[Level 5 step 5] Advanced 1048576 cells
+Doing Poisson solve...
+
