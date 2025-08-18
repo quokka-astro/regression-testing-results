@@ -1,0 +1,57 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./RadhydroShell-GPU.ex(+0x29aa05) [0x563ec21eaa05]
+    ?? ??:0
+
+ 1: ./RadhydroShell-GPU.ex(+0x29d32c) [0x563ec21ed32c]
+    ?? ??:0
+
+ 2: ./RadhydroShell-GPU.ex(+0x29356c) [0x563ec21e356c]
+    ?? ??:0
+
+ 3: ./RadhydroShell-GPU.ex(+0x2d6ebc) [0x563ec2226ebc]
+    ?? ??:0
+
+ 4: ./RadhydroShell-GPU.ex(+0x2d504d) [0x563ec222504d]
+    ?? ??:0
+
+ 5: ./RadhydroShell-GPU.ex(+0x168a87) [0x563ec20b8a87]
+    ?? ??:0
+
+ 6: ./RadhydroShell-GPU.ex(+0x171f8a) [0x563ec20c1f8a]
+    ?? ??:0
+
+ 7: ./RadhydroShell-GPU.ex(+0x188518) [0x563ec20d8518]
+    ?? ??:0
+
+ 8: ./RadhydroShell-GPU.ex(+0x19c9ca) [0x563ec20ec9ca]
+    ?? ??:0
+
+ 9: ./RadhydroShell-GPU.ex(+0x8b2ac) [0x563ec1fdb2ac]
+    ?? ??:0
+
+10: ./RadhydroShell-GPU.ex(+0x71fd0) [0x563ec1fc1fd0]
+    ?? ??:0
+
+11: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fdd8639a1ca]
+
+12: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fdd8639a28b]
+
+13: ./RadhydroShell-GPU.ex(+0x77255) [0x563ec1fc7255]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+AMRSimulation::evolve()
+AMRSimulation::timeStepWithSubcycling()
+QuokkaSimulation::advanceSingleTimestepAtLevel()
+
