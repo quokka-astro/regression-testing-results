@@ -1,0 +1,59 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-08-21 / RadhydroShell-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="DiskGalaxy-GPU.html">previous test</td><td class="alignright"><a href="RandomBlast-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-08-21</a> / RadhydroShell-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="RadhydroShell-GPU.radhydro_shell_regression.in">radhydro_shell_regression.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 256.624 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  test_radhydro3d_shell</tt>
+</li>
+<li><a href="RadhydroShell-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 4.026 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./RadhydroShell-GPU.ex radhydro_shell_regression.in  plotfile_prefix=RadhydroShell-GPU_plt  checkpoint_prefix=RadhydroShell-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="RadhydroShell-GPU.run.out">execution output</a>
+</li>
+<li><a href="RadhydroShell-GPU.err.out">execution stderr</a>
+</li></ul></li>
+<li>Backtraces:
+<ul>
+<li><a href="RadhydroShell-GPU.Backtrace.0">RadhydroShell-GPU.Backtrace.0</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+</table>
+</div>
+</div>
+</div></body>
+</html>
