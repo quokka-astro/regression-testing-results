@@ -1,0 +1,126 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-08-23 / DiskGalaxy-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="RadhydroShell-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-08-23</a> / DiskGalaxy-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="DiskGalaxy-GPU.DiskGalaxy.in">DiskGalaxy.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 297.063 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  disk_galaxy</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 1351.522 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.in  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="DiskGalaxy-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000
+</tt>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt02000 DiskGalaxy-GPU_plt02000 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.767847778e-27</td><td class='highlight'>0.01602968325</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>2.918642118e-20</td><td class='highlight'>0.02202959243</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>3.258293527e-20</td><td class='highlight'>0.02018078906</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>5.457180291e-21</td><td class='highlight'>0.04852306391</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.512560979e-13</td><td class='highlight'>0.01788097106</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.839095495e-13</td><td class='highlight'>0.03373279141</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>130122.1576</td><td class='highlight'>0.08445683839</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>275792229700.0</td><td class='highlight'>0.0001606767218</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.134501472e-26</td><td class='highlight'>0.02134413295</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.451437595e-19</td><td class='highlight'>0.02132621916</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.345986998e-19</td><td class='highlight'>0.03217382063</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.096396085e-20</td><td class='highlight'>0.07075339327</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>3.087984177e-12</td><td class='highlight'>0.02885782329</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>8.648228215e-13</td><td class='highlight'>0.0366858631</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>1474478.18</td><td class='highlight'>0.2229533098</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>814666696200.0</td><td class='highlight'>0.000395043625</td></tr>
+<tr class='special'><td colspan=3>level = 2</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>5.922838535e-26</td><td class='highlight'>0.03010471133</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>6.434207818e-19</td><td class='highlight'>0.03023924102</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.192722673e-18</td><td class='highlight'>0.05323287846</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.102575118e-19</td><td class='highlight'>0.09361419848</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.264723482e-11</td><td class='highlight'>0.04754018124</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>2.454269078e-12</td><td class='highlight'>0.04056389335</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>63532299.19</td><td class='highlight'>0.658555614</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>1345579946000.0</td><td class='highlight'>0.0005701045855</td></tr>
+<tr class='special'><td colspan=3>level = 3</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>2.097613366e-25</td><td class='highlight'>0.03198190752</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>2.990933811e-18</td><td class='highlight'>0.04448929427</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>3.597851657e-18</td><td class='highlight'>0.05719522833</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.231637499e-18</td><td class='highlight'>0.1098597465</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.369189089e-11</td><td class='highlight'>0.06716217631</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.223856303e-11</td><td class='highlight'>0.06981477417</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>296559681.7</td><td class='highlight'>0.6610751629</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>3706230302000.0</td><td class='highlight'>0.001426475141</td></tr>
+<tr class='special'><td colspan=3>level = 4</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.037640518e-24</td><td class='highlight'>0.03878005832</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.162121521e-17</td><td class='highlight'>0.04658892867</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.262670833e-17</td><td class='highlight'>0.07033088592</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.057639052e-17</td><td class='highlight'>0.150565493</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.449672077e-10</td><td class='highlight'>0.08285051167</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>5.156271769e-11</td><td class='highlight'>0.1226170476</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>519337820.8</td><td class='highlight'>1.004443783</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>7756371786000.0</td><td class='highlight'>0.002785953724</td></tr>
+<tr class='special'><td colspan=3>level = 5</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>5.984225861e-24</td><td class='highlight'>0.0494392825</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>5.503976846e-17</td><td class='highlight'>0.06146298708</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>3.97584791e-17</td><td class='highlight'>0.06559167163</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>5.520303679e-17</td><td class='highlight'>0.1482107213</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.37565599e-10</td><td class='highlight'>0.1180068268</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>2.084941814e-11</td><td class='highlight'>0.7696227371</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>811858635.9</td><td class='highlight'>1.227174226</td></tr>
+<tr><td class='highlight'>gpot</td><td class='highlight'>13116272410000.0</td><td class='highlight'>0.004485549478</td></tr>
+<tr><td class='highlight'>tracer_particles_position_x</td><td class='highlight'>1.17208195e+21</td><td class='highlight'>0.0303613825</td></tr>
+<tr><td class='highlight'>tracer_particles_position_y</td><td class='highlight'>1.38011005e+21</td><td class='highlight'>0.0357314515</td></tr>
+<tr><td class='highlight'>tracer_particles_position_z</td><td class='highlight'>1.0130395e+21</td><td class='highlight'>0.0787264071</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp0</td><td class='highlight'>14419772.6</td><td class='highlight'>2.06521665</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp1</td><td class='highlight'>7296630.81</td><td class='highlight'>1.02799049</td></tr>
+<tr><td class='highlight'>tracer_particles_real_comp2</td><td class='highlight'>4130879.19</td><td class='highlight'>1.2820238</td></tr>
+<tr><td>tracer_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='DiskGalaxy-GPU_plt02000.temperature.XY.png' BORDER=0></div></body>
+</html>
