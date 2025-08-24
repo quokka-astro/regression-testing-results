@@ -1,0 +1,18 @@
+Initializing AMReX (25.08-2-ge6dfad939fc5)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (25.08-2-ge6dfad939fc5) initialized
+Successfully read inputs file ... 
+Creating new distribution map on level: 0
+Writing plotfile RadhydroShell-GPU_plt00000
+
+Coarse STEP 1 at t = 0 (0%) starts ...
+...[level 0] estimated hydro timestep: 2.803416e+09
+...[level 0] 	hydro timestep limited at cell [32, 127, 0] with signal speed = 1.720000e+07
+...[level 0] 	cell density = 6.462841e-28, |v| = 0.000000e+00, cs = 4.297748e+04
+...[level 0] timestep limited by HYDRO
+...coarse timestep set by level 0
+[Level 0 step 1] ADVANCE with time = 0.0000000000e+00 dt = 2.8034156977e+09
+	Radiation substeps: 7	dt: 400487956.8
