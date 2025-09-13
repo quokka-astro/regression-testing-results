@@ -1,0 +1,23 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt01000 RandomBlastAMR-GPU_plt01000
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         2.572000567e-32            2.19334375e-08
+ x-GasMomentum                      6.199615961e-25           2.357619382e-08
+ y-GasMomentum                      9.723365364e-25           3.527200008e-08
+ z-GasMomentum                      6.920998768e-25           2.515432702e-08
+ gasEnergy                          6.491434543e-17           2.377088939e-08
+ gasInternalEnergy                  4.758696083e-17           1.964381256e-08
+ scalar_0                                         0                         0
+ temperature                           0.1867026289           3.913374778e-10
+ level = 1
+ gasDensity                         1.763957178e-31           1.277386003e-07
+ x-GasMomentum                      3.276180913e-24           1.209120781e-07
+ y-GasMomentum                      1.514977598e-23            4.51628563e-07
+ z-GasMomentum                      5.631747792e-24           1.676821377e-07
+ gasEnergy                          4.274303409e-16           1.380329163e-07
+ gasInternalEnergy                   3.05236433e-16           1.126787116e-07
+ scalar_0                                         0                         0
+ temperature                            1.148923816           2.404162974e-09
