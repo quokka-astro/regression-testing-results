@@ -1,0 +1,79 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-09-18 / RandomBlastAMR-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="RandomBlast-GPU.html">previous test</td><td class="alignright"><a href="Sedov-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-09-18</a> / RandomBlastAMR-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="RandomBlastAMR-GPU.RandomBlastAMR_regression.in">RandomBlastAMR_regression.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 245.510 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  random_blast</tt>
+</li>
+<li><a href="RandomBlastAMR-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 351.595 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./RandomBlastAMR-GPU.ex RandomBlastAMR_regression.in  plotfile_prefix=RandomBlastAMR-GPU_plt  checkpoint_prefix=RandomBlastAMR-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="RandomBlastAMR-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt01000 RandomBlastAMR-GPU_plt01000
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td>gasDensity</td><td>5.751432541e-33</td><td>4.904691228e-09</td></tr>
+<tr><td>x-GasMomentum</td><td>2.051618675e-26</td><td>7.80199287e-10</td></tr>
+<tr><td>y-GasMomentum</td><td>1.569797302e-26</td><td>5.69451918e-10</td></tr>
+<tr><td>z-GasMomentum</td><td>5.476574428e-26</td><td>1.990457573e-09</td></tr>
+<tr><td>gasEnergy</td><td>2.35469824e-18</td><td>8.622635112e-10</td></tr>
+<tr><td>gasInternalEnergy</td><td>2.298174094e-18</td><td>9.486821671e-10</td></tr>
+<tr><td>scalar_0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>temperature</td><td>0.1848968655</td><td>3.87552513e-10</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td>gasDensity</td><td>7.615378347e-33</td><td>5.514747086e-09</td></tr>
+<tr><td>x-GasMomentum</td><td>8.107197941e-26</td><td>2.992075762e-09</td></tr>
+<tr><td>y-GasMomentum</td><td>6.810690868e-26</td><td>2.030328722e-09</td></tr>
+<tr><td>z-GasMomentum</td><td>1.609658012e-25</td><td>4.792666618e-09</td></tr>
+<tr><td>gasEnergy</td><td>8.554136103e-18</td><td>2.762443934e-09</td></tr>
+<tr><td>gasInternalEnergy</td><td>4.500447659e-18</td><td>1.661350314e-09</td></tr>
+<tr><td>scalar_0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>temperature</td><td>0.1808488779</td><td>3.784325557e-10</td></tr>
+</table>
+</div>
+</div>
+<P>&nbsp;
+<P><IMG SRC='RandomBlastAMR-GPU_plt01000.temperature.XY.png' BORDER=0></div></body>
+</html>
