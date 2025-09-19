@@ -1,0 +1,55 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-09-20 / SphericalCollapseAMR-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="SphericalCollapse-GPU.html">previous test</td><td>&nbsp;</td></tr></table>
+<center><h1><a href="index.html">2025-09-20</a> / SphericalCollapseAMR-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="SphericalCollapseAMR-GPU.SphericalCollapseAMR_regression.in">SphericalCollapseAMR_regression.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 262.634 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  spherical_collapse</tt>
+</li>
+<li><a href="SphericalCollapseAMR-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 700.880 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./SphericalCollapseAMR-GPU.ex SphericalCollapseAMR_regression.in  plotfile_prefix=SphericalCollapseAMR-GPU_plt  checkpoint_prefix=SphericalCollapseAMR-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="SphericalCollapseAMR-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+</table>
+</div>
+</div>
+<p>no corresponding benchmark found</p>
+<P>&nbsp;
+<P><IMG SRC='SphericalCollapseAMR-GPU_plt01000.gpot.XY.png' BORDER=0></div></body>
+</html>
