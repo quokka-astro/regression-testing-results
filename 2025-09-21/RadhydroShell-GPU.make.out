@@ -1,0 +1,479 @@
+[  0%] Building CXX object fmt/CMakeFiles/fmt.dir/src/format.cc.o
+[  0%] Building CXX object fmt/CMakeFiles/fmt.dir/src/os.cc.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o
+[  0%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BlockMutex.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_error_fi.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Version.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PODVector.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParmParse.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_parmparse_fi.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/fptostring.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_String.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Utility.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FileSystem.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Random.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_DistributionMapping.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParallelDescriptor.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_OpenMP.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o
+[ 10%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o
+[ 10%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ForkJoin.cpp.o
+[ 20%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_ParallelContext.cpp.o
+[ 20%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o
+[ 20%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_VisMF.cpp.o
+[ 20%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/null.cpp.o
+[ 20%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o
+[ 20%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o
+[ 20%] Linking CXX static library libfmt.a
+[ 20%] Built target fmt
+[ 20%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o
+[ 20%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_AsyncOut.cpp.o
+[ 20%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BackgroundThread.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Arena.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BArena.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_CArena.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PArena.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BLBackTrace.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_NFiles.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_parstream.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o
+[ 30%] Building CXX object yaml-cpp/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FabConv.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FPC.cpp.o
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_VectorIO.cpp.o
+[ 30%] Linking CXX static library libyaml-cpp.a
+[ 30%] Built target yaml-cpp
+[ 30%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IntConv.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Box.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxIterator.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IntVect.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IndexType.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Orientation.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Periodicity.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_RealBox.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_RealVect.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxList.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxArray.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BoxDomain.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FArrayBox.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_IArrayBox.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BaseFab.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MultiFab.cpp.o
+[ 40%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MFCopyDescriptor.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_iMultiFab.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FabArrayBase.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MFIter.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_CoordSys.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Geometry.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MultiFabUtil.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BCRec.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PhysBCFunct.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BCUtil.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilCC_C.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilFC_C.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_FilND_C.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_NonLocalBC.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PlotFileUtil.cpp.o
+[ 50%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_PlotFileDataImpl.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuControl.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuDevice.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuUtility.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuAsyncArray.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_GpuElixir.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_Machine.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MemPool.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser_Exe.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_Parser_Y.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_parser.lex.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_parser.tab.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser_Exe.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/AMReX_IParser_Y.cpp.o
+[ 60%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_iparser.lex.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/Parser/amrex_iparser.tab.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_BLProfiler.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_TinyProfiler.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Base/AMReX_MPMD.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_Mask.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_MultiMask.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_LO_BCTYPES.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Boundary/AMReX_EdgeFluxRegister.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_AmrCore.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_Cluster.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_ErrorList.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_FillPatchUtil.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_FluxRegister.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_InterpBase.cpp.o
+[ 70%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_MFInterpolater.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_Interpolater.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_TagBox.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_AmrMesh.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/AmrCore/AMReX_InterpFaceRegister.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLMG.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/MLMG/AMReX_MLNodeLinOp.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/AMReX_AlgPartition.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/LinearSolvers/OpenBC/AMReX_OpenBC.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_TracerParticles.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleMPIUtil.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleUtil.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleBufferMap.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleCommunication.cpp.o
+[ 80%] Building CUDA object amrex/Src/CMakeFiles/amrex_3d.dir/Particle/AMReX_ParticleContainerBase.cpp.o
+[ 80%] Linking CUDA static library libamrex_3d.a
+[ 80%] Built target amrex_3d
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/main.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/test_radhydro_shell.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/io/DiagBase.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/io/DiagFilter.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/io/DiagFramePlane.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/io/DiagPDF.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/io/projection.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/cooling/GrackleLikeCooling.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/cooling/GrackleDataReader.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/cooling/TabulatedCooling.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/cooling/CloudyDataReader.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/cooling/ResampledCooling.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/util/fextract.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/__/extern/Microphysics/interfaces/eos_data.cpp.o
+[ 90%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/__/extern/Microphysics/interfaces/network_initialization.cpp.o
+[100%] Building CUDA object src/problems/RadhydroShell/CMakeFiles/test_radhydro3d_shell.dir/__/__/extern_parameters.cpp.o
+[100%] Linking CUDA device code CMakeFiles/test_radhydro3d_shell.dir/cmake_device_link.o
+[100%] Linking CXX executable test_radhydro3d_shell
+[100%] Built target test_radhydro3d_shell
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/io/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::begin()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/io/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("std::vector<int, ::std::allocator<int> > ::end()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/io/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("bool __gnu_cxx::operator !=<int *,     ::std::vector<int, ::std::allocator<int> > > (const  ::__gnu_cxx::__normal_iterator<T1, T2>  &, const  ::__gnu_cxx::__normal_iterator<T1, T2>  &)") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/io/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator *() const") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/src/io/DiagPDF.cpp(97): warning #20011-D: calling a __host__ function("__gnu_cxx::__normal_iterator<int *,     ::std::vector<int, ::std::allocator<int> > > ::operator ++()") from a __host__ __device__ function("DiagPDF::getTotalBinCount") is not allowed
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/base.h(467): warning #128-D: loop is not reachable
+    for (; n != 0; ++s1, ++s2, --n) {
+    ^
+          detected during:
+            instantiation of "auto fmt::v11::detail::compare(const Char *, const Char *, size_t)->int [with Char=char]" at line 585
+            instantiation of "auto fmt::v11::basic_string_view<Char>::compare(fmt::v11::basic_string_view<Char>) const->int [with Char=char]" at line 592
+            instantiation of class "fmt::v11::basic_string_view<Char> [with Char=char]" at line 2653
+            instantiation of "auto fmt::v11::basic_format_args<Context>::get_id(fmt::v11::basic_string_view<Char>) const->int [with Context=fmt::v11::context, Char=char]" at line 2691
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/extern/fmt/include/fmt/format.h(2731): warning #2417-D: constexpr constructor calls non-constexpr function "fmt::v11::basic_memory_buffer<T, SIZE, Allocator>::basic_memory_buffer(const Allocator &) [with T=fmt::v11::detail::bigint::bigit, SIZE=32UL, Allocator=fmt::v11::detail::allocator<fmt::v11::detail::bigint::bigit>]"
+    constexpr bigint() : exp_(0) {}
+                                 ^
+

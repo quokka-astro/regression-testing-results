@@ -1,0 +1,13 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/SphericalCollapse-GPU_plt01000 SphericalCollapse-GPU_plt01000
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         3.104184909e-08           3.033066202e-09
+ x-GasMomentum                       1.22481151e-07           3.449327225e-08
+ y-GasMomentum                       1.30293777e-07            3.66762189e-08
+ z-GasMomentum                      1.709162425e-07           4.813913458e-08
+ gasEnergy                          2.141060675e-06           2.684652414e-06
+ gasInternalEnergy                  2.143057128e-06           1.374566299e-05
+ gpot                               5.755261157e-09           3.416711253e-10
