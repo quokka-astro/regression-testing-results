@@ -1,0 +1,33 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/SedovAMR-GPU_plt00100 SedovAMR-GPU_plt00100
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                                       0                         0
+ x-GasMomentum                      5.686460983e-24           4.664990495e-25
+ y-GasMomentum                      5.686460983e-24           4.664990495e-25
+ z-GasMomentum                      5.686460983e-24           4.664990495e-25
+ gasEnergy                                        0                         0
+ gasInternalEnergy                                0                         0
+ level = 1
+ gasDensity                                       0                         0
+ x-GasMomentum                                    0                         0
+ y-GasMomentum                                    0                         0
+ z-GasMomentum                                    0                         0
+ gasEnergy                                        0                         0
+ gasInternalEnergy                                0                         0
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/SedovAMR-GPU_plt00100 SedovAMR-GPU_plt00100 tracer_particles
+
+-----------------------------------------------------------------------
+tracer_particles
+tracer_particles_position_x         0.00000000e+00        0.00000000e+00        
+tracer_particles_position_y         0.00000000e+00        0.00000000e+00        
+tracer_particles_position_z         0.00000000e+00        0.00000000e+00        
+tracer_particles_real_comp0         2.56739640e-24        2.56739640e-24        
+tracer_particles_real_comp1         2.56739640e-24        2.56739640e-24        
+tracer_particles_real_comp2         2.56739640e-24        2.56739640e-24        
+tracer_particles_id                 0.00000000e+00        0.00000000e+00        
+tracer_particles_cpu                0.00000000e+00        0.00000000e+00        
+
+ PARTICLES DISAGREE to relative tolerance 0
