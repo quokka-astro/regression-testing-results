@@ -1,0 +1,17 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt00998 LinearAlfvenWave-GPU_plt00998
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         1.234568003e-12           1.234568002e-12
+ x-GasMomentum                      3.568953484e-13            9.99884663e-07
+ y-GasMomentum                      4.948051168e-13            6.92850934e-07
+ z-GasMomentum                      4.992180105e-13           8.383660237e-07
+ gasEnergy                          7.616129949e-13           5.440092808e-13
+ gasInternalEnergy                  2.259858967e-12             2.5109544e-12
+ x-BField                           1.403321903e-13           3.164386205e-13
+ y-BField                           1.515454429e-13           2.183044971e-13
+ z-BField                            1.20015109e-13           2.116865343e-13
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt00998 LinearAlfvenWave-GPU_plt00998 tracer_particles
+Error! Could not open file /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt00998/tracer_particles/Header.
