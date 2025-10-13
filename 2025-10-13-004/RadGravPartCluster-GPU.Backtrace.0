@@ -1,0 +1,45 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./RadGravPartCluster-GPU.ex(+0x323c65) [0x559b765bac65]
+    ?? ??:0
+
+ 1: ./RadGravPartCluster-GPU.ex(+0x32658c) [0x559b765bd58c]
+    ?? ??:0
+
+ 2: ./RadGravPartCluster-GPU.ex(+0x269bad) [0x559b76500bad]
+    ?? ??:0
+
+ 3: ./RadGravPartCluster-GPU.ex(+0x256000) [0x559b764ed000]
+    ?? ??:0
+
+ 4: ./RadGravPartCluster-GPU.ex(+0x252b6a) [0x559b764e9b6a]
+    ?? ??:0
+
+ 5: ./RadGravPartCluster-GPU.ex(+0x1b5192) [0x559b7644c192]
+    ?? ??:0
+
+ 6: ./RadGravPartCluster-GPU.ex(+0x9d23c) [0x559b7633423c]
+    ?? ??:0
+
+ 7: ./RadGravPartCluster-GPU.ex(+0x72500) [0x559b76309500]
+    ?? ??:0
+
+ 8: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fd161ab11ca]
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fd161ab128b]
+
+10: ./RadGravPartCluster-GPU.ex(+0x77735) [0x559b7630e735]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
