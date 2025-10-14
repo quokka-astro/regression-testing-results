@@ -1,0 +1,91 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-10-15 / ShockCloud-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="SedovAMR-GPU.html">previous test</td><td class="alignright"><a href="SphericalCollapse-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-10-15</a> / ShockCloud-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="ShockCloud-GPU.ShockCloud_64_regression.in">ShockCloud_64_regression.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 240.348 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  shock_cloud</tt>
+</li>
+<li><a href="ShockCloud-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 234.832 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./ShockCloud-GPU.ex ShockCloud_64_regression.in  plotfile_prefix=ShockCloud-GPU_plt  checkpoint_prefix=ShockCloud-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="ShockCloud-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li></ul></li>
+</ul>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt07713 ShockCloud-GPU_plt07713
+</tt>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt07713 ShockCloud-GPU_plt07713 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td>gasDensity</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>x-GasMomentum</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>y-GasMomentum</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>z-GasMomentum</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>gasEnergy</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>gasInternalEnergy</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>scalar_0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>scalar_1</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>scalar_2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>pressure</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>entropy</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>nH</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>temperature</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>cooling_length</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>cloud_fraction</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>lab_velocity_x</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>mass</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>velocity_mag</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>c_s</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_position_x</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_position_y</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_position_z</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_real_comp0</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_real_comp1</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_real_comp2</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>tracer_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+<P>&nbsp;
+<P><IMG SRC='ShockCloud-GPU_plt07713.temperature.XY.png' BORDER=0></div></body>
+</html>
