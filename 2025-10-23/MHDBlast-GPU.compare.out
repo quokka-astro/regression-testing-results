@@ -1,0 +1,21 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00220 MHDBlast-GPU_plt00220
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                            0.1093359193             0.07314688723
+ x-GasMomentum                         0.6690364769              0.2237319883
+ y-GasMomentum                         0.6649980419              0.2225070335
+ z-GasMomentum                        0.09067610377              0.1107505299
+ gasEnergy                              9.498287564              0.1058659298
+ gasInternalEnergy                      9.865710695              0.2191250221
+ x-BField                              0.1715859529             0.02188055097
+ y-BField                              0.1723130899             0.02197275208
+ z-BField                             0.09701113305              0.1049888378
+ magnetic_divergence                3.504196933e-12               1.346774194
+amrex::Abort::0::ERROR: grids do not match !!!
+SIGABRT
+See Backtrace.0 file for details
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00220 MHDBlast-GPU_plt00220 tracer_particles
+FAIL - Particle data headers do not agree. 

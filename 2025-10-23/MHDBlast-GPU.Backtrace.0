@@ -1,0 +1,30 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex(+0x1e74ab) [0x555a14b134ab]
+    amrex::BLBackTrace::handler(int) at /usr/include/x86_64-linux-gnu/bits/unistd.h:145 (discriminator 7)
+ (inlined by) amrex::BLBackTrace::print_backtrace_info(_IO_FILE*) at /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex//Src/Base/AMReX_BLBackTrace.cpp:215 (discriminator 7)
+ (inlined by) amrex::BLBackTrace::handler(int) at /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex//Src/Base/AMReX_BLBackTrace.cpp:101 (discriminator 7)
+
+ 1: /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex(+0x28f9f) [0x555a14954f9f]
+    amrex::Abort(char const*) at /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex//Src/Base/AMReX.H:183
+ (inlined by) main_main() at /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile/fcompare.cpp:210
+
+ 2: /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex(+0x2230a) [0x555a1494e30a]
+    main at /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile/fcompare.cpp:405
+
+ 3: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fe45fd991ca]
+
+ 4: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fe45fd9928b]
+
+ 5: /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex(+0x248b5) [0x555a149508b5]
+    ?? ??:0
+
