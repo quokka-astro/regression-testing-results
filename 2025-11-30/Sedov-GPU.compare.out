@@ -1,0 +1,27 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Sedov-GPU_plt10978 Sedov-GPU_plt10978
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                                       0                         0
+ x-GasMomentum                                    0                         0
+ y-GasMomentum                                    0                         0
+ z-GasMomentum                                    0                         0
+ gasEnergy                                        0                         0
+ gasInternalEnergy                                0                         0
+ PLOTFILE AGREE
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Sedov-GPU_plt10978 Sedov-GPU_plt10978 tracer_particles
+
+-----------------------------------------------------------------------
+tracer_particles
+tracer_particles_position_x         0.00000000e+00        0.00000000e+00        
+tracer_particles_position_y         0.00000000e+00        0.00000000e+00        
+tracer_particles_position_z         0.00000000e+00        0.00000000e+00        
+tracer_particles_real_comp0         0.00000000e+00        0.00000000e+00        
+tracer_particles_real_comp1         0.00000000e+00        0.00000000e+00        
+tracer_particles_real_comp2         0.00000000e+00        0.00000000e+00        
+tracer_particles_id                 0.00000000e+00        0.00000000e+00        
+tracer_particles_cpu                0.00000000e+00        0.00000000e+00        
+
+ PARTICLES AGREE to relative tolerance 0
