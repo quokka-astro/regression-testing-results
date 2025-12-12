@@ -1,0 +1,29 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00232 MHDBlast-GPU_plt00232
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                            0.1742537309             0.05509711459
+ x-GasMomentum                         0.1460491138             0.01536683639
+ y-GasMomentum                         0.1115599124             0.01173622082
+ z-GasMomentum                        0.03575382729             0.03182023658
+ gasEnergy                              0.647198539            0.006716204812
+ gasInternalEnergy                     0.4296200701             0.01272852913
+ x-BField                             0.03369643099            0.004176587702
+ y-BField                             0.03228427981            0.004001537285
+ z-BField                             0.02411948385             0.02926186479
+ magnetic_divergence                3.038458374e-12               1.234238297
+ level = 1
+ gasDensity                            0.2822688085             0.08430893595
+ x-GasMomentum                         0.2873949713             0.02860165563
+ y-GasMomentum                         0.2969085569             0.02954535267
+ z-GasMomentum                        0.07118273237             0.05986980786
+ gasEnergy                              1.180941985             0.01208477214
+ gasInternalEnergy                     0.8854339887             0.02535616015
+ x-BField                             0.05166544553            0.006372558707
+ y-BField                             0.04838561534            0.005967996797
+ z-BField                             0.02997457817             0.02971656954
+ magnetic_divergence                 5.62572211e-12               1.343657191
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00232 MHDBlast-GPU_plt00232 tracer_particles
+FAIL - Particle data headers do not agree. 

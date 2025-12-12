@@ -1,0 +1,86 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-12-12 / MHDBlast-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="LinearAlfvenWave-GPU.html">previous test</td><td class="alignright"><a href="RadhydroShell-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-12-12</a> / MHDBlast-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="MHDBlast-GPU.MHDBlast.in">MHDBlast.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 116.936 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  MHDBlast</tt>
+</li>
+<li><a href="MHDBlast-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 135.665 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./MHDBlast-GPU.ex MHDBlast.in  plotfile_prefix=MHDBlast-GPU_plt  checkpoint_prefix=MHDBlast-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="MHDBlast-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00232 MHDBlast-GPU_plt00232
+</tt>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt00232 MHDBlast-GPU_plt00232 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>0.1742537309</td><td class='highlight'>0.05509711459</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>0.1460491138</td><td class='highlight'>0.01536683639</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>0.1115599124</td><td class='highlight'>0.01173622082</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>0.03575382729</td><td class='highlight'>0.03182023658</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>0.647198539</td><td class='highlight'>0.006716204812</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>0.4296200701</td><td class='highlight'>0.01272852913</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>0.03369643099</td><td class='highlight'>0.004176587702</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>0.03228427981</td><td class='highlight'>0.004001537285</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>0.02411948385</td><td class='highlight'>0.02926186479</td></tr>
+<tr><td class='highlight'>magnetic_divergence</td><td class='highlight'>3.038458374e-12</td><td class='highlight'>1.234238297</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>0.2822688085</td><td class='highlight'>0.08430893595</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>0.2873949713</td><td class='highlight'>0.02860165563</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>0.2969085569</td><td class='highlight'>0.02954535267</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>0.07118273237</td><td class='highlight'>0.05986980786</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.180941985</td><td class='highlight'>0.01208477214</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>0.8854339887</td><td class='highlight'>0.02535616015</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>0.05166544553</td><td class='highlight'>0.006372558707</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>0.04838561534</td><td class='highlight'>0.005967996797</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>0.02997457817</td><td class='highlight'>0.02971656954</td></tr>
+<tr><td class='highlight'>magnetic_divergence</td><td class='highlight'>5.62572211e-12</td><td class='highlight'>1.343657191</td></tr>
+</table>
+</div>
+</div>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='MHDBlast-GPU_plt00232.gasDensity.XY.png' BORDER=0></div></body>
+</html>
