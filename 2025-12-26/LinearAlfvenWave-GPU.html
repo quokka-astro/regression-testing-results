@@ -1,0 +1,71 @@
+
+<HTML>
+<HEAD>
+<TITLE>2025-12-26 / LinearAlfvenWave-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="MHDBlast-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2025-12-26</a> / LinearAlfvenWave-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="LinearAlfvenWave-GPU.alfven_wave_linear_regression.in">alfven_wave_linear_regression.in</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 145.288 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  AlfvenWaveLinear</tt>
+</li>
+<li><a href="LinearAlfvenWave-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 42.474 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./LinearAlfvenWave-GPU.ex alfven_wave_linear_regression.in  plotfile_prefix=LinearAlfvenWave-GPU_plt  checkpoint_prefix=LinearAlfvenWave-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="LinearAlfvenWave-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt00882 LinearAlfvenWave-GPU_plt00882
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td>gasDensity</td><td>1.034386465e-09</td><td>1.034386464e-09</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>3.049747339e-10</td><td class='highlight'>0.0008541453982</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.307510394e-10</td><td class='highlight'>0.0001830442937</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.065395894e-10</td><td class='highlight'>0.0003467800152</td></tr>
+<tr><td>gasEnergy</td><td>1.218685153e-10</td><td>8.70489393e-11</td></tr>
+<tr><td>gasInternalEnergy</td><td>1.551572981e-09</td><td>1.723969975e-09</td></tr>
+<tr><td>x-BField</td><td>2.810629507e-10</td><td>6.337759865e-10</td></tr>
+<tr><td>y-BField</td><td>1.70865766e-10</td><td>2.461358415e-10</td></tr>
+<tr><td>z-BField</td><td>3.032329943e-11</td><td>5.348521715e-11</td></tr>
+</table>
+</div>
+</div>
+<P>&nbsp;
+<P><IMG SRC='LinearAlfvenWave-GPU_plt00882.z-BField.XY.png' BORDER=0></div></body>
+</html>
