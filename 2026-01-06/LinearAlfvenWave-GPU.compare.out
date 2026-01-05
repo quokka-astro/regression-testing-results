@@ -1,0 +1,15 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt00882 LinearAlfvenWave-GPU_plt00882
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         1.030627916e-09           1.030627915e-09
+ x-GasMomentum                      3.030623934e-10           0.0008487894895
+ y-GasMomentum                      1.257967459e-10           0.0001761085541
+ z-GasMomentum                      2.074287668e-10           0.0003482729443
+ gasEnergy                          1.207871581e-10           8.627654128e-11
+ gasInternalEnergy                   1.54592561e-09           1.717695117e-09
+ x-BField                           2.806795907e-10           6.329115383e-10
+ y-BField                           1.715210196e-10           2.470797486e-10
+ z-BField                           2.957323275e-11           5.216222527e-11
