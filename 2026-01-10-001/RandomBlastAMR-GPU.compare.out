@@ -1,0 +1,44 @@
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt01000 RandomBlastAMR-GPU_plt01000
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                                       0                         0
+ x-GasMomentum                                    0                         0
+ y-GasMomentum                                    0                         0
+ z-GasMomentum                                    0                         0
+ gasEnergy                                        0                         0
+ gasInternalEnergy                                0                         0
+ scalar_0                                         0                         0
+ temperature                                      0                         0
+ level = 1
+ gasDensity                                       0                         0
+ x-GasMomentum                                    0                         0
+ y-GasMomentum                                    0                         0
+ z-GasMomentum                                    0                         0
+ gasEnergy                                        0                         0
+ gasInternalEnergy                                0                         0
+ scalar_0                                         0                         0
+ temperature                                      0                         0
+ PLOTFILE AGREE
+/data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /data/mash/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt01000 RandomBlastAMR-GPU_plt01000 StochasticStellarPop_particles
+
+-----------------------------------------------------------------------
+StochasticStellarPop_particles
+StochasticStellarPop_particles_position_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_position_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_position_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp00.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp10.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp20.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp30.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp40.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp50.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp60.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_real_comp70.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_id   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_cpu  0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_int_comp00.00000000e+00        0.00000000e+00        
+
+ PARTICLES AGREE to relative tolerance 0
