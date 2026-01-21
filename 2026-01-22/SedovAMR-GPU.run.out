@@ -1,0 +1,494 @@
+Initializing AMReX (25.12-26-g53dc0a470c5d)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (25.12-26-g53dc0a470c5d) initialized
+Writing plotfile SedovAMR-GPU_plt0000000
+
+Coarse STEP 1 at t = 0 (0%) starts ...
+
+Coarse STEP 2 at t = 5.229826469e-06 (0.0005229826469%) starts ...
+
+Coarse STEP 3 at t = 1.011367698e-05 (0.001011367698%) starts ...
+
+Coarse STEP 4 at t = 1.484907243e-05 (0.001484907243%) starts ...
+
+Coarse STEP 5 at t = 1.954147492e-05 (0.001954147492%) starts ...
+
+Coarse STEP 6 at t = 2.426611819e-05 (0.002426611819%) starts ...
+
+Coarse STEP 7 at t = 2.907029777e-05 (0.002907029777%) starts ...
+
+Coarse STEP 8 at t = 3.400711456e-05 (0.003400711456%) starts ...
+
+Coarse STEP 9 at t = 3.912741626e-05 (0.003912741626%) starts ...
+
+Coarse STEP 10 at t = 4.447419918e-05 (0.004447419918%) starts ...
+
+Coarse STEP 11 at t = 5.009112922e-05 (0.005009112922%) starts ...
+
+Coarse STEP 12 at t = 5.602315793e-05 (0.005602315793%) starts ...
+
+Coarse STEP 13 at t = 6.231140847e-05 (0.006231140847%) starts ...
+
+Coarse STEP 14 at t = 6.894682231e-05 (0.006894682231%) starts ...
+
+Coarse STEP 15 at t = 7.591512362e-05 (0.007591512362%) starts ...
+
+Coarse STEP 16 at t = 8.316218599e-05 (0.008316218599%) starts ...
+
+Coarse STEP 17 at t = 9.061502992e-05 (0.009061502992%) starts ...
+
+Coarse STEP 18 at t = 9.82149422e-05 (0.00982149422%) starts ...
+
+Coarse STEP 19 at t = 0.0001059341772 (0.01059341772%) starts ...
+
+Coarse STEP 20 at t = 0.000113766691 (0.0113766691%) starts ...
+
+Coarse STEP 21 at t = 0.000121706954 (0.0121706954%) starts ...
+
+Coarse STEP 22 at t = 0.0001297441151 (0.01297441151%) starts ...
+
+Coarse STEP 23 at t = 0.0001378855438 (0.01378855438%) starts ...
+
+Coarse STEP 24 at t = 0.0001461344981 (0.01461344981%) starts ...
+
+Coarse STEP 25 at t = 0.0001544917746 (0.01544917746%) starts ...
+
+Coarse STEP 26 at t = 0.0001629707501 (0.01629707501%) starts ...
+
+Coarse STEP 27 at t = 0.0001715792758 (0.01715792758%) starts ...
+
+Coarse STEP 28 at t = 0.0001803180641 (0.01803180641%) starts ...
+
+Coarse STEP 29 at t = 0.0001891806609 (0.01891806609%) starts ...
+
+Coarse STEP 30 at t = 0.0001981592032 (0.01981592032%) starts ...
+
+Coarse STEP 31 at t = 0.0002072494886 (0.02072494886%) starts ...
+
+Coarse STEP 32 at t = 0.0002164537656 (0.02164537656%) starts ...
+
+Coarse STEP 33 at t = 0.0002257725264 (0.02257725264%) starts ...
+
+Coarse STEP 34 at t = 0.0002352074128 (0.02352074128%) starts ...
+
+Coarse STEP 35 at t = 0.0002447549556 (0.02447549556%) starts ...
+
+Coarse STEP 36 at t = 0.0002544084452 (0.02544084452%) starts ...
+
+Coarse STEP 37 at t = 0.0002641539432 (0.02641539432%) starts ...
+
+Coarse STEP 38 at t = 0.0002739802642 (0.02739802642%) starts ...
+
+Coarse STEP 39 at t = 0.000283877777 (0.0283877777%) starts ...
+
+Coarse STEP 40 at t = 0.0002938375607 (0.02938375607%) starts ...
+
+Coarse STEP 41 at t = 0.0003038530365 (0.03038530365%) starts ...
+
+Coarse STEP 42 at t = 0.0003139193688 (0.03139193688%) starts ...
+
+Coarse STEP 43 at t = 0.0003240329972 (0.03240329972%) starts ...
+
+Coarse STEP 44 at t = 0.0003341929401 (0.03341929401%) starts ...
+
+Coarse STEP 45 at t = 0.0003444008396 (0.03444008396%) starts ...
+
+Coarse STEP 46 at t = 0.000354659674 (0.0354659674%) starts ...
+
+Coarse STEP 47 at t = 0.0003649733677 (0.03649733677%) starts ...
+
+Coarse STEP 48 at t = 0.000375345064 (0.0375345064%) starts ...
+
+Coarse STEP 49 at t = 0.0003857776105 (0.03857776105%) starts ...
+
+Coarse STEP 50 at t = 0.0003962726324 (0.03962726324%) starts ...
+
+Coarse STEP 51 at t = 0.000406830665 (0.0406830665%) starts ...
+
+Coarse STEP 52 at t = 0.0004174521585 (0.04174521585%) starts ...
+
+Coarse STEP 53 at t = 0.0004281350184 (0.04281350184%) starts ...
+
+Coarse STEP 54 at t = 0.0004388765844 (0.04388765844%) starts ...
+
+Coarse STEP 55 at t = 0.0004496770484 (0.04496770484%) starts ...
+
+Coarse STEP 56 at t = 0.0004605360046 (0.04605360046%) starts ...
+
+Coarse STEP 57 at t = 0.0004714510593 (0.04714510593%) starts ...
+
+Coarse STEP 58 at t = 0.0004824199422 (0.04824199422%) starts ...
+
+Coarse STEP 59 at t = 0.0004934403029 (0.04934403029%) starts ...
+
+Coarse STEP 60 at t = 0.0005045098375 (0.05045098375%) starts ...
+
+Coarse STEP 61 at t = 0.0005156259531 (0.05156259531%) starts ...
+
+Coarse STEP 62 at t = 0.0005267860057 (0.05267860057%) starts ...
+
+Coarse STEP 63 at t = 0.0005379881838 (0.05379881838%) starts ...
+
+Coarse STEP 64 at t = 0.0005492308895 (0.05492308895%) starts ...
+
+Coarse STEP 65 at t = 0.0005605124556 (0.05605124556%) starts ...
+
+Coarse STEP 66 at t = 0.0005718313167 (0.05718313167%) starts ...
+
+Coarse STEP 67 at t = 0.0005831862291 (0.05831862291%) starts ...
+
+Coarse STEP 68 at t = 0.0005945763084 (0.05945763084%) starts ...
+
+Coarse STEP 69 at t = 0.0006060007017 (0.06060007017%) starts ...
+
+Coarse STEP 70 at t = 0.0006174595526 (0.06174595526%) starts ...
+
+Coarse STEP 71 at t = 0.0006289529616 (0.06289529616%) starts ...
+
+Coarse STEP 72 at t = 0.000640481721 (0.0640481721%) starts ...
+
+Coarse STEP 73 at t = 0.0006520462372 (0.06520462372%) starts ...
+
+Coarse STEP 74 at t = 0.0006636472565 (0.06636472565%) starts ...
+
+Coarse STEP 75 at t = 0.0006752853763 (0.06752853763%) starts ...
+
+Coarse STEP 76 at t = 0.0006869611114 (0.06869611114%) starts ...
+
+Coarse STEP 77 at t = 0.0006986747964 (0.06986747964%) starts ...
+
+Coarse STEP 78 at t = 0.0007104265659 (0.07104265659%) starts ...
+
+Coarse STEP 79 at t = 0.000722215441 (0.0722215441%) starts ...
+
+Coarse STEP 80 at t = 0.0007340402628 (0.07340402628%) starts ...
+
+Coarse STEP 81 at t = 0.0007459003401 (0.07459003401%) starts ...
+
+Coarse STEP 82 at t = 0.0007577950986 (0.07577950986%) starts ...
+
+Coarse STEP 83 at t = 0.0007697239604 (0.07697239604%) starts ...
+
+Coarse STEP 84 at t = 0.0007816865364 (0.07816865364%) starts ...
+
+Coarse STEP 85 at t = 0.0007936825268 (0.07936825268%) starts ...
+
+Coarse STEP 86 at t = 0.000805711676 (0.0805711676%) starts ...
+
+Coarse STEP 87 at t = 0.0008177738945 (0.08177738945%) starts ...
+
+Coarse STEP 88 at t = 0.0008298691948 (0.08298691948%) starts ...
+
+Coarse STEP 89 at t = 0.0008419976435 (0.08419976435%) starts ...
+
+Coarse STEP 90 at t = 0.0008541592813 (0.08541592813%) starts ...
+
+Coarse STEP 91 at t = 0.0008663540228 (0.08663540228%) starts ...
+
+Coarse STEP 92 at t = 0.000878581744 (0.0878581744%) starts ...
+
+Coarse STEP 93 at t = 0.0008908427248 (0.08908427248%) starts ...
+
+Coarse STEP 94 at t = 0.0009031373424 (0.09031373424%) starts ...
+
+Coarse STEP 95 at t = 0.0009154658233 (0.09154658233%) starts ...
+
+Coarse STEP 96 at t = 0.0009278281077 (0.09278281077%) starts ...
+
+Coarse STEP 97 at t = 0.0009402241186 (0.09402241186%) starts ...
+
+Coarse STEP 98 at t = 0.0009526531894 (0.09526531894%) starts ...
+
+Coarse STEP 99 at t = 0.0009651143604 (0.09651143604%) starts ...
+
+Coarse STEP 100 at t = 0.0009776065092 (0.09776065092%) starts ...
+
+Initial energy = 0.01332031034
+Final energy = 0.01332031034
+	absolute conservation error = 1.040834086e-17
+	relative conservation error = 7.813887657e-16
+	kinetic energy = 0.001987220232
+	relative K.E. error = -0.0695417678
+
+Energy conservation is OK.
+Kinetic energy production is incorrect by more than 1 percent!
+
+Initial gasDensity = 1.728
+	absolute conservation error = 0
+	relative conservation error = 0
+
+Initial x-GasMomentum = 0
+	absolute conservation error = 0.0002432355948
+
+Initial y-GasMomentum = 0
+	absolute conservation error = 0.0002457648609
+
+Initial z-GasMomentum = 0
+	absolute conservation error = 0.0002457648609
+
+Initial gasEnergy = 0.01332031034
+	absolute conservation error = 1.040834086e-17
+	relative conservation error = 7.813887657e-16
+
+Initial gasInternalEnergy = 0
+	absolute conservation error = 0.01133309011
+
+Performance figure-of-merit: 0.02318998822 μs/zone-update [43.12205727 Mupdates/s]
+Zone-updates on level 0: 209715200
+Zone-updates on level 1: 26214400
+
+Writing plotfile SedovAMR-GPU_plt0000100
+elapsed time: 10.1381955 seconds.
+
+
+TinyProfiler total time across processes [min...avg...max]: 10.14 ... 10.14 ... 10.14
+
+--------------------------------------------------------------------------------------------------------
+Name                                                     NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+--------------------------------------------------------------------------------------------------------
+WriteBinaryParticleData()                                     2      2.142      2.142      2.142  21.13%
+VisMF::Write(FabArray)                                        4      2.138      2.138      2.138  21.09%
+QuokkaSimulation::computeHydroFluxes()                      400      1.923      1.923      1.923  18.97%
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)          1200     0.7749     0.7749     0.7749   7.64%
+QuokkaSimulation::computeFOHydroFluxes()                    200      0.486      0.486      0.486   4.79%
+QuokkaSimulation::advanceHydroAtLevel()                     200     0.4204     0.4204     0.4204   4.15%
+FabArray::Saxpy()                                          2400     0.3395     0.3395     0.3395   3.35%
+FluxRegister::Reflux()                                      600     0.3388     0.3388     0.3388   3.34%
+FabArray::setVal()                                         2902     0.2117     0.2117     0.2117   2.09%
+ParticleContainer<NSR, NSI, NAR, NAI>::InitOnePerCell()       1     0.1783     0.1783     0.1783   1.76%
+AmrMesh::MakeNewGrids()                                      51     0.1728     0.1728     0.1728   1.70%
+PhysBCFunct::()                                             609     0.1727     0.1727     0.1727   1.70%
+ParticleContainer::WriteParticles()                           4     0.1566     0.1566     0.1566   1.54%
+amrex::Copy()                                               628     0.1227     0.1227     0.1227   1.21%
+AMRSimulation::incrementFluxRegisters()                     200     0.1175     0.1175     0.1175   1.16%
+TracerParticleContainer::AdvectWithUmac()                   200     0.1055     0.1055     0.1055   1.04%
+Redistribute_partition                                      151    0.06829    0.06829    0.06829   0.67%
+HydroSystem::PredictStep()                                  400    0.04032    0.04032    0.04032   0.40%
+ParticleContainer::RedistributeGPU()                        151    0.03313    0.03313    0.03313   0.33%
+FabArray::ParallelCopy_nowait()                            1760    0.02729    0.02729    0.02729   0.27%
+QuokkaSimulation::computeMaxSignalLocal()                   200    0.02224    0.02224    0.02224   0.22%
+QuokkaSimulation::advanceSingleTimestepAtLevel()            200    0.02205    0.02205    0.02205   0.22%
+FillPatchInterp(MF)                                         203    0.02023    0.02023    0.02023   0.20%
+FillPatcher::fillCFB                                        200   0.006151   0.006151   0.006151   0.06%
+WriteMultiLevelPlotfile()                                     2    0.00588    0.00588    0.00588   0.06%
+AMRSimulation::WritePlotFile()                                2   0.005744   0.005744   0.005744   0.06%
+AMRSimulation::computeTimestepAtLevel()                     200   0.005377   0.005377   0.005377   0.05%
+AMRSimulation::evolve()                                       1   0.002951   0.002951   0.002951   0.03%
+AMRSimulation::setInitialConditions()                         1   0.002035   0.002035   0.002035   0.02%
+AMRSimulation::timeStepWithSubcycling()                     200   0.001614   0.001614   0.001614   0.02%
+REG::HydroSolver                                            200   0.001256   0.001256   0.001256   0.01%
+AMRSimulation::fillBoundaryConditions()                     406   0.001083   0.001083   0.001083   0.01%
+AMRSimulation::FillPatchWithData()                          203  0.0008693  0.0008693  0.0008693   0.01%
+FabArray::ParallelCopy()                                   1760  0.0008515  0.0008515  0.0008515   0.01%
+FillPatcher::fill()                                         200  0.0001921  0.0001921  0.0001921   0.00%
+FillPatchSingleLevel                                        206  0.0001405  0.0001405  0.0001405   0.00%
+AMRSimulation::computeTimestep()                            100  6.797e-05  6.797e-05  6.797e-05   0.00%
+AMRSimulation::InitParticles()                                1  1.346e-05  1.346e-05  1.346e-05   0.00%
+Other                                                      8328    0.06922    0.06922    0.06922   0.68%
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+Name                                                     NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+--------------------------------------------------------------------------------------------------------
+AMRSimulation::evolve()                                       1      7.696      7.696      7.696  75.91%
+AMRSimulation::timeStepWithSubcycling()                     200      5.426      5.426      5.426  53.52%
+QuokkaSimulation::advanceSingleTimestepAtLevel()            200      4.676      4.676      4.676  46.12%
+REG::HydroSolver                                            200      4.654      4.654      4.654  45.91%
+QuokkaSimulation::advanceHydroAtLevel()                     200      4.532      4.532      4.532  44.70%
+AMRSimulation::WritePlotFile()                                2      4.459      4.459      4.459  43.99%
+QuokkaSimulation::computeHydroFluxes()                      400      2.698      2.698      2.698  26.61%
+AMRSimulation::setInitialConditions()                         1      2.435      2.435      2.435  24.02%
+WriteBinaryParticleData()                                     2      2.299      2.299      2.299  22.67%
+WriteMultiLevelPlotfile()                                     2      2.152      2.152      2.152  21.23%
+VisMF::Write(FabArray)                                        4      2.138      2.138      2.138  21.09%
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)          1200     0.7749     0.7749     0.7749   7.64%
+QuokkaSimulation::computeFOHydroFluxes()                    200      0.486      0.486      0.486   4.79%
+FluxRegister::Reflux()                                      600     0.4621     0.4621     0.4621   4.56%
+FabArray::Saxpy()                                          2400     0.3395     0.3395     0.3395   3.35%
+AMRSimulation::fillBoundaryConditions()                     406     0.2179     0.2179     0.2179   2.15%
+FabArray::setVal()                                         2902     0.2117     0.2117     0.2117   2.09%
+AMRSimulation::InitParticles()                                1     0.1812     0.1812     0.1812   1.79%
+ParticleContainer<NSR, NSI, NAR, NAI>::InitOnePerCell()       1     0.1806     0.1806     0.1806   1.78%
+AmrMesh::MakeNewGrids()                                      51     0.1797     0.1797     0.1797   1.77%
+PhysBCFunct::()                                             609     0.1727     0.1727     0.1727   1.70%
+ParticleContainer::WriteParticles()                           4     0.1566     0.1566     0.1566   1.54%
+AMRSimulation::incrementFluxRegisters()                     200     0.1323     0.1323     0.1323   1.31%
+amrex::Copy()                                               628     0.1227     0.1227     0.1227   1.21%
+AMRSimulation::FillPatchWithData()                          203     0.1154     0.1154     0.1154   1.14%
+FillPatcher::fill()                                         200     0.1125     0.1125     0.1125   1.11%
+ParticleContainer::RedistributeGPU()                        151     0.1102     0.1102     0.1102   1.09%
+TracerParticleContainer::AdvectWithUmac()                   200     0.1055     0.1055     0.1055   1.04%
+FillPatcher::fillCFB                                        200    0.08261    0.08261    0.08261   0.81%
+Redistribute_partition                                      151    0.06829    0.06829    0.06829   0.67%
+AMRSimulation::computeTimestep()                            100    0.04241    0.04241    0.04241   0.42%
+AMRSimulation::computeTimestepAtLevel()                     200    0.04234    0.04234    0.04234   0.42%
+HydroSystem::PredictStep()                                  400    0.04032    0.04032    0.04032   0.40%
+FillPatchSingleLevel                                        206     0.0308     0.0308     0.0308   0.30%
+FabArray::ParallelCopy()                                   1760    0.02957    0.02957    0.02957   0.29%
+FabArray::ParallelCopy_nowait()                            1760    0.02836    0.02836    0.02836   0.28%
+QuokkaSimulation::computeMaxSignalLocal()                   200    0.02224    0.02224    0.02224   0.22%
+FillPatchInterp(MF)                                         203    0.02023    0.02023    0.02023   0.20%
+Other                                                      8328    0.09199    0.09199    0.09199   0.91%
+--------------------------------------------------------------------------------------------------------
+
+
+
+BEGIN REGION HydroSolver
+
+--------------------------------------------------------------------------------------------------
+Name                                               NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+--------------------------------------------------------------------------------------------------
+QuokkaSimulation::computeHydroFluxes()                400      1.923      1.923      1.923  18.97%
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)    1200     0.7749     0.7749     0.7749   7.64%
+QuokkaSimulation::computeFOHydroFluxes()              200      0.486      0.486      0.486   4.79%
+QuokkaSimulation::advanceHydroAtLevel()               200     0.4204     0.4204     0.4204   4.15%
+FabArray::Saxpy()                                    2400     0.3395     0.3395     0.3395   3.35%
+PhysBCFunct::()                                       600       0.17       0.17       0.17   1.68%
+amrex::Copy()                                         600     0.1209     0.1209     0.1209   1.19%
+AMRSimulation::incrementFluxRegisters()               200     0.1175     0.1175     0.1175   1.16%
+TracerParticleContainer::AdvectWithUmac()             200     0.1055     0.1055     0.1055   1.04%
+FabArray::setVal()                                   2100    0.09052    0.09052    0.09052   0.89%
+HydroSystem::PredictStep()                            400    0.04032    0.04032    0.04032   0.40%
+FillPatcher::fillCFB                                  200   0.006151   0.006151   0.006151   0.06%
+REG::HydroSolver                                      200   0.001256   0.001256   0.001256   0.01%
+AMRSimulation::FillPatchWithData()                    200   0.000865   0.000865   0.000865   0.01%
+AMRSimulation::fillBoundaryConditions()               400   0.000466   0.000466   0.000466   0.00%
+FillPatcher::fill()                                   200  0.0001921  0.0001921  0.0001921   0.00%
+FillPatchSingleLevel                                  200  0.0001357  0.0001357  0.0001357   0.00%
+Other                                                6600    0.05647    0.05647    0.05647   0.56%
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+Name                                               NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+--------------------------------------------------------------------------------------------------
+REG::HydroSolver                                      200      4.654      4.654      4.654  45.91%
+QuokkaSimulation::advanceHydroAtLevel()               200      4.532      4.532      4.532  44.70%
+QuokkaSimulation::computeHydroFluxes()                400      2.698      2.698      2.698  26.61%
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)    1200     0.7749     0.7749     0.7749   7.64%
+QuokkaSimulation::computeFOHydroFluxes()              200      0.486      0.486      0.486   4.79%
+FabArray::Saxpy()                                    2400     0.3395     0.3395     0.3395   3.35%
+AMRSimulation::fillBoundaryConditions()               400     0.2132     0.2132     0.2132   2.10%
+PhysBCFunct::()                                       600       0.17       0.17       0.17   1.68%
+AMRSimulation::incrementFluxRegisters()               200     0.1323     0.1323     0.1323   1.31%
+amrex::Copy()                                         600     0.1209     0.1209     0.1209   1.19%
+AMRSimulation::FillPatchWithData()                    200     0.1133     0.1133     0.1133   1.12%
+FillPatcher::fill()                                   200     0.1125     0.1125     0.1125   1.11%
+TracerParticleContainer::AdvectWithUmac()             200     0.1055     0.1055     0.1055   1.04%
+FabArray::setVal()                                   2100    0.09052    0.09052    0.09052   0.89%
+FillPatcher::fillCFB                                  200    0.08261    0.08261    0.08261   0.81%
+HydroSystem::PredictStep()                            400    0.04032    0.04032    0.04032   0.40%
+FillPatchSingleLevel                                  200    0.02966    0.02966    0.02966   0.29%
+Other                                                6600    0.07836    0.07836    0.07836   0.77%
+--------------------------------------------------------------------------------------------------
+
+END REGION HydroSolver
+Unused ParmParse Variables:
+  [TOP]::amr.checkpoint_files_output(nvals = 1)  :: [0]
+
+Device Memory Usage:
+-----------------------------------------------------------------------------------
+Name                                                     Nalloc    AvgMem    MaxMem
+-----------------------------------------------------------------------------------
+The_Arena::Initialize()                                       1  3932   B    23 GiB
+QuokkaSimulation::computeHydroFluxes()                    15600   367 MiB  1484 MiB
+QuokkaSimulation::computeFOHydroFluxes()                   8000   180 MiB  1426 MiB
+QuokkaSimulation::advanceHydroAtLevel()                    4400   183 MiB   573 MiB
+AMRSimulation::MakeNewLevelFromScratch()                     12   315 MiB   315 MiB
+REG::HydroSolver                                            400    98 MiB   251 MiB
+AMRSimulation::WritePlotFile()                                4    64 MiB   145 MiB
+ParticleContainer::WriteParticles()                          24   367 KiB   118 MiB
+AMRSimulation::incrementFluxRegisters()                    1800  1323 KiB   112 MiB
+ParticleContainer<NSR, NSI, NAR, NAI>::InitOnePerCell()       1   110 MiB   112 MiB
+FluxRegister::Reflux()                                      600  4502 KiB    96 MiB
+WriteMultiLevelPlotfile()                                     4    18 MiB    96 MiB
+ResizeRandomSeed                                              1    29 MiB    30 MiB
+AMRSimulation::evolve()                                       1   490   B    16 MiB
+AMRSimulation::timeStepWithSubcycling()                     100   750 KiB    16 MiB
+WriteBinaryParticleData()                                    10  1857 KiB  8370 KiB
+FillPatcher::fillCFB                                       1600   729 KiB  6451 KiB
+FillPatchTwoLevels                                           18   353   B  4676 KiB
+FillPatchInterp(MF)                                        1327  5282   B  2661 KiB
+AmrMesh::MakeNewGrids()                                     102    41 KiB  2349 KiB
+Redistribute_partition                                      609    13 KiB  2320 KiB
+amrex::unpackBuffer                                           1  1782 KiB  1821 KiB
+amrex::packBuffer                                             1   190   B  1795 KiB
+amrex::average_down                                         101   856   B  1536 KiB
+ParticleContainer::RedistributeGPU()                          5   388   B   720 KiB
+VisMF::Write(FabArray)                                       24    53   B   320 KiB
+FabArray::norminf()                                         202   323   B   160 KiB
+FabArray::sum()                                              15    18   B   160 KiB
+iMultiFab::sum()                                            400   217   B   160 KiB
+MultiFab::max()                                             200   101   B   160 KiB
+ParticleCopyPlan::build                                     907    16   B   130 KiB
+MultiFab::contains_nan()                                      4   255   B    20 KiB
+TagBoxArray::mapPRD                                         102     0   B  1728   B
+DenseBins<T>::buildGPU                                       12   156   B   928   B
+PhysBCFunct::()                                            2639     9   B   880   B
+OwnerMask()                                                  51     0   B   864   B
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)          2400   133   B   768   B
+FabArray::ParallelCopy_nowait()                             406     0   B   544   B
+HydroSystem::PredictStep()                                  202   223   B   384   B
+TagBoxArray::collate()                                      153     0   B   128   B
+ParticleBufferMap::define                                     3    46   B    48   B
+AMRSimulation::computeTimestepAtLevel()                     200     0   B    16   B
+-----------------------------------------------------------------------------------
+
+Managed Memory Usage:
+---------------------------------------------------------
+Name                             Nalloc  AvgMem    MaxMem
+---------------------------------------------------------
+The_Managed_Arena::Initialize()       1   0   B  8192 KiB
+---------------------------------------------------------
+
+Pinned Memory Usage:
+-----------------------------------------------------------------------------------
+Name                                                     Nalloc    AvgMem    MaxMem
+-----------------------------------------------------------------------------------
+ParticleContainer<NSR, NSI, NAR, NAI>::InitOnePerCell()      38  1586 KiB   243 MiB
+VisMF::Write(FabArray)                                       28   780 KiB    96 MiB
+The_Pinned_Arena::Initialize()                                1     1   B  8192 KiB
+QuokkaSimulation::computeFOHydroFluxes()                   4000   412   B  2560   B
+QuokkaSimulation::computeHydroFluxes()                     6400   383   B  2048   B
+FillPatchInterp(MF)                                         515    96   B  1600   B
+FillPatcher::fillCFB                                        400   147   B  1376   B
+QuokkaSimulation::advanceHydroAtLevel()                    2200    47   B  1024   B
+PhysBCFunct::()                                            2639     9   B   880   B
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)          2400   133   B   768   B
+FabArray::ParallelCopy_nowait()                             406     0   B   544   B
+ParticleContainer::RedistributeGPU()                        156   126   B   480   B
+HydroSystem::PredictStep()                                  202   223   B   384   B
+MultiFab::contains_nan()                                      4   255   B   272   B
+FabArray::norminf()                                         202   194   B   272   B
+TagBoxArray::collate()                                      204     0   B   192   B
+AMRSimulation::incrementFluxRegisters()                     600     0   B   176   B
+FabArray::sum()                                              15     0   B   144   B
+WriteBinaryParticleData()                                     6     0   B    16   B
+AMRSimulation::computeTimestepAtLevel()                     200     0   B    16   B
+iMultiFab::sum()                                            400     0   B    16   B
+Redistribute_partition                                      301     0   B    16   B
+ParticleCopyPlan::build                                     151     0   B    16   B
+ParticleContainer::WriteParticles()                           4     0   B    16   B
+MultiFab::max()                                             200     0   B    16   B
+-----------------------------------------------------------------------------------
+
+Comms Memory Usage:
+-------------------------------------------------------
+Name                           Nalloc  AvgMem    MaxMem
+-------------------------------------------------------
+The_Comms_Arena::Initialize()       1   0   B  8192 KiB
+-------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [32494 ... 32494]
+Free  GPU global memory (MB) spread across MPI: [7636 ... 7636]
+[The         Arena] max space (MB) allocated spread across MPI: [24370 ... 24370]
+[The         Arena] max space (MB) used      spread across MPI: [3035 ... 3035]
+[The Managed Arena] max space (MB) allocated spread across MPI: [8 ... 8]
+[The Managed Arena] max space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] max space (MB) allocated spread across MPI: [312 ... 312]
+[The  Pinned Arena] max space (MB) used      spread across MPI: [243 ... 243]
+[The   Comms Arena] max space (MB) allocated spread across MPI: [8 ... 8]
+[The   Comms Arena] max space (MB) used      spread across MPI: [0 ... 0]
+AMReX (25.12-26-g53dc0a470c5d) finalized
