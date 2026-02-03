@@ -1,0 +1,17 @@
+Initializing AMReX (26.01-24-gfde4d987226e)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (26.01-24-gfde4d987226e) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+Using derived variables:
+	temperature
+
+Reading resampled cooling tables...
+Initializing resampled cooling.
+resampled_table_file: ./CloudyData_UVB=HM2012_resampled.h5.
+	Density range: 2.3368215933e-34 to 2.3368215933000003e-20 g/cm^3 (30 steps).
+	Specific energy range: 2418246265.9451904 to 2.022491441386058e+17 erg/g (200 steps).
+	Photoelectric heating: enabled.
