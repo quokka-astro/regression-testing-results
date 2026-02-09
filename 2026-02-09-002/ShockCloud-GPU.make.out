@@ -1,0 +1,38 @@
+[  0%] Built target fmt
+[ 20%] Built target yaml-cpp
+[ 80%] Built target amrex_3d
+[ 90%] Built target amrex_hydro
+[ 90%] Built target amrex_hydro_api
+[ 90%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/testShockCloud.cpp.o
+[ 90%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/main.cpp.o
+[ 90%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagBase.cpp.o
+[ 90%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagFilter.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagPDF.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagPlotfile.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagParticleTxt.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagProjectionPlot.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/projection.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/cooling/ResampledCooling.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/io/DiagFramePlane.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/util/fextract.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/__/extern/Microphysics/interfaces/eos_data.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/__/extern/Microphysics/interfaces/network_initialization.cpp.o
+[100%] Building CUDA object src/problems/ShockCloud/CMakeFiles/ShockCloud.dir/__/__/extern_parameters.cpp.o
+[100%] Linking CUDA device code CMakeFiles/ShockCloud.dir/cmake_device_link.o
+[100%] Linking CXX executable ShockCloud
+[100%] Built target ShockCloud
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
