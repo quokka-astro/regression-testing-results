@@ -1,0 +1,73 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Updating d0f0aeabb..d7da50458
+Fast-forward
+ .clang-tidy                             |   6 +-
+ .github/workflows/bittree.yml           |   8 +-
+ .github/workflows/clang.yml             |  12 +-
+ .github/workflows/gcc.yml               |  77 +++---
+ .github/workflows/hypre.yml             |   8 +-
+ .github/workflows/petsc.yml             |   4 +-
+ .github/workflows/smoke.yml             |   4 +-
+ .github/workflows/sundials.yml          |   4 +-
+ Src/Base/AMReX_Algorithm.H              |   8 +-
+ Src/Base/AMReX_BoxArray.H               |   5 +-
+ Src/Base/AMReX_CudaGraph.H              |   4 +-
+ Src/Base/AMReX_FabArrayUtility.H        |  24 +-
+ Src/Base/AMReX_PODVector.H              |   2 +-
+ Src/Base/AMReX_PhysBCFunct.H            |   2 +-
+ Src/Base/AMReX_SIMD.H                   |   4 +-
+ Src/Base/AMReX_Scan.H                   |  30 +--
+ Src/Base/AMReX_Version.cpp              |   2 +-
+ Src/EB/AMReX_EB2_Level.H                |   2 +-
+ Src/Particle/AMReX_Particle.H           |   4 +-
+ Src/Particle/AMReX_ParticleIO.H         |   2 +-
+ Tests/CMakeLists.txt                    |   2 +-
+ Tests/LinearSolvers/ABecLap_SP/MyTest.H |   4 +-
+ Tests/SIMD/CMakeLists.txt               |   9 +
+ Tests/SIMD/GNUmakefile                  |  20 ++
+ Tests/SIMD/Make.package                 |   1 +
+ Tests/SIMD/main.cpp                     | 439 ++++++++++++++++++++++++++++++++
+ Tools/CMake/AMReXClangTidy.cmake        |   3 +-
+ Tools/CMake/FindAMReXFFTW.cmake         |  13 +-
+ 28 files changed, 601 insertions(+), 102 deletions(-)
+ create mode 100644 Tests/SIMD/CMakeLists.txt
+ create mode 100644 Tests/SIMD/GNUmakefile
+ create mode 100644 Tests/SIMD/Make.package
+ create mode 100644 Tests/SIMD/main.cpp
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
