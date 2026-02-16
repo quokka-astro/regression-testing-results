@@ -1,0 +1,182 @@
+amrex::Abort::0::Arena out of memory!!!
+Bytes to allocate: 129773952 (123 MiB)
+Memory type: GPU device memory
+MPI rank: 0
+Error: cudaMalloc returned 2: out of memory
+
+
+TinyProfiler call stack:
+
+===== TinyProfilers ======
+AMRSimulation::evolve()
+AMRSimulation::timeStepWithSubcycling()
+AMRSimulation::timeStepWithSubcycling()
+QuokkaSimulation::advanceSingleTimestepAtLevel()
+REG::HydroSolver
+QuokkaSimulation::advanceHydroAtLevel()
+QuokkaSimulation::computeHydroFluxes()
+
+
+TinyProfiler memory usage so far:
+
+Device Memory Usage:
+---------------------------------------------------------------------------------------------------------
+Name                                                        Nalloc  Nfree    AvgMem    MaxMem  CurrentMem
+---------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()                                          1      1    22 KiB    23 GiB       0   B
+QuokkaSimulation::computeHydroFluxes()                         409    234    92 MiB    12 GiB      12 GiB
+QuokkaSimulation::computeFOHydroFluxes()                       304    245   298 MiB    12 GiB    3394 MiB
+QuokkaSimulation::advanceHydroAtLevel()                        122     66   155 MiB  4305 MiB    4305 MiB
+AMRSimulation::MakeNewLevelFromCoarse()                         72      0   179 MiB  2522 MiB    2522 MiB
+REG::HydroSolver                                                22      6   100 MiB  2344 MiB    2344 MiB
+FillPatchInterp(MF)                                             38     32  5314 KiB   478 MiB    4256   B
+AMRSimulation::MakeNewLevelFromScratch()                         3      0   278 MiB   314 MiB     314 MiB
+FillPatcher::fillCFB                                            21      0  4676 KiB   188 MiB     188 MiB
+[particle_deposition] SNDeposition()                             8      8   230 KiB   167 MiB       0   B
+AMRSimulation::WritePlotFile()                                   1      1   119 MiB   167 MiB       0   B
+InterpFromCoarseLevel                                           16     16  1887 KiB   159 MiB       0   B
+AMRSimulation::particleMeshInteraction()                         4      4   336 KiB   134 MiB       0   B
+AMRSimulation::incrementFluxRegisters()                         60     60   132 KiB   130 MiB       0   B
+WriteMultiLevelPlotfile()                                        1      1    90 MiB   128 MiB       0   B
+MLMG::prepareForSolve()                                         84     84  1625 KiB    91 MiB       0   B
+AMRSimulation::kickParticlesAllLevels()                         15     15    48 KiB    70 MiB       0   B
+REG::GravitySolver                                              15     14    15 MiB    69 MiB      16 MiB
+quokka::ResampledCooling::computeCooling()                      14     14   159 KiB    64 MiB       0   B
+FillBoundary_nowait()                                          110    107    32 KiB    39 MiB      45 KiB
+amrex::ParticleToMesh                                            6      6    33 KiB    35 MiB       0   B
+ResizeRandomSeed                                                 1      0    29 MiB    30 MiB      30 MiB
+MLCellLinOp::setLevelBC()                                        3      3    13 KiB    16 MiB       0   B
+ParticleCreationImpl::createParticlesImpl()                      6      6    13 KiB    16 MiB       0   B
+AmrMesh::MakeNewGrids()                                          6      6  6323   B  2350 KiB       0   B
+BndryData::define()                                             36     36    35 KiB  1684 KiB       0   B
+MLCellLinOp::defineAuxData()                                   252    252    35 KiB  1535 KiB       0   B
+ParticleContainer::RedistributeGPU()                             7      4   467   B   720 KiB     560   B
+AMRSimulation::computeTimestepAtLevel()                          9      9    58   B   640 KiB       0   B
+VisMF::Write(FabArray)                                           8      8   178   B   320 KiB       0   B
+WriteBinaryParticleData()                                        3      3    30   B   160 KiB       0   B
+amrex::Dot()                                                    99     99   108   B   160 KiB       0   B
+FabArray::norminf()                                             76     75   181   B   160 KiB     128   B
+FabArray::sum()                                                 40     40   104   B   160 KiB       0   B
+MultiFab::min()                                                  3      3    17   B   160 KiB       0   B
+iMultiFab::sum()                                                13     13    59   B   160 KiB       0   B
+ParticleContainer::WriteParticles()                              7      7    19   B   160 KiB       0   B
+MultiFab::max()                                                  3      3    17   B   160 KiB       0   B
+iMultiFab::max()                                                14     14    23   B    81 KiB       0   B
+Redistribute_partition                                          16     16     7   B    80 KiB       0   B
+MultiFab::contains_nan()                                        24     22   234   B    20 KiB     256   B
+FabArray::ParallelCopy_nowait()                                 19     19    16   B    19 KiB       0   B
+ParticleContainer<NSR, NSI, NAR, NAI>::InitFromAsciiFile()       1      1    14 KiB    17 KiB       0   B
+amrex::unpackBuffer                                              8      0  1039   B    16 KiB      16 KiB
+amrex::packBuffer                                                1      1     1   B    16 KiB       0   B
+TagBoxArray::mapPRD                                              6      6     1   B  8000   B       0   B
+MLCellLinOp::applyBC()                                         603    603   103   B  7072   B       0   B
+OwnerMask()                                                      3      3     0   B  4000   B       0   B
+TagBoxArray::collate()                                           5      5     0   B  2080   B       0   B
+ParticleCopyPlan::build                                         37     37     0   B  1312   B       0   B
+MLCGSolver::bicgstab                                            45     45     2   B  1216   B       0   B
+DenseBins<T>::buildGPU                                          13      3    81   B  1040   B     272   B
+MLCellLinOp::prepareForSolve()                                  21     21     0   B   976   B       0   B
+FabArray::setVal(val, thecmd, scomp, ncomp)                    144    144     0   B   912   B       0   B
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)               36     36    21   B   768   B       0   B
+MLCellLinOp::defineBC()                                         21     21    13   B   672   B       0   B
+QuokkaSimulation::FixupState()                                   1      0    34   B   576   B     576   B
+HydroSystem::PredictStep()                                       4      3    19   B   256   B     128   B
+ParticleBufferMap::define                                        5      2    45   B   128   B     112   B
+MLMG::actualBottomSolve()                                        9      9     0   B    64   B       0   B
+---------------------------------------------------------------------------------------------------------
+
+Async Memory Usage:
+-------------------------------------------------------------------
+Name                                         Nalloc  AvgMem  MaxMem
+-------------------------------------------------------------------
+ParticleCreationImpl::createParticlesImpl()       4  13 KiB  16 MiB
+-------------------------------------------------------------------
+
+Managed Memory Usage:
+---------------------------------------------------------
+Name                             Nalloc  AvgMem    MaxMem
+---------------------------------------------------------
+The_Managed_Arena::Initialize()       1   2   B  8192 KiB
+---------------------------------------------------------
+
+Pinned Memory Usage:
+---------------------------------------------------------------------------------------------------------
+Name                                                        Nalloc  Nfree    AvgMem    MaxMem  CurrentMem
+---------------------------------------------------------------------------------------------------------
+VisMF::Write(FabArray)                                           9      9  3684 KiB   128 MiB       0   B
+The_Pinned_Arena::Initialize()                                   1      1     3   B  8192 KiB       0   B
+Unprofiled                                                      15      0   216 KiB   243 KiB     243 KiB
+FillBoundary_nowait()                                           58     55  9838   B    50 KiB      45 KiB
+ParticleContainer<NSR, NSI, NAR, NAI>::InitFromAsciiFile()      24     24    93   B    43 KiB       0   B
+QuokkaSimulation::computeFOHydroFluxes()                        84     73   344   B    22 KiB    9472   B
+FabArray::ParallelCopy_nowait()                                 19     19    16   B    19 KiB       0   B
+MLCellLinOp::applyBC()                                          69     69   103   B  7056   B       0   B
+FillPatchInterp(MF)                                             13      7   249   B  5248   B    4256   B
+TagBoxArray::collate()                                           8      8     0   B  4032   B       0   B
+QuokkaSimulation::computeHydroFluxes()                          96     96    62   B  2048   B       0   B
+FillPatcher::fillCFB                                             3      0    47   B  1968   B    1968   B
+AMRSimulation::incrementFluxRegisters()                          6      6     0   B  1328   B       0   B
+iMultiFab::max()                                                14     14     0   B  1040   B       0   B
+QuokkaSimulation::advanceHydroAtLevel()                         33     33     5   B  1024   B       0   B
+MLCellLinOp::prepareForSolve()                                  21     21     0   B   976   B       0   B
+FabArray::setVal(val, thecmd, scomp, ncomp)                    144    144     0   B   912   B       0   B
+HyperbolicSystem::ReconstructStatesPPM(MultiFabs)               36     36    21   B   768   B       0   B
+ParticleContainer::RedistributeGPU()                            16     14    71   B   672   B     320   B
+QuokkaSimulation::FixupState()                                   1      0    34   B   576   B     576   B
+amrex::Dot()                                                    99     99     0   B   400   B       0   B
+MultiFab::contains_nan()                                        24     22   221   B   400   B     256   B
+FabArray::norminf()                                             76     75    20   B   400   B     128   B
+FabArray::sum()                                                 40     40     2   B   272   B       0   B
+REG::GravitySolver                                               6      6     3   B   256   B       0   B
+HydroSystem::PredictStep()                                       4      3    19   B   256   B     128   B
+[particle_deposition] SNDeposition()                             6      6     0   B   160   B       0   B
+AMRSimulation::kickParticlesAllLevels()                          5      5     0   B   128   B       0   B
+AMRSimulation::particleMeshInteraction()                         2      2     0   B   128   B       0   B
+MLCellLinOp::setLevelBC()                                       21     21     0   B    96   B       0   B
+ParticleCopyPlan::build                                          6      6     0   B    48   B       0   B
+AMRSimulation::computeTimestepAtLevel()                          6      6     0   B    32   B       0   B
+Redistribute_partition                                           6      6     0   B    16   B       0   B
+iMultiFab::sum()                                                13     13     0   B    16   B       0   B
+WriteBinaryParticleData()                                        2      2     0   B    16   B       0   B
+MultiFab::max()                                                  3      3     0   B    16   B       0   B
+MultiFab::min()                                                  3      3     0   B    16   B       0   B
+ParticleContainer::WriteParticles()                              1      1     0   B    16   B       0   B
+---------------------------------------------------------------------------------------------------------
+
+Comms Memory Usage:
+-------------------------------------------------------
+Name                           Nalloc  AvgMem    MaxMem
+-------------------------------------------------------
+The_Comms_Arena::Initialize()       1   2   B  8192 KiB
+-------------------------------------------------------
+
+
+AMReX Arena usage so far:
+
+Total GPU global memory (MB): 32494
+Free  GPU global memory (MB): 84
+[The         Arena] space allocated (MB): 26235
+[The         Arena] space used      (MB): 26204
+[The         Arena]: 25 allocs, 442 busy blocks, 13 free blocks
+[The Managed Arena] space allocated (MB): 8
+[The Managed Arena] space used      (MB): 0
+[The Managed Arena]: 1 allocs, 0 busy blocks, 1 free blocks
+[The  Pinned Arena] space allocated (MB): 136
+[The  Pinned Arena] space used      (MB): 0
+[The  Pinned Arena]: 2 allocs, 45 busy blocks, 11 free blocks
+[The   Comms Arena] space allocated (MB): 8
+[The   Comms Arena] space used      (MB): 0
+[The   Comms Arena]: 1 allocs, 0 busy blocks, 1 free blocks
+
+
+Out of memory, see message above !!!
+SIGABRT
+See Backtrace.0 file for details
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 6.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

@@ -1,0 +1,92 @@
+Initializing AMReX (26.01-24-gfde4d987226e)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (26.01-24-gfde4d987226e) initialized
+Using default ref_ratio = 2 at all levels
+Successfully read inputs file ... 
+Using derived variables:
+	temperature
+
+Reading resampled cooling tables...
+Initializing resampled cooling.
+resampled_table_file: ./CloudyData_UVB=HM2012_resampled.h5.
+	Density range: 2.3368215933e-34 to 2.3368215933000003e-20 g/cm^3 (30 steps).
+	Specific energy range: 2418246265.9451904 to 2.022491441386058e+17 erg/g (200 steps).
+	Photoelectric heating: enabled.
+boost_velocity: 0, 0, 0
+Creating new distribution map on level: 0
+Gravity BCs: x:periodic y:periodic z:periodic 
+Using MLMG solver with fully periodic boundaries...
+
+MLMG: Initial rhs               = 1.487956158e-24
+MLMG: Initial residual (resid0) = 1.487956158e-24
+MLMG: Final Iter. 3 resid, resid/bnorm = 4.445645915e-30, 2.987753295e-06
+MLMG: Timers: Solve = 0.013654293 Iter = 0.010512031 Bottom = 0.001760455
+MLMG converged with final residual norm: 4.445645915e-30
+
+Writing plotfile RandomBlastAMR-GPU_plt0000000
+
+Coarse STEP 1 at t = 0 (0%) starts ...
+...[level 0] estimated hydro timestep: 6.144206e+10
+...[level 0] 	hydro timestep limited at cell [64, 1, 1] with signal speed = 1.177176e+06
+...[level 0] 	cell density = 2.338093e-25, |v| = 0.000000e+00, cs = 1.177176e+06
+...[level 0] estimated particle timestep: 3.757617e+10
+...[level 0] 	max particle velocity: 3.208067e+06
+...[level 0] 	particle timestep limited at position [1.605326e+19, 1.989674e+19, 9.810427e+18]
+...[level 0] timestep limited by PARTICLES
+...coarse timestep set by level 0
+[Level 0 step 1] ADVANCE with time = 0.0000000000e+00 dt = 3.7576172304e+10
+	cooling substeps (per cell): avg 1, max 1
+	cooling substeps (per cell): avg 1, max 1
+[Level 0 step 1] Advanced 2097152 cells
+Gravity BCs: x:periodic y:periodic z:periodic 
+Using MLMG solver with fully periodic boundaries...
+
+MLMG: Initial rhs               = 1.428988812e-24
+MLMG: Initial residual (resid0) = 1.428988812e-24
+MLMG: Final Iter. 3 resid, resid/bnorm = 4.431034192e-30, 3.100817973e-06
+MLMG: Timers: Solve = 0.011002652 Iter = 0.009989933 Bottom = 0.001525093
+MLMG converged with final residual norm: 4.431034192e-30
+
+
+Coarse STEP 2 at t = 3.75761723e+10 (5.129815445%) starts ...
+...[level 0] estimated hydro timestep: 6.141766e+10
+...[level 0] 	hydro timestep limited at cell [80, 60, 3] with signal speed = 1.177644e+06
+...[level 0] 	cell density = 2.338093e-25, |v| = 1.562555e+03, cs = 1.176081e+06
+...[level 0] estimated particle timestep: 3.757607e+10
+...[level 0] 	max particle velocity: 3.208076e+06
+...[level 0] 	particle timestep limited at position [1.611920e+19, 1.981851e+19, 9.874174e+18]
+...[level 0] timestep limited by PARTICLES
+...coarse timestep set by level 0
+[Level 0 step 2] ADVANCE with time = 3.7576172304e+10 dt = 3.7576066649e+10
+	cooling substeps (per cell): avg 1, max 1
+	cooling substeps (per cell): avg 1, max 1
+[Level 0 step 2] Advanced 2097152 cells
+Gravity BCs: x:periodic y:periodic z:periodic 
+Using MLMG solver with fully periodic boundaries...
+
+MLMG: Initial rhs               = 1.405958696e-24
+MLMG: Initial residual (resid0) = 1.405958696e-24
+MLMG: Final Iter. 3 resid, resid/bnorm = 4.419637771e-30, 3.143504701e-06
+MLMG: Timers: Solve = 0.010950676 Iter = 0.009979944 Bottom = 0.001530849
+MLMG converged with final residual norm: 4.419637771e-30
+
+
+Coarse STEP 3 at t = 7.515223895e+10 (10.25961647%) starts ...
+...[level 0] estimated hydro timestep: 6.138803e+10
+...[level 0] 	hydro timestep limited at cell [60, 76, 41] with signal speed = 1.178212e+06
+...[level 0] 	cell density = 2.338482e-25, |v| = 3.145567e+03, cs = 1.175067e+06
+...[level 0] estimated particle timestep: 3.757599e+10
+...[level 0] 	max particle velocity: 3.208083e+06
+...[level 0] 	particle timestep limited at position [1.618513e+19, 1.974028e+19, 9.937920e+18]
+...[level 0] timestep limited by PARTICLES
+...coarse timestep set by level 0
+Creating new distribution map on level: 1
+[Level 0 step 3] ADVANCE with time = 7.5152238954e+10 dt = 3.7575987413e+10
+	cooling substeps (per cell): avg 1, max 1
+	cooling substeps (per cell): avg 1, max 1
+[Level 0 step 3] Advanced 2097152 cells
+[Level 1 step 1] ADVANCE with time = 7.5152238954e+10 dt = 3.7575987413e+10
+	cooling substeps (per cell): avg 1, max 1

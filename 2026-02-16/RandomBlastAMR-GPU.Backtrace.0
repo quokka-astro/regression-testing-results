@@ -1,0 +1,82 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./RandomBlastAMR-GPU.ex(+0x3b9337) [0x55e0335c1337]
+    ?? ??:0
+
+ 1: ./RandomBlastAMR-GPU.ex(+0x3bce69) [0x55e0335c4e69]
+    ?? ??:0
+
+ 2: ./RandomBlastAMR-GPU.ex(+0x3a6c59) [0x55e0335aec59]
+    ?? ??:0
+
+ 3: ./RandomBlastAMR-GPU.ex(+0x3a7e85) [0x55e0335afe85]
+    ?? ??:0
+
+ 4: ./RandomBlastAMR-GPU.ex(+0x3af65b) [0x55e0335b765b]
+    ?? ??:0
+
+ 5: ./RandomBlastAMR-GPU.ex(+0x3afa10) [0x55e0335b7a10]
+    ?? ??:0
+
+ 6: ./RandomBlastAMR-GPU.ex(+0x3fb4f1) [0x55e0336034f1]
+    ?? ??:0
+
+ 7: ./RandomBlastAMR-GPU.ex(+0x3f9335) [0x55e033601335]
+    ?? ??:0
+
+ 8: ./RandomBlastAMR-GPU.ex(+0x23b1b9) [0x55e0334431b9]
+    ?? ??:0
+
+ 9: ./RandomBlastAMR-GPU.ex(+0x2eaa9f) [0x55e0334f2a9f]
+    ?? ??:0
+
+10: ./RandomBlastAMR-GPU.ex(+0x418d7c) [0x55e033620d7c]
+    ?? ??:0
+
+11: ./RandomBlastAMR-GPU.ex(+0x24443a) [0x55e03344c43a]
+    ?? ??:0
+
+12: ./RandomBlastAMR-GPU.ex(+0x24ab6b) [0x55e033452b6b]
+    ?? ??:0
+
+13: ./RandomBlastAMR-GPU.ex(+0x24da5c) [0x55e033455a5c]
+    ?? ??:0
+
+14: ./RandomBlastAMR-GPU.ex(+0x2081e4) [0x55e0334101e4]
+    ?? ??:0
+
+15: ./RandomBlastAMR-GPU.ex(+0x254db9) [0x55e03345cdb9]
+    ?? ??:0
+
+16: ./RandomBlastAMR-GPU.ex(+0xb1b11) [0x55e0332b9b11]
+    ?? ??:0
+
+17: ./RandomBlastAMR-GPU.ex(+0x88a5c) [0x55e033290a5c]
+    ?? ??:0
+
+18: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fab8079a1ca]
+
+19: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fab8079a28b]
+
+20: ./RandomBlastAMR-GPU.ex(+0x8d305) [0x55e033295305]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+AMRSimulation::evolve()
+AMRSimulation::timeStepWithSubcycling()
+AMRSimulation::timeStepWithSubcycling()
+QuokkaSimulation::advanceSingleTimestepAtLevel()
+REG::HydroSolver
+QuokkaSimulation::advanceHydroAtLevel()
+QuokkaSimulation::computeHydroFluxes()
+
