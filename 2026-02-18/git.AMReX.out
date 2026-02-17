@@ -1,0 +1,105 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Updating d0f0aeabb..d7da50458
+Fast-forward
+ .clang-tidy                             |   6 +-
+ .github/workflows/bittree.yml           |   8 +-
+ .github/workflows/clang.yml             |  12 +-
+ .github/workflows/gcc.yml               |  77 +++---
+ .github/workflows/hypre.yml             |   8 +-
+ .github/workflows/petsc.yml             |   4 +-
+ .github/workflows/smoke.yml             |   4 +-
+ .github/workflows/sundials.yml          |   4 +-
+ Src/Base/AMReX_Algorithm.H              |   8 +-
+ Src/Base/AMReX_BoxArray.H               |   5 +-
+ Src/Base/AMReX_CudaGraph.H              |   4 +-
+ Src/Base/AMReX_FabArrayUtility.H        |  24 +-
+ Src/Base/AMReX_PODVector.H              |   2 +-
+ Src/Base/AMReX_PhysBCFunct.H            |   2 +-
+ Src/Base/AMReX_SIMD.H                   |   4 +-
+ Src/Base/AMReX_Scan.H                   |  30 +--
+ Src/Base/AMReX_Version.cpp              |   2 +-
+ Src/EB/AMReX_EB2_Level.H                |   2 +-
+ Src/Particle/AMReX_Particle.H           |   4 +-
+ Src/Particle/AMReX_ParticleIO.H         |   2 +-
+ Tests/CMakeLists.txt                    |   2 +-
+ Tests/LinearSolvers/ABecLap_SP/MyTest.H |   4 +-
+ Tests/SIMD/CMakeLists.txt               |   9 +
+ Tests/SIMD/GNUmakefile                  |  20 ++
+ Tests/SIMD/Make.package                 |   1 +
+ Tests/SIMD/main.cpp                     | 439 ++++++++++++++++++++++++++++++++
+ Tools/CMake/AMReXClangTidy.cmake        |   3 +-
+ Tools/CMake/FindAMReXFFTW.cmake         |  13 +-
+ 28 files changed, 601 insertions(+), 102 deletions(-)
+ create mode 100644 Tests/SIMD/CMakeLists.txt
+ create mode 100644 Tests/SIMD/GNUmakefile
+ create mode 100644 Tests/SIMD/Make.package
+ create mode 100644 Tests/SIMD/main.cpp
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Updating d7da50458..622966607
+Fast-forward
+ Src/EB/AMReX_EB2_Level.H                                | 6 +++++-
+ Src/Extern/Conduit/AMReX_Conduit_Blueprint_ParticlesI.H | 2 +-
+ Src/FFT/AMReX_FFT.cpp                                   | 2 +-
+ Tools/CMake/AMReX_Config_ND.H.in                        | 1 +
+ Tools/CMake/FindAMReXFFTW.cmake                         | 6 +++---
+ Tools/GNUMake/Make.defs                                 | 1 +
+ 6 files changed, 12 insertions(+), 6 deletions(-)
+Updating 622966607..537a556e3
+Fast-forward
+ .../Conduit/AMReX_Conduit_Blueprint_ParticlesI.H   |   5 +-
+ .../SENSEI/AMReX_AmrMeshParticleDataAdaptor.H      |   8 +-
+ .../SENSEI/AMReX_AmrMeshParticleDataAdaptorI.H     |  62 ++++++------
+ .../SENSEI/AMReX_AmrMeshParticleInSituBridge.H     |  12 +--
+ Src/Extern/SENSEI/AMReX_AmrParticleDataAdaptor.H   |   8 +-
+ Src/Extern/SENSEI/AMReX_AmrParticleDataAdaptorI.H  |  62 ++++++------
+ Src/Extern/SENSEI/AMReX_AmrParticleInSituBridge.H  |  12 +--
+ Src/Extern/SENSEI/AMReX_ParticleDataAdaptor.H      |   6 +-
+ Src/Extern/SENSEI/AMReX_ParticleDataAdaptorI.H     | 110 ++++++++++-----------
+ Src/Extern/SENSEI/AMReX_ParticleInSituBridge.H     |  12 +--
+ 10 files changed, 149 insertions(+), 148 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
