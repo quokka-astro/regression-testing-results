@@ -14,7 +14,7 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
    ShockCloud-GPU
    Turbulence-GPU
 
-[1mtesting directory is: 2026-02-20/[0m
+[1mtesting directory is: 2026-02-21/[0m
 
 [1mrepo: AMReX[0m
    git fetch in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/
@@ -53,13 +53,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding LinearAlfvenWave-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  AlfvenWaveLinear
-   Compilation time: 71.370 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/LinearAlfvenWave-GPU/
+   Compilation time: 164.158 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/LinearAlfvenWave-GPU/
    copying files to run directory...
    path to input file: inputs/alfven_wave_linear_regression.in
    running the test...
    mpirun -n 1 ./LinearAlfvenWave-GPU.ex alfven_wave_linear_regression.in  plotfile_prefix=LinearAlfvenWave-GPU_plt  checkpoint_prefix=LinearAlfvenWave-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 14.439 s
+   Execution time: 14.266 s
    doing the comparison...
       comparison file: LinearAlfvenWave-GPU_plt0000882
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt0000882
@@ -78,13 +78,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding MHDBlast-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  MHDBlast
-   Compilation time: 63.463 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/MHDBlast-GPU/
+   Compilation time: 137.455 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/MHDBlast-GPU/
    copying files to run directory...
    path to input file: inputs/MHDBlast.in
    running the test...
    mpirun -n 1 ./MHDBlast-GPU.ex MHDBlast.in  plotfile_prefix=MHDBlast-GPU_plt  checkpoint_prefix=MHDBlast-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 139.684 s
+   Execution time: 139.140 s
    doing the comparison...
       comparison file: MHDBlast-GPU_plt0000233
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt0000233
@@ -103,13 +103,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding RadhydroShell-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RadhydroShell
-   Compilation time: 54.996 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/RadhydroShell-GPU/
+   Compilation time: 132.979 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/RadhydroShell-GPU/
    copying files to run directory...
    path to input file: inputs/radhydro_shell_regression.in
    running the test...
    mpirun -n 1 ./RadhydroShell-GPU.ex radhydro_shell_regression.in  plotfile_prefix=RadhydroShell-GPU_plt  checkpoint_prefix=RadhydroShell-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 787.806 s
+   Execution time: 787.412 s
    doing the comparison...
       comparison file: RadhydroShell-GPU_plt0003440
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RadhydroShell-GPU_plt0003440
@@ -128,21 +128,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding RandomBlastAMR-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RandomBlast
-   Compilation time: 54.292 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/RandomBlastAMR-GPU/
+   Compilation time: 151.227 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/RandomBlastAMR-GPU/
    copying files to run directory...
    path to input file: inputs/RandomBlastAMR_regression.in
    running the test...
    mpirun -n 1 ./RandomBlastAMR-GPU.ex RandomBlastAMR_regression.in  plotfile_prefix=RandomBlastAMR-GPU_plt  checkpoint_prefix=RandomBlastAMR-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 305.925 s
+   Execution time: 304.831 s
    doing the comparison...
-      comparison file: RandomBlastAMR-GPU_plt0000676
-      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000676
+      comparison file: RandomBlastAMR-GPU_plt0000675
+[33m      WARNING: no corresponding benchmark found[0m
 [33m   WARNING: unable to open the job_info file[0m
    doing the visualization...
    archiving the output...
    creating problem test report ...
-   [32mRandomBlastAMR-GPU PASSED[0m
+   [31mRandomBlastAMR-GPU FAILED[0m
 
 [1mworking on test: Sedov-GPU[0m
    building...
@@ -153,13 +153,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding Sedov-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  HydroBlast3D
-   Compilation time: 48.778 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/Sedov-GPU/
+   Compilation time: 129.962 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/Sedov-GPU/
    copying files to run directory...
    path to input file: inputs/blast_unigrid_128_regression.in
    running the test...
    mpirun -n 1 ./Sedov-GPU.ex blast_unigrid_128_regression.in  plotfile_prefix=Sedov-GPU_plt  checkpoint_prefix=Sedov-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 431.045 s
+   Execution time: 431.075 s
    doing the comparison...
       comparison file: Sedov-GPU_plt0011028
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Sedov-GPU_plt0011028
@@ -180,13 +180,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding SedovAMR-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  HydroBlast3D
-   Compilation time: 50.639 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/SedovAMR-GPU/
+   Compilation time: 45.018 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/SedovAMR-GPU/
    copying files to run directory...
    path to input file: inputs/blast_unigrid_128_AMR_regression.in
    running the test...
    mpirun -n 1 ./SedovAMR-GPU.ex blast_unigrid_128_AMR_regression.in  plotfile_prefix=SedovAMR-GPU_plt  checkpoint_prefix=SedovAMR-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 14.704 s
+   Execution time: 14.576 s
    doing the comparison...
       comparison file: SedovAMR-GPU_plt0000099
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/SedovAMR-GPU_plt0000099
@@ -207,13 +207,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding ShockCloud-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  ShockCloud
-   Compilation time: 50.458 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/ShockCloud-GPU/
+   Compilation time: 144.254 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/ShockCloud-GPU/
    copying files to run directory...
    path to input file: inputs/ShockCloud_64_regression.in
    running the test...
    mpirun -n 1 ./ShockCloud-GPU.ex ShockCloud_64_regression.in  plotfile_prefix=ShockCloud-GPU_plt  checkpoint_prefix=ShockCloud-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 243.795 s
+   Execution time: 244.757 s
    doing the comparison...
       comparison file: ShockCloud-GPU_plt0007716
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007716
@@ -234,13 +234,13 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding Turbulence-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  Turbulence
-   Compilation time: 47.584 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-20/Turbulence-GPU/
+   Compilation time: 128.290 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-02-21/Turbulence-GPU/
    copying files to run directory...
    path to input file: inputs/Turbulence_regression.in
    running the test...
    mpirun -n 1 ./Turbulence-GPU.ex Turbulence_regression.in  plotfile_prefix=Turbulence-GPU_plt  checkpoint_prefix=Turbulence-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 90.399 s
+   Execution time: 90.473 s
    doing the comparison...
       comparison file: Turbulence-GPU_plt0011224
       benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Turbulence-GPU_plt0011224
