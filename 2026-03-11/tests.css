@@ -1,0 +1,153 @@
+
+body {font-family: "Arial", san-serif;}
+
+h1 {font-family: "Tahoma","Arial", sans-serif;
+    color: #333333;}
+
+h3 {display: inline;}
+
+h3.passed {text-decoration: none; display: inline;
+           color: black; background-color: lime; padding: 2px;}
+
+a.passed:link {color: black; text-decoration: none;}
+a.passed:visited {color: black; text-decoration: none;}
+a.passed:hover {color: #ee00ee; text-decoration: underline;}
+
+a.passed-slowly:link {color: black; text-decoration: none;}
+a.passed-slowly:visited {color: black; text-decoration: none;}
+a.passed-slowly:hover {color: #ee00ee; text-decoration: underline;}
+
+h3.failed {text-decoration: none; display: inline;
+           color: yellow; background-color: red; padding: 2px;}
+
+a.failed:link {color: yellow; text-decoration: none;}
+a.failed:visited {color: yellow; text-decoration: none;}
+a.failed:hover {color: #00ffff; text-decoration: underline;}
+
+a.compfailed:link {color: yellow; text-decoration: none;}
+a.compfailed:visited {color: yellow; text-decoration: none;}
+a.compfailed:hover {color: #00ffff; text-decoration: underline;}
+
+a.crashed:link {color: yellow; text-decoration: none;}
+a.crashed:visited {color: yellow; text-decoration: none;}
+a.crashed:hover {color: #00ffff; text-decoration: underline;}
+
+h3.benchmade {text-decoration: none; display: inline;
+              color: black; background-color: orange; padding: 2px;}
+
+a.benchmade:link {color: black; text-decoration: none;}
+a.benchmade:visited {color: black; text-decoration: none;}
+a.benchmade:hover {color: #00ffff; text-decoration: underline;}
+
+span.nobreak {white-space: nowrap;}
+span.mild-success {color: green;}
+span.mild-failure {color: red;}
+
+a.main:link {color: yellow; text-decoration: none;}
+a.main:visited {color: yellow; text-decoration: none;}
+a.main:hover {color: #00ffff; text-decoration: underline;}
+
+td {border-width: 0px;
+    padding: 5px;
+    background-color: white;
+    vertical-align: middle;}
+
+td.passed {background-color: lime; opacity: 0.8;}
+td.passed-slowly {background-color: yellow; opacity: 0.8;}
+td.failed {background-color: red; color: yellow; opacity: 0.8;}
+td.compfailed {background-color: purple; color: yellow; opacity: 0.8;}
+td.crashed {background-color: black; color: yellow; opacity: 0.8;}
+td.benchmade {background-color: orange; opacity: 0.8;}
+td.date {background-color: #666666; color: white; opacity: 0.8; font-weight: bold;}
+
+.maintable tr:hover {background-color: blue;}
+
+
+table {border-collapse: separate;
+       border-spacing: 2px;
+       margin-left: auto;
+       margin-right: auto;
+       border-width: 1px;
+       border-color: gray;
+       border-style: solid;
+       box-shadow: 10px 10px 5px #888888;}
+
+table.head {border-collapse: separate;
+       border-spacing: 0px;
+       margin-left: auto;
+       margin-right: auto;
+       border-width: 0px;
+       border-style: solid;
+       box-shadow: none;}
+
+/* http://blog.petermares.com/2010/10/27/vertical-text-in-html-table-headers-for-webkitmozilla-browsers-without-using-images/ */
+
+div.verticaltext {text-align: center;
+                  vertical-align: middle;
+                  width: 20px;
+                  margin: 0px;
+                  padding: 0px;
+                  padding-left: 3px;
+                  padding-right: 3px;
+                  padding-top: 10px;
+                  white-space: nowrap;
+                  -webkit-transform: rotate(-90deg);
+                  -moz-transform: rotate(-90deg);}
+
+#summary th {background-color: grey;
+    color: yellow;
+    text-align: center;
+    height: 2em;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;}
+
+
+#summary td {background: transparent;}
+
+#summary tr:nth-child(even) {background: #dddddd;}
+#summary tr:nth-child(odd) {background: #eeeeee;}
+
+#summary tr.special {background: #ccccff;}
+#summary td.highlight {color: red;}
+
+#summary td.passed {background-color: lime; }
+#summary td.passed-slowly {background-color: yellow; }
+#summary td.failed {background-color: red; color: yellow;}
+#summary td.benchmade {background-color: orange;}
+#summary td.compfailed {background-color: purple; color: yellow;}
+#summary td.crashed {background-color: black; color: yellow;}
+
+div.small {font-size: 75%;}
+
+th {background-color: grey;
+    color: yellow;
+    text-align: center;
+    vertical-align: bottom;
+    height: 16em;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;}
+
+li {padding-top: 0.5em;}
+
+ul li {color: blue;
+       font-weight: bold;}
+ul li ul li {color: black;
+             font-weight: normal;}
+
+ul li h3 {border: 1px solid black;}
+
+#compare td {font-family: "Lucida Console", Monaco, monospace;
+             font-size: 80%;}
+
+#box {  width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+  background: #ffffff;
+}
+
+.alignright {
+   text-align: right;
+}
+

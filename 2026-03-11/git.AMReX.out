@@ -1,0 +1,482 @@
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Updating d0f0aeabb..d7da50458
+Fast-forward
+ .clang-tidy                             |   6 +-
+ .github/workflows/bittree.yml           |   8 +-
+ .github/workflows/clang.yml             |  12 +-
+ .github/workflows/gcc.yml               |  77 +++---
+ .github/workflows/hypre.yml             |   8 +-
+ .github/workflows/petsc.yml             |   4 +-
+ .github/workflows/smoke.yml             |   4 +-
+ .github/workflows/sundials.yml          |   4 +-
+ Src/Base/AMReX_Algorithm.H              |   8 +-
+ Src/Base/AMReX_BoxArray.H               |   5 +-
+ Src/Base/AMReX_CudaGraph.H              |   4 +-
+ Src/Base/AMReX_FabArrayUtility.H        |  24 +-
+ Src/Base/AMReX_PODVector.H              |   2 +-
+ Src/Base/AMReX_PhysBCFunct.H            |   2 +-
+ Src/Base/AMReX_SIMD.H                   |   4 +-
+ Src/Base/AMReX_Scan.H                   |  30 +--
+ Src/Base/AMReX_Version.cpp              |   2 +-
+ Src/EB/AMReX_EB2_Level.H                |   2 +-
+ Src/Particle/AMReX_Particle.H           |   4 +-
+ Src/Particle/AMReX_ParticleIO.H         |   2 +-
+ Tests/CMakeLists.txt                    |   2 +-
+ Tests/LinearSolvers/ABecLap_SP/MyTest.H |   4 +-
+ Tests/SIMD/CMakeLists.txt               |   9 +
+ Tests/SIMD/GNUmakefile                  |  20 ++
+ Tests/SIMD/Make.package                 |   1 +
+ Tests/SIMD/main.cpp                     | 439 ++++++++++++++++++++++++++++++++
+ Tools/CMake/AMReXClangTidy.cmake        |   3 +-
+ Tools/CMake/FindAMReXFFTW.cmake         |  13 +-
+ 28 files changed, 601 insertions(+), 102 deletions(-)
+ create mode 100644 Tests/SIMD/CMakeLists.txt
+ create mode 100644 Tests/SIMD/GNUmakefile
+ create mode 100644 Tests/SIMD/Make.package
+ create mode 100644 Tests/SIMD/main.cpp
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Already up to date.
+Updating d7da50458..622966607
+Fast-forward
+ Src/EB/AMReX_EB2_Level.H                                | 6 +++++-
+ Src/Extern/Conduit/AMReX_Conduit_Blueprint_ParticlesI.H | 2 +-
+ Src/FFT/AMReX_FFT.cpp                                   | 2 +-
+ Tools/CMake/AMReX_Config_ND.H.in                        | 1 +
+ Tools/CMake/FindAMReXFFTW.cmake                         | 6 +++---
+ Tools/GNUMake/Make.defs                                 | 1 +
+ 6 files changed, 12 insertions(+), 6 deletions(-)
+Updating 622966607..537a556e3
+Fast-forward
+ .../Conduit/AMReX_Conduit_Blueprint_ParticlesI.H   |   5 +-
+ .../SENSEI/AMReX_AmrMeshParticleDataAdaptor.H      |   8 +-
+ .../SENSEI/AMReX_AmrMeshParticleDataAdaptorI.H     |  62 ++++++------
+ .../SENSEI/AMReX_AmrMeshParticleInSituBridge.H     |  12 +--
+ Src/Extern/SENSEI/AMReX_AmrParticleDataAdaptor.H   |   8 +-
+ Src/Extern/SENSEI/AMReX_AmrParticleDataAdaptorI.H  |  62 ++++++------
+ Src/Extern/SENSEI/AMReX_AmrParticleInSituBridge.H  |  12 +--
+ Src/Extern/SENSEI/AMReX_ParticleDataAdaptor.H      |   6 +-
+ Src/Extern/SENSEI/AMReX_ParticleDataAdaptorI.H     | 110 ++++++++++-----------
+ Src/Extern/SENSEI/AMReX_ParticleInSituBridge.H     |  12 +--
+ 10 files changed, 149 insertions(+), 148 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 537a556e3..2b08dcf50
+Fast-forward
+ Src/Base/AMReX_GpuDevice.cpp            |   4 +
+ Src/Base/AMReX_GpuLaunch.H              |  75 +++++++++
+ Src/Base/AMReX_GpuLaunchFunctsG.H       | 261 +++++++++++++++++++++++++++-----
+ Src/Base/AMReX_GpuTypes.H               |   4 +-
+ Src/Particle/AMReX_ParticleContainerI.H |   2 +-
+ Tests/GPU/SyclKernelSize/CMakeLists.txt |  13 ++
+ Tests/GPU/SyclKernelSize/GNUmakefile    |  23 +++
+ Tests/GPU/SyclKernelSize/Make.package   |   1 +
+ Tests/GPU/SyclKernelSize/main.cpp       | 125 +++++++++++++++
+ 9 files changed, 470 insertions(+), 38 deletions(-)
+ create mode 100644 Tests/GPU/SyclKernelSize/CMakeLists.txt
+ create mode 100644 Tests/GPU/SyclKernelSize/GNUmakefile
+ create mode 100644 Tests/GPU/SyclKernelSize/Make.package
+ create mode 100644 Tests/GPU/SyclKernelSize/main.cpp
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 2b08dcf50..2e4b667c1
+Fast-forward
+ Src/Base/AMReX_FabArray.H | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 2e4b667c1..98bce0678
+Fast-forward
+ .clang-tidy                                        | 30 +++++++++
+ .../workflows/dependencies/dependencies_ccache.sh  |  2 +-
+ .github/workflows/gcc.yml                          |  9 ++-
+ Src/Amr/AMReX_Amr.cpp                              |  2 +-
+ Src/Amr/AMReX_AmrLevel.cpp                         |  2 +
+ Src/Amr/AMReX_StateDescriptor.cpp                  |  2 +-
+ Src/AmrCore/AMReX_Cluster.cpp                      | 10 +--
+ Src/AmrCore/AMReX_FluxRegister.cpp                 | 20 +++---
+ Src/Base/AMReX.H                                   |  2 +
+ Src/Base/AMReX_Algorithm.H                         |  6 +-
+ Src/Base/AMReX_Arena.cpp                           |  4 +-
+ Src/Base/AMReX_Array4.H                            |  8 +--
+ Src/Base/AMReX_BackgroundThread.cpp                |  4 +-
+ Src/Base/AMReX_CArena.cpp                          | 13 ++--
+ Src/Base/AMReX_DistributionMapping.H               |  2 +-
+ Src/Base/AMReX_DistributionMapping.cpp             |  2 +-
+ Src/Base/AMReX_FArrayBox.H                         |  2 +-
+ Src/Base/AMReX_FabArray.H                          |  6 +-
+ Src/Base/AMReX_FabArrayBase.cpp                    |  5 +-
+ Src/Base/AMReX_FabConv.cpp                         |  8 +--
+ Src/Base/AMReX_FileSystem.cpp                      |  2 +-
+ Src/Base/AMReX_Geometry.cpp                        |  4 +-
+ Src/Base/AMReX_GpuControl.H                        | 22 +++---
+ Src/Base/AMReX_GpuLaunch.H                         |  4 +-
+ Src/Base/AMReX_MFIter.H                            |  2 +-
+ Src/Base/AMReX_Math.H                              |  2 +-
+ Src/Base/AMReX_MultiFabUtil.cpp                    |  2 +
+ Src/Base/AMReX_Order.H                             |  3 +-
+ Src/Base/AMReX_ParallelDescriptor.cpp              |  2 +-
+ Src/Base/AMReX_ParallelReduce.H                    | 14 ++--
+ Src/Base/AMReX_ParmParse.H                         |  2 +-
+ Src/Base/AMReX_ParmParse.cpp                       | 58 ++++++++--------
+ Src/Base/AMReX_RealBox.H                           |  4 ++
+ Src/Base/AMReX_RealVect.H                          | 14 ++--
+ Src/Base/AMReX_Reduce.H                            |  3 +-
+ Src/Base/AMReX_TableData.H                         |  8 +--
+ Src/Base/AMReX_Tuple.H                             |  3 +-
+ Src/Base/AMReX_TypeTraits.H                        |  2 +-
+ Src/Base/AMReX_Utility.H                           |  2 +-
+ Src/Base/AMReX_VisMFBuffer.H                       |  2 +-
+ Src/Base/Parser/AMReX_Parser_Exe.H                 | 18 ++---
+ Src/Base/Parser/AMReX_Parser_Exe.cpp               | 78 +++++++++++-----------
+ Src/Base/Parser/AMReX_Parser_Y.H                   |  8 ++-
+ Src/EB/AMReX_EB2_IF_Box.H                          |  4 +-
+ Src/EB/AMReX_EB2_IF_Complement.H                   |  4 +-
+ Src/EB/AMReX_EB2_IF_Cylinder.H                     |  4 +-
+ Src/EB/AMReX_EB2_IF_Difference.H                   |  4 +-
+ Src/EB/AMReX_EB2_IF_Ellipsoid.H                    |  4 +-
+ Src/EB/AMReX_EB2_IF_Extrusion.H                    |  4 +-
+ Src/EB/AMReX_EB2_IF_Intersection.H                 | 16 ++---
+ Src/EB/AMReX_EB2_IF_Lathe.H                        |  4 +-
+ Src/EB/AMReX_EB2_IF_Parser.H                       |  4 +-
+ Src/EB/AMReX_EB2_IF_Plane.H                        |  4 +-
+ Src/EB/AMReX_EB2_IF_Polynomial.H                   |  8 +--
+ Src/EB/AMReX_EB2_IF_Rotation.H                     |  8 +--
+ Src/EB/AMReX_EB2_IF_Scale.H                        |  4 +-
+ Src/EB/AMReX_EB2_IF_Sphere.H                       |  4 +-
+ Src/EB/AMReX_EB2_IF_Torus.H                        |  4 +-
+ Src/EB/AMReX_EB2_IF_Translation.H                  |  4 +-
+ Src/EB/AMReX_EB2_IF_Union.H                        | 16 ++---
+ Src/EB/AMReX_EBMultiFabUtil_2D_C.H                 |  1 +
+ Src/EB/AMReX_EBMultiFabUtil_3D_C.H                 |  1 +
+ Src/EB/AMReX_EB_Redistribution.cpp                 |  2 +
+ Src/EB/AMReX_EB_STL_utils.H                        |  4 +-
+ Src/EB/AMReX_EB_STL_utils.cpp                      |  4 +-
+ Src/EB/AMReX_EB_Slopes_2D_K.H                      | 16 ++---
+ Src/EB/AMReX_EB_Slopes_3D_K.H                      | 24 +++----
+ Src/EB/AMReX_EB_chkpt_file.cpp                     |  8 +--
+ Src/EB/AMReX_EB_utils.cpp                          |  4 +-
+ Src/Extern/Bittree/AMReX_Bittree.cpp               |  2 +
+ Src/Extern/HYPRE/AMReX_Hypre.H                     |  8 ++-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp          |  4 +-
+ Src/LinearSolvers/MLMG/AMReX_MLNodeLap_3D_K.H      | 16 ++---
+ Src/Particle/AMReX_Particle.H                      |  8 +--
+ Src/Particle/AMReX_ParticleContainer.H             |  2 +-
+ Src/Particle/AMReX_ParticleContainerI.H            |  4 +-
+ Src/Particle/AMReX_ParticleInterpolators.H         |  2 +-
+ Tests/EB/CNS/Source/CNS_advance.cpp                |  8 +--
+ Tests/EB/MarchingCubes/main.cpp                    |  1 -
+ Tests/Enum/main.cpp                                |  4 ++
+ Tests/LinearSolvers/CellEB/MyEB.H                  |  4 +-
+ Tests/LinearSolvers/CellEB2/MyEB.H                 |  4 +-
+ Tests/LinearSolvers/EBConvergenceTest/MyEB.H       |  4 +-
+ Tests/LinearSolvers/EBflux_grad/MyEB.H             |  4 +-
+ Tests/LinearSolvers/LeastSquares/MyEB.H            |  4 +-
+ Tests/Parser2/fn.cpp                               |  4 ++
+ Tests/SIMD/main.cpp                                |  2 +-
+ Tools/C_scripts/mmclt.py                           |  4 +-
+ Tools/Plotfile/AMReX_PPMUtil.cpp                   |  4 ++
+ Tools/Plotfile/fsnapshot.cpp                       |  2 +-
+ 90 files changed, 358 insertions(+), 299 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 98bce0678..27198db2e
+Fast-forward
+ Docs/sphinx_documentation/source/Basics.rst |  47 ++++++++-
+ Src/Base/AMReX_ParmParse.H                  |   2 +
+ Src/FFT/AMReX_FFT.H                         |  23 ++++-
+ Src/FFT/AMReX_FFT_Helper.H                  | 147 +++++++++++++++++++++++++++-
+ Src/FFT/AMReX_FFT_LocalR2C.H                |  42 ++++++--
+ Src/FFT/AMReX_FFT_OpenBCSolver.H            |  36 +++++++
+ Src/FFT/AMReX_FFT_Poisson.H                 | 100 +++++++++++++++++--
+ Src/FFT/AMReX_FFT_R2C.H                     |  50 ++++++++--
+ Src/FFT/AMReX_FFT_R2X.H                     |  88 +++++++++++++++++
+ 9 files changed, 501 insertions(+), 34 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 27198db2e..f057dd71f
+Fast-forward
+ Src/AmrCore/AMReX_AmrMesh.H                    |  3 ++-
+ Src/Base/AMReX_BaseFab.H                       |  2 +-
+ Src/Base/AMReX_GpuControl.H                    | 12 ++++++---
+ Src/Base/AMReX_GpuDevice.H                     | 37 ++++++++++++++++++++++++++
+ Src/Base/AMReX_GpuDevice.cpp                   | 16 +++++++++--
+ Src/Base/AMReX_NonLocalBCImpl.H                |  2 +-
+ Src/EB/AMReX_EBToPVD.cpp                       |  2 +-
+ Src/LinearSolvers/MLMG/AMReX_MLABecLap_1D_K.H  |  4 +--
+ Src/LinearSolvers/MLMG/AMReX_MLABecLaplacian.H |  2 +-
+ Src/LinearSolvers/MLMG/AMReX_MLEBABecLap.cpp   |  2 +-
+ Src/Particle/AMReX_ParticleCommunication.H     |  9 +++++--
+ Src/Particle/AMReX_ParticleContainerI.H        |  6 ++---
+ Src/Particle/AMReX_ParticleIO.H                |  2 +-
+ Src/Particle/AMReX_WriteBinaryParticleData.H   |  4 +--
+ 14 files changed, 81 insertions(+), 22 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating f057dd71f..7f70313e7
+Fast-forward
+ Src/Base/AMReX_Box.cpp                        |  3 +-
+ Src/Base/AMReX_MultiFabUtil.H                 | 86 +++++++++++++++++++++++++++
+ Src/Base/AMReX_Print.H                        | 49 +++++++--------
+ Src/Extern/HYPRE/AMReX_Hypre.H                | 72 +++++++++++++++++++++-
+ Src/Extern/HYPRE/AMReX_HypreABecLap.H         | 30 ++++++++++
+ Src/Extern/HYPRE/AMReX_HypreABecLap2.H        | 30 ++++++++++
+ Src/Extern/HYPRE/AMReX_HypreABecLap2.cpp      |  4 +-
+ Src/Extern/HYPRE/AMReX_HypreABecLap3.H        | 35 ++++++++++-
+ Src/Extern/HYPRE/AMReX_HypreIJIface.H         | 29 +++++++++
+ Src/Extern/HYPRE/AMReX_HypreIJIface.cpp       |  2 +-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.H       | 55 +++++++++++++++++
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp     |  4 +-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_1D_K.H  |  2 +-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_2D_K.H  |  2 +-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_3D_K.H  |  4 +-
+ Src/Extern/HYPRE/AMReX_HypreNodeLap.H         | 55 ++++++++++++++++-
+ Src/Extern/HYPRE/AMReX_HypreSolver.H          | 52 +++++++++++-----
+ Src/Particle/AMReX_NeighborParticlesCPUImpl.H |  5 +-
+ Src/Particle/AMReX_ParticleContainer.H        |  7 ++-
+ Src/Particle/AMReX_ParticleIO.H               |  2 +-
+ Src/Particle/AMReX_ParticleLocator.H          |  2 +-
+ Tests/CMakeLists.txt                          |  2 +-
+ Tests/ReduceToPlanePatchy/CMakeLists.txt      |  9 +++
+ Tests/ReduceToPlanePatchy/GNUmakefile         | 24 ++++++++
+ Tests/ReduceToPlanePatchy/Make.package        |  1 +
+ Tests/ReduceToPlanePatchy/main.cpp            | 80 +++++++++++++++++++++++++
+ 26 files changed, 584 insertions(+), 62 deletions(-)
+ create mode 100644 Tests/ReduceToPlanePatchy/CMakeLists.txt
+ create mode 100644 Tests/ReduceToPlanePatchy/GNUmakefile
+ create mode 100644 Tests/ReduceToPlanePatchy/Make.package
+ create mode 100644 Tests/ReduceToPlanePatchy/main.cpp
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 7f70313e7..55c25f771
+Fast-forward
+ Src/Extern/SUNDIALS/AMReX_SUNMemory.cpp        |  2 +-
+ Src/Extern/SUNDIALS/AMReX_SundialsIntegrator.H | 20 ++++++++++----------
+ Src/FFT/AMReX_FFT_Poisson.H                    |  7 +++++++
+ Src/FFT/AMReX_FFT_R2C.H                        |  3 +++
+ Src/FFT/AMReX_FFT_R2X.H                        |  6 ++++++
+ Src/LinearSolvers/MLMG/AMReX_MLCurlCurl_K.H    | 12 ++++--------
+ 6 files changed, 31 insertions(+), 19 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 55c25f771..eb10d7082
+Fast-forward
+ Tests/ReduceToPlanePatchy/main.cpp | 44 +++++++++++++++++++++++++-------------
+ 1 file changed, 29 insertions(+), 15 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating eb10d7082..b1255c9b0
+Fast-forward
+ CHANGES.md                                         | 106 ++++++++
+ Src/Amr/AMReX_AmrLevel.cpp                         |   2 +
+ Src/Amr/AMReX_StateData.cpp                        |   3 +-
+ Src/AmrCore/AMReX_FillPatcher.H                    |   2 +
+ Src/AmrCore/AMReX_FluxRegister.cpp                 |  34 ++-
+ Src/AmrCore/AMReX_MFInterpolater.cpp               |  19 +-
+ Src/Base/AMReX_Geometry.cpp                        |  12 +-
+ Src/Base/AMReX_MultiFabUtil.H                      |  44 +--
+ Src/Base/AMReX_MultiFabUtil.cpp                    |  18 +-
+ Src/Base/AMReX_Partition.H                         |   4 +-
+ Src/Base/AMReX_RungeKutta.H                        |  26 +-
+ Src/Boundary/AMReX_BndryData.H                     |  65 +++--
+ Src/Boundary/AMReX_BndryRegister.H                 |  73 ++++-
+ Src/Boundary/AMReX_BoundCond.H                     |  10 +-
+ Src/Boundary/AMReX_BoundaryFwd.H                   |   5 +
+ Src/Boundary/AMReX_EdgeFluxRegister.H              |  42 +++
+ Src/Boundary/AMReX_EdgeFluxRegister.cpp            |   7 +-
+ Src/Boundary/AMReX_FabSet.H                        | 149 +++++++++-
+ Src/Boundary/AMReX_InterpBndryData.H               |   5 +
+ Src/Boundary/AMReX_LO_BCTYPES.H                    |  12 +
+ Src/Boundary/AMReX_Mask.H                          | 151 ++++++-----
+ Src/Boundary/AMReX_MultiMask.H                     |  48 ++++
+ Src/Boundary/AMReX_YAFluxRegister.H                |  86 +++++-
+ Src/Extern/HYPRE/AMReX_HypreABecLap.cpp            |   2 +
+ Src/Extern/HYPRE/AMReX_HypreABecLap2.cpp           |   2 +
+ Src/Extern/HYPRE/AMReX_HypreABecLap3.H             |   2 +-
+ Src/Extern/HYPRE/AMReX_HypreABecLap3.cpp           |  16 +-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp          |  13 +-
+ Src/Extern/HYPRE/AMReX_HypreNodeLap.cpp            |   3 +
+ Src/Extern/HYPRE/CMakeLists.txt                    |   2 +-
+ Src/Extern/PETSc/AMReX_PETSc.H                     |  58 ++++
+ Src/Extern/PETSc/AMReX_PETSc.cpp                   |  20 +-
+ Src/FFT/AMReX_FFT.cpp                              |   3 +
+ Src/FFT/AMReX_FFT_R2C.H                            |  10 +-
+ Src/LinearSolvers/MLMG/AMReX_MLCellLinOp.H         |   4 +-
+ Src/LinearSolvers/MLMG/AMReX_MLCurlCurl.cpp        |  23 +-
+ .../MLMG/AMReX_MLNodeLaplacian_sten.cpp            |   8 +-
+ Src/Particle/AMReX_ParticleIO.H                    |  10 +-
+ .../CheckpointRestartDualGrid/CMakeLists.txt       |  12 +
+ .../CheckpointRestartDualGrid/GNUmakefile          |  30 +++
+ .../CheckpointRestartDualGrid/Make.package         |   1 +
+ Tests/Particles/CheckpointRestartDualGrid/main.cpp | 300 +++++++++++++++++++++
+ 42 files changed, 1229 insertions(+), 213 deletions(-)
+ create mode 100644 Tests/Particles/CheckpointRestartDualGrid/CMakeLists.txt
+ create mode 100644 Tests/Particles/CheckpointRestartDualGrid/GNUmakefile
+ create mode 100644 Tests/Particles/CheckpointRestartDualGrid/Make.package
+ create mode 100644 Tests/Particles/CheckpointRestartDualGrid/main.cpp
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating b1255c9b0..d44123764
+Fast-forward
+ Docs/sphinx_documentation/source/LinearSolvers.rst |  26 +-
+ .../source/LinearSolvers_Chapter.rst               |   2 +-
+ .../source/RuntimeParameters.rst                   |   4 +-
+ Src/Amr/AMReX_AmrLevel.cpp                         |   4 +-
+ Src/Amr/AMReX_StateDescriptor.H                    |  40 ---
+ Src/Amr/AMReX_StateDescriptor.cpp                  | 122 +--------
+ Src/AmrCore/AMReX_AmrMesh.cpp                      |   9 +-
+ Src/AmrCore/AMReX_FillPatchUtil_I.H                |  10 +-
+ Src/AmrCore/AMReX_FillPatcher.H                    |   8 +-
+ Src/AmrCore/AMReX_TagBox.cpp                       |   7 +-
+ Src/Base/AMReX.cpp                                 |  31 +++
+ Src/Base/AMReX_FACopyDescriptor.H                  |  14 +-
+ Src/Base/AMReX_FileSystem.cpp                      |   2 +-
+ Src/Base/AMReX_GpuContainers.H                     |   2 +-
+ Src/Base/AMReX_GpuReduce.H                         |   8 +-
+ Src/Base/AMReX_ParallelDescriptor.cpp              |  22 +-
+ Src/Base/AMReX_Scan.H                              |   6 +-
+ Src/Base/AMReX_VisMF.H                             |   4 +-
+ Src/Base/AMReX_VisMF.cpp                           |  10 +-
+ Src/Boundary/AMReX_BndryData.H                     |   4 +-
+ Src/Boundary/AMReX_BndryRegister.H                 |  17 +-
+ Src/Boundary/AMReX_BoundaryFwd.H                   |  10 +-
+ Src/Boundary/AMReX_LO_BCTYPES.H                    |   1 +
+ Src/Boundary/AMReX_Mask.cpp                        |  10 +-
+ Src/Boundary/AMReX_MultiMask.cpp                   |   8 +-
+ Src/Boundary/AMReX_lo_bctypes_mod.F90              |   3 +
+ Src/EB/AMReX_EB2_IndexSpaceI.H                     |  13 +-
+ Src/EB/AMReX_EB_STL_utils.cpp                      |   3 +
+ Src/EB/AMReX_MarchingCubes.cpp                     |  12 +-
+ Src/EB/AMReX_distFcnElement.cpp                    |  17 +-
+ Src/Extern/HYPRE/AMReX_Habec_1D_K.H                |   4 +-
+ Src/Extern/HYPRE/AMReX_HypreIJIface.cpp            | 152 +++++------
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap.cpp          |  63 ++++-
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_1D_K.H       | 291 +--------------------
+ Src/Extern/HYPRE/AMReX_HypreMLABecLap_K.H          |   4 +
+ Src/Extern/HYPRE/AMReX_HypreNodeLap.cpp            |   4 +-
+ Src/Extern/PETSc/AMReX_PETSc.cpp                   |  17 +-
+ Src/LinearSolvers/AMReX_SpMatrix.H                 |   9 +-
+ Src/LinearSolvers/OpenBC/AMReX_OpenBC.cpp          |  13 +
+ 39 files changed, 338 insertions(+), 648 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating d44123764..7674e50af
+Fast-forward
+ Src/Particle/AMReX_NeighborParticles.H        | 4 +++-
+ Src/Particle/AMReX_NeighborParticlesGPUImpl.H | 9 ++++++---
+ 2 files changed, 9 insertions(+), 4 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 7674e50af..441748364
+Fast-forward
+ Docs/sphinx_documentation/source/Basics.rst | 106 +++++
+ Src/Base/AMReX_ParmParse.H                  |  25 +
+ Src/Base/AMReX_ParmParse.cpp                | 709 +++++++++++++++++++++-------
+ Src/Extern/HDF5/AMReX_ParticleHDF5.H        |   7 +-
+ Src/Particle/AMReX_ParticleIO.H             |   2 +-
+ Tests/CMakeLists.txt                        |   5 +-
+ Tests/TOML/CMakeLists.txt                   |   9 +
+ Tests/TOML/GNUmakefile                      |  24 +
+ Tests/TOML/Make.package                     |   1 +
+ Tests/TOML/config-2.toml                    |  12 +
+ Tests/TOML/config.toml                      | 127 +++++
+ Tests/TOML/main.cpp                         | 190 ++++++++
+ 12 files changed, 1041 insertions(+), 176 deletions(-)
+ create mode 100644 Tests/TOML/CMakeLists.txt
+ create mode 100644 Tests/TOML/GNUmakefile
+ create mode 100644 Tests/TOML/Make.package
+ create mode 100644 Tests/TOML/config-2.toml
+ create mode 100644 Tests/TOML/config.toml
+ create mode 100644 Tests/TOML/main.cpp
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Updating 441748364..815d08b41
+Fast-forward
+ Docs/sphinx_documentation/source/Basics.rst | 162 ++++++++++++++++------
+ Src/Base/AMReX_FabArrayCommI.H              | 201 ++++++++++++++++++++++++++--
+ Src/Base/AMReX_GpuDevice.H                  |   3 +
+ Src/Base/AMReX_GpuDevice.cpp                |  13 ++
+ Src/Base/AMReX_ParmParse.cpp                |  82 +++++++-----
+ Src/Base/AMReX_parmparse_mod.F90            |   4 +-
+ Src/Base/Parser/AMReX_Parser.cpp            |   2 +-
+ Src/Base/Parser/AMReX_Parser_Exe.H          |  16 +++
+ Src/Base/Parser/AMReX_Parser_Exe.cpp        |  33 ++++-
+ Src/Base/Parser/AMReX_Parser_Y.H            |   2 +-
+ Src/Base/Parser/AMReX_Parser_Y.cpp          |  12 +-
+ Tests/TOML/config.toml                      |   6 +-
+ Tests/TOML/main.cpp                         |  13 +-
+ 13 files changed, 455 insertions(+), 94 deletions(-)
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
+Your branch is up to date with 'origin/development'.
+Already on 'development'
+Already up to date.
