@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-11T17:45:52",
+  "timestamp": "2026-03-12T17:22:38",
   "status": "UNKNOWN_FAILURE",
   "exit_code": 8,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "development",
-  "commit": "75c5b39b",
-  "error_details": "",
+  "commit": "6e0089dc",
+  "error_details": "   \u001b[31mERROR: unable to copy file inputs/alfven_wave_linear_regression.in\u001b[0m\n   \u001b[31mLinearAlfvenWave-GPU FAILED\u001b[0m\n   \u001b[31mERROR: unable to copy file inputs/MHDBlast.in\u001b[0m\n   \u001b[31mMHDBlast-GPU FAILED\u001b[0m\n   \u001b[31mERROR: unable to copy file inputs/radhydro_shell_regression.in\u001b[0m\n   \u001b[31mRadhydroShell-GPU FAILED\u001b[0m\n   \u001b[31mERROR: unable to copy file inputs/RandomBlastAMR_regression.in\u001b[0m\n   \u001b[31mRandomBlastAMR-GPU FAILED\u001b[0m\n   \u001b[31mERROR: unable to copy file inputs/blast_unigrid_128_regres",
   "log_file": "regression-run.log"
 }
