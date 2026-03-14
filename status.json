@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-13T17:52:49",
+  "timestamp": "2026-03-14T17:52:51",
   "status": "UNKNOWN_FAILURE",
   "exit_code": 4,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "development",
-  "commit": "bbe9389e",
+  "commit": "fcc1a8bf",
   "error_details": "   \u001b[31mMHDBlast-GPU FAILED\u001b[0m\n   \u001b[31mRandomBlastAMR-GPU FAILED\u001b[0m\n   \u001b[31mSedov-GPU FAILED\u001b[0m\n   \u001b[31mShockCloud-GPU FAILED\u001b[0m",
   "log_file": "regression-run.log"
 }
