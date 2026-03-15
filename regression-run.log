@@ -7,7 +7,7 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 [1mrunning tests: [0m
    MHDBlast-GPU
 
-[1mtesting directory is: 2026-03-15-002/[0m
+[1mtesting directory is: 2026-03-15-003/[0m
 
 [1mrepo: AMReX[0m
    git fetch in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/
