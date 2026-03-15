@@ -1,4 +1,4 @@
-[1mloading ./tests/quokka-tests.ini[0m
+[1mloading /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/tests/quokka-tests.ini[0m
 just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/
 [33mWARNING: slack_webhookfile invalid[0m
 
@@ -7,7 +7,7 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 [1mrunning tests: [0m
    MHDBlast-GPU
 
-[1mtesting directory is: 2026-03-15-003/[0m
+[1mtesting directory is: 2026-03-15-004/[0m
 
 [1mrepo: AMReX[0m
    git fetch in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/
@@ -18,4 +18,58 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mrepo: quokka[0m
    git fetch in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/
-   [31mERROR: git fetch was unsuccessful[0m
+   'git pull' in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/
+   git submodule update in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/
+   saving git HEAD for quokka/
+   generating ChangeLog for quokka/
+
+[1mbuilding tools...[0m
+   building fcompare...
+   gmake -j16 AMREX_HOME=/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/   DEBUG=FALSE USE_MPI=FALSE USE_OMP=FALSE  COMP=  programs=fcompare
+   building fboxinfo...
+   gmake -j16 AMREX_HOME=/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/   DEBUG=FALSE USE_MPI=FALSE USE_OMP=FALSE  COMP=  programs=fboxinfo
+   building fsnapshot...
+   gmake -j16 AMREX_HOME=/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/   DEBUG=FALSE USE_MPI=FALSE USE_OMP=FALSE  COMP=  programs=fsnapshot
+   building particle_compare...
+   gmake -j16 AMREX_HOME=/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/   DEBUG=FALSE USE_MPI=FALSE EBASE=particle_compare COMP=  
+
+[1mmake clean in...[0m
+.
+
+[1mworking on test: MHDBlast-GPU[0m
+   re-making clean...
+   building...
+
+[1mconfiguring MHDBlast-GPU build...[0m
+   mkdir /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir
+   cmake   -DAMReX_GPU_BACKEND=CUDA -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_CUDA_COMPILER_LAUNCHER=ccache -S /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/ -B /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -DAMReX_SPACEDIM=3
+
+[1mbuilding MHDBlast-GPU...[0m
+   cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  MHDBlast
+   Compilation time: 40.867 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-03-15-004/MHDBlast-GPU/
+   copying files to run directory...
+   path to input file: inputs/MHDBlast.toml
+   running the test...
+   mpirun -n 1 ./MHDBlast-GPU.ex MHDBlast.toml  plotfile_prefix=MHDBlast-GPU_plt  checkpoint_prefix=MHDBlast-GPU_chk  amr.checkpoint_files_output=0  
+   Execution time: 139.716 s
+   doing the comparison...
+      comparison file: MHDBlast-GPU_plt0000232
+[33m      WARNING: no corresponding benchmark found[0m
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
+   archiving the output...
+   creating problem test report ...
+   [31mMHDBlast-GPU FAILED[0m
+
+[1mcleaning AMReX CMake directories...[0m
+
+[1mcleaning quokka CMake directories...[0m
+
+[1mcreating new test report...[0m
+
+[1mreverting git branches/hashes[0m
+   git checkout development in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/
+   git checkout development in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/
+
+[1mcreating suite report...[0m
