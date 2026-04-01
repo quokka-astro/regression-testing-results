@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./Turbulence-GPU.ex(+0x359c27) [0x555fbb265c27]
+    ?? ??:0
+
+ 1: ./Turbulence-GPU.ex(+0x35d759) [0x555fbb269759]
+    ?? ??:0
+
+ 2: ./Turbulence-GPU.ex(+0x346019) [0x555fbb252019]
+    ?? ??:0
+
+ 3: ./Turbulence-GPU.ex(+0x3472d2) [0x555fbb2532d2]
+    ?? ??:0
+
+ 4: ./Turbulence-GPU.ex(+0x34edbb) [0x555fbb25adbb]
+    ?? ??:0
+
+ 5: ./Turbulence-GPU.ex(+0x34f170) [0x555fbb25b170]
+    ?? ??:0
+
+ 6: ./Turbulence-GPU.ex(+0x34915e) [0x555fbb25515e]
+    ?? ??:0
+
+ 7: ./Turbulence-GPU.ex(+0x28c39f) [0x555fbb19839f]
+    ?? ??:0
+
+ 8: ./Turbulence-GPU.ex(+0x891f5) [0x555fbaf951f5]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f5620cb11ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f5620cb128b]
+
+11: ./Turbulence-GPU.ex(+0x8da35) [0x555fbaf99a35]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+

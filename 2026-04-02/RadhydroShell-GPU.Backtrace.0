@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./RadhydroShell-GPU.ex(+0x36d727) [0x55ce9b807727]
+    ?? ??:0
+
+ 1: ./RadhydroShell-GPU.ex(+0x371259) [0x55ce9b80b259]
+    ?? ??:0
+
+ 2: ./RadhydroShell-GPU.ex(+0x359b19) [0x55ce9b7f3b19]
+    ?? ??:0
+
+ 3: ./RadhydroShell-GPU.ex(+0x35add2) [0x55ce9b7f4dd2]
+    ?? ??:0
+
+ 4: ./RadhydroShell-GPU.ex(+0x3628bb) [0x55ce9b7fc8bb]
+    ?? ??:0
+
+ 5: ./RadhydroShell-GPU.ex(+0x362c70) [0x55ce9b7fcc70]
+    ?? ??:0
+
+ 6: ./RadhydroShell-GPU.ex(+0x35cc5e) [0x55ce9b7f6c5e]
+    ?? ??:0
+
+ 7: ./RadhydroShell-GPU.ex(+0x2a038f) [0x55ce9b73a38f]
+    ?? ??:0
+
+ 8: ./RadhydroShell-GPU.ex(+0x89195) [0x55ce9b523195]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fe9c7b6a1ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fe9c7b6a28b]
+
+11: ./RadhydroShell-GPU.ex(+0x8d9d5) [0x55ce9b5279d5]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
