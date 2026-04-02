@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-01T17:21:22",
-  "status": "UNKNOWN_FAILURE",
-  "exit_code": 8,
+  "timestamp": "2026-04-02T17:56:39",
+  "status": "SUCCESS",
+  "exit_code": 0,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "development",
-  "commit": "d769fd26",
+  "commit": "9581e682",
   "error_details": "",
   "log_file": "regression-run.log"
 }
