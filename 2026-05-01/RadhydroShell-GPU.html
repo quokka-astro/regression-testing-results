@@ -1,0 +1,72 @@
+
+<HTML>
+<HEAD>
+<TITLE>2026-05-01 / RadhydroShell-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="MHDBlast-GPU.html">previous test</td><td class="alignright"><a href="RandomBlastAMR-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2026-05-01</a> / RadhydroShell-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="RadhydroShell-GPU.radhydro_shell_regression.toml">radhydro_shell_regression.toml</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 133.625 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RadhydroShell</tt>
+</li>
+<li><a href="RadhydroShell-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 781.304 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./RadhydroShell-GPU.ex radhydro_shell_regression.toml  plotfile_prefix=RadhydroShell-GPU_plt  checkpoint_prefix=RadhydroShell-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="RadhydroShell-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RadhydroShell-GPU_plt0003440 RadhydroShell-GPU_plt0003440
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>3.143108698e-21</td><td class='highlight'>0.02433190045</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>6.733037322e-15</td><td class='highlight'>0.02654743087</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>6.457419029e-15</td><td class='highlight'>0.02546398688</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>6.89076115e-15</td><td class='highlight'>0.02719191775</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.497670535e-08</td><td class='highlight'>0.03008720529</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>8.308419891e-12</td><td class='highlight'>0.02629059663</td></tr>
+<tr><td class='highlight'>radEnergy-Group0</td><td class='highlight'>2.38878196e-09</td><td class='highlight'>0.01051054669</td></tr>
+<tr><td class='highlight'>x-RadFlux-Group0</td><td class='highlight'>41.89344108</td><td class='highlight'>0.026509985</td></tr>
+<tr><td class='highlight'>y-RadFlux-Group0</td><td class='highlight'>51.46393489</td><td class='highlight'>0.03256624238</td></tr>
+<tr><td class='highlight'>z-RadFlux-Group0</td><td class='highlight'>48.09186266</td><td class='highlight'>0.03043245576</td></tr>
+</table>
+</div>
+</div>
+<P>&nbsp;
+<P><IMG SRC='RadhydroShell-GPU_plt0003440.gasDensity.XY.png' BORDER=0></div></body>
+</html>
