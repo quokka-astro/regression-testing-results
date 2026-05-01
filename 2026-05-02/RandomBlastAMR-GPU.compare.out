@@ -1,0 +1,50 @@
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000675 RandomBlastAMR-GPU_plt0000675
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         9.526827314e-25              0.0660122579
+ x-GasMomentum                      1.175172012e-16             0.05268214818
+ y-GasMomentum                      1.399059444e-16             0.06400549366
+ z-GasMomentum                      1.309631801e-16             0.05765918807
+ gasEnergy                          1.938186201e-08             0.05148186079
+ gasInternalEnergy                   1.80324192e-09             0.05141979801
+ scalar_0                           4.791112603e-59             0.06601224892
+ temperature                            28989040.02              0.0560791478
+ level = 1
+ gasDensity                         1.129172897e-24             0.07818453669
+ x-GasMomentum                      1.406216316e-16              0.0628192579
+ y-GasMomentum                      1.938770645e-16              0.0882957714
+ z-GasMomentum                      1.631212186e-16             0.07147058406
+ gasEnergy                          2.698404393e-08             0.07139269138
+ gasInternalEnergy                  4.863794692e-09              0.1378493642
+ scalar_0                           5.678696257e-59             0.07818456945
+ temperature                            158228181.5              0.3050267701
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000675 RandomBlastAMR-GPU_plt0000675 StochasticStellarPop_particles
+
+-----------------------------------------------------------------------
+StochasticStellarPop_particles
+StochasticStellarPop_particles_position_x1.56057600e+06        7.65065651e-14        
+StochasticStellarPop_particles_position_y4.25984000e+05        2.47893413e-14        
+StochasticStellarPop_particles_position_z4.34176000e+05        2.41409291e-14        
+StochasticStellarPop_particles_mass 0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_vx   1.26501021e-04        6.23995139e-10        
+StochasticStellarPop_particles_vy   6.71060407e-05        4.42769100e-11        
+StochasticStellarPop_particles_vz   5.60095068e-05        3.61958564e-11        
+StochasticStellarPop_particles_birth_time0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_time0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_density0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_mass_at_birth0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_luminosity_00.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_id   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_cpu  0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_evolution_stage0.00000000e+00        0.00000000e+00        
+
+ PARTICLES DISAGREE to relative tolerance 0
