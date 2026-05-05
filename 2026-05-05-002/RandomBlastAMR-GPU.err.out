@@ -1,0 +1,39 @@
+Could not find platform independent libraries <prefix>
+Could not find platform dependent libraries <exec_prefix>
+Python path configuration:
+  PYTHONHOME = (not set)
+  PYTHONPATH = (not set)
+  program name = 'plotting'
+  isolated = 0
+  environment = 1
+  user site = 1
+  safe_path = 0
+  import site = 1
+  is in build tree = 0
+  stdlib dir = '/install/lib/python3.12'
+  sys._base_executable = ''
+  sys.base_prefix = '/install'
+  sys.base_exec_prefix = '/install'
+  sys.platlibdir = 'lib'
+  sys.executable = ''
+  sys.prefix = '/install'
+  sys.exec_prefix = '/install'
+  sys.path = [
+    '/install/lib/python312.zip',
+    '/install/lib/python3.12',
+    '/install/lib/python3.12/lib-dynload',
+  ]
+ModuleNotFoundError: No module named 'numpy'
+ModuleNotFoundError: No module named 'matplotlib'
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Error loading module matplotlib!
+SIGABRT
+See Backtrace.0 file for details
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 6.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
