@@ -1,0 +1,102 @@
+
+<HTML>
+<HEAD>
+<TITLE>2026-05-06 / RandomBlastAMR-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="RadhydroShell-GPU.html">previous test</td><td class="alignright"><a href="Sedov-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2026-05-06</a> / RandomBlastAMR-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="RandomBlastAMR-GPU.RandomBlastAMR_regression.toml">RandomBlastAMR_regression.toml</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 152.070 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RandomBlast</tt>
+</li>
+<li><a href="RandomBlastAMR-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 280.326 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./RandomBlastAMR-GPU.ex RandomBlastAMR_regression.toml  plotfile_prefix=RandomBlastAMR-GPU_plt  checkpoint_prefix=RandomBlastAMR-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="RandomBlastAMR-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000675 RandomBlastAMR-GPU_plt0000675
+</tt>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000675 RandomBlastAMR-GPU_plt0000675 StochasticStellarPop_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>9.526827314e-25</td><td class='highlight'>0.0660122579</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.175172012e-16</td><td class='highlight'>0.05268214818</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.399059444e-16</td><td class='highlight'>0.06400549366</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.309631801e-16</td><td class='highlight'>0.05765918807</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.938186201e-08</td><td class='highlight'>0.05148186079</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.80324192e-09</td><td class='highlight'>0.05141979801</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>4.791112603e-59</td><td class='highlight'>0.06601224892</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>28989040.02</td><td class='highlight'>0.0560791478</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.129172897e-24</td><td class='highlight'>0.07818453669</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.406216316e-16</td><td class='highlight'>0.0628192579</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.938770645e-16</td><td class='highlight'>0.0882957714</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.631212186e-16</td><td class='highlight'>0.07147058406</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>2.698404393e-08</td><td class='highlight'>0.07139269138</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>4.863794692e-09</td><td class='highlight'>0.1378493642</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>5.678696257e-59</td><td class='highlight'>0.07818456945</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>158228181.5</td><td class='highlight'>0.3050267701</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_x1.56057600e+06</th><th>7.65065651e-14</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_y4.25984000e+05</th><th>2.47893413e-14</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_z4.34176000e+05</th><th>2.41409291e-14</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_mass 0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><td>StochasticStellarPop_particles_vx</td><td>0.000126501021</td><td>6.23995139e-10</td></tr>
+<tr><td>StochasticStellarPop_particles_vy</td><td>6.71060407e-05</td><td>4.427691e-11</td></tr>
+<tr><td>StochasticStellarPop_particles_vz</td><td>5.60095068e-05</td><td>3.61958564e-11</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_time0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_time0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_x0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_y0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_z0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_x0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_y0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_z0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_density0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_mass_at_birth0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_luminosity_00.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><td>StochasticStellarPop_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>StochasticStellarPop_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_evolution_stage0.00000000e+00</th><th>0.00000000e+00</th></tr>
+</table>
+</div>
+</div>
+<P>&nbsp;
+<P><IMG SRC='RandomBlastAMR-GPU_plt0000675.temperature.XY.png' BORDER=0></div></body>
+</html>
