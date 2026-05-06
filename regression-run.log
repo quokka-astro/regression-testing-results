@@ -15,7 +15,7 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
    ShockCloud-GPU
    Turbulence-GPU
 
-[1mtesting directory is: 2026-05-06-002/[0m
+[1mtesting directory is: 2026-05-06-003/[0m
 
 [1mrepo: AMReX[0m
    git fetch in /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/
@@ -54,17 +54,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding DiskGalaxy-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  DiskGalaxy
-   Compilation time: 41.824 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/DiskGalaxy-GPU/
+   Compilation time: 40.041 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/DiskGalaxy-GPU/
    copying files to run directory...
    path to input file: inputs/DiskGalaxy.toml
    running the test...
    mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.toml  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  max_timesteps=300 checkpoint_interval=-1 plotfile_interval=300
-   Execution time: 2.301 s
+   Execution time: 228.124 s
+   doing the comparison...
+      comparison file: DiskGalaxy-GPU_plt0000300
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mDiskGalaxy-GPU CRASHED (backtraces produced)[0m
+   [31mDiskGalaxy-GPU FAILED[0m
 
 [1mworking on test: LinearAlfvenWave-GPU[0m
    building...
@@ -75,17 +79,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding LinearAlfvenWave-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  AlfvenWaveLinear
-   Compilation time: 38.629 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/LinearAlfvenWave-GPU/
+   Compilation time: 43.538 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/LinearAlfvenWave-GPU/
    copying files to run directory...
    path to input file: inputs/alfven_wave_linear_regression.toml
    running the test...
    mpirun -n 1 ./LinearAlfvenWave-GPU.ex alfven_wave_linear_regression.toml  plotfile_prefix=LinearAlfvenWave-GPU_plt  checkpoint_prefix=LinearAlfvenWave-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.211 s
+   Execution time: 14.150 s
+   doing the comparison...
+      comparison file: LinearAlfvenWave-GPU_plt0000882
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/LinearAlfvenWave-GPU_plt0000882
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mLinearAlfvenWave-GPU CRASHED (backtraces produced)[0m
+   [32mLinearAlfvenWave-GPU PASSED[0m
 
 [1mworking on test: MHDBlast-GPU[0m
    building...
@@ -96,17 +104,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding MHDBlast-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  MHDBlast
-   Compilation time: 38.769 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/MHDBlast-GPU/
+   Compilation time: 42.324 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/MHDBlast-GPU/
    copying files to run directory...
    path to input file: inputs/MHDBlast.toml
    running the test...
    mpirun -n 1 ./MHDBlast-GPU.ex MHDBlast.toml  plotfile_prefix=MHDBlast-GPU_plt  checkpoint_prefix=MHDBlast-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.244 s
+   Execution time: 131.736 s
+   doing the comparison...
+      comparison file: MHDBlast-GPU_plt0000232
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/MHDBlast-GPU_plt0000232
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mMHDBlast-GPU CRASHED (backtraces produced)[0m
+   [32mMHDBlast-GPU PASSED[0m
 
 [1mworking on test: RadhydroShell-GPU[0m
    building...
@@ -117,17 +129,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding RadhydroShell-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RadhydroShell
-   Compilation time: 38.332 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/RadhydroShell-GPU/
+   Compilation time: 42.877 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/RadhydroShell-GPU/
    copying files to run directory...
    path to input file: inputs/radhydro_shell_regression.toml
    running the test...
    mpirun -n 1 ./RadhydroShell-GPU.ex radhydro_shell_regression.toml  plotfile_prefix=RadhydroShell-GPU_plt  checkpoint_prefix=RadhydroShell-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.213 s
+   Execution time: 863.792 s
+   doing the comparison...
+      comparison file: RadhydroShell-GPU_plt0003440
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RadhydroShell-GPU_plt0003440
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mRadhydroShell-GPU CRASHED (backtraces produced)[0m
+   [32mRadhydroShell-GPU PASSED[0m
 
 [1mworking on test: RandomBlastAMR-GPU[0m
    building...
@@ -138,17 +154,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding RandomBlastAMR-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  RandomBlast
-   Compilation time: 38.576 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/RandomBlastAMR-GPU/
+   Compilation time: 43.562 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/RandomBlastAMR-GPU/
    copying files to run directory...
    path to input file: inputs/RandomBlastAMR_regression.toml
    running the test...
    mpirun -n 1 ./RandomBlastAMR-GPU.ex RandomBlastAMR_regression.toml  plotfile_prefix=RandomBlastAMR-GPU_plt  checkpoint_prefix=RandomBlastAMR-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.236 s
+   Execution time: 352.177 s
+   doing the comparison...
+      comparison file: RandomBlastAMR-GPU_plt0000675
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RandomBlastAMR-GPU_plt0000675
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mRandomBlastAMR-GPU CRASHED (backtraces produced)[0m
+   [32mRandomBlastAMR-GPU PASSED[0m
 
 [1mworking on test: Sedov-GPU[0m
    building...
@@ -159,17 +179,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding Sedov-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  HydroBlast3D
-   Compilation time: 37.683 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/Sedov-GPU/
+   Compilation time: 43.222 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/Sedov-GPU/
    copying files to run directory...
    path to input file: inputs/blast_unigrid_128_regression.toml
    running the test...
    mpirun -n 1 ./Sedov-GPU.ex blast_unigrid_128_regression.toml  plotfile_prefix=Sedov-GPU_plt  checkpoint_prefix=Sedov-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.239 s
+   Execution time: 495.297 s
+   doing the comparison...
+      comparison file: Sedov-GPU_plt0011083
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Sedov-GPU_plt0011083
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mSedov-GPU CRASHED (backtraces produced)[0m
+   [32mSedov-GPU PASSED[0m
 
 [1mworking on test: SedovAMR-GPU[0m
    building...
@@ -180,17 +204,17 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding SedovAMR-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  HydroBlast3D
-   Compilation time: 38.730 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/SedovAMR-GPU/
+   Compilation time: 43.837 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/SedovAMR-GPU/
    copying files to run directory...
    path to input file: inputs/blast_unigrid_128_AMR_regression.toml
    running the test...
    mpirun -n 1 ./SedovAMR-GPU.ex blast_unigrid_128_AMR_regression.toml  plotfile_prefix=SedovAMR-GPU_plt  checkpoint_prefix=SedovAMR-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.211 s
+   Execution time: 14.599 s
    archiving the output...
    creating problem test report ...
 [33m   WARNING: WARNING: no comparison file found[0m
-   [31mSedovAMR-GPU CRASHED (backtraces produced)[0m
+   [31mSedovAMR-GPU FAILED[0m
 
 [1mworking on test: ShockCloud-GPU[0m
    building...
@@ -201,17 +225,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding ShockCloud-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  ShockCloud
-   Compilation time: 38.603 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/ShockCloud-GPU/
+   Compilation time: 44.017 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/ShockCloud-GPU/
    copying files to run directory...
    path to input file: inputs/ShockCloud_64_regression.toml
    running the test...
    mpirun -n 1 ./ShockCloud-GPU.ex ShockCloud_64_regression.toml  plotfile_prefix=ShockCloud-GPU_plt  checkpoint_prefix=ShockCloud-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.243 s
+   Execution time: 296.740 s
+   doing the comparison...
+      comparison file: ShockCloud-GPU_plt0007730
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007730
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mShockCloud-GPU CRASHED (backtraces produced)[0m
+   [32mShockCloud-GPU PASSED[0m
 
 [1mworking on test: Turbulence-GPU[0m
    building...
@@ -222,17 +250,21 @@ just set testTopDir = /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avata
 
 [1mbuilding Turbulence-GPU...[0m
    cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  Turbulence
-   Compilation time: 38.531 s
-   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-002/Turbulence-GPU/
+   Compilation time: 43.015 s
+   run & test directory: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-tests/2026-05-06-003/Turbulence-GPU/
    copying files to run directory...
    path to input file: inputs/Turbulence_regression.toml
    running the test...
    mpirun -n 1 ./Turbulence-GPU.ex Turbulence_regression.toml  plotfile_prefix=Turbulence-GPU_plt  checkpoint_prefix=Turbulence-GPU_chk  amr.checkpoint_files_output=0  
-   Execution time: 2.229 s
+   Execution time: 80.711 s
+   doing the comparison...
+      comparison file: Turbulence-GPU_plt0011224
+      benchmark file: /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/Turbulence-GPU_plt0011224
+[33m   WARNING: unable to open the job_info file[0m
+   doing the visualization...
    archiving the output...
    creating problem test report ...
-[33m   WARNING: WARNING: no comparison file found[0m
-   [31mTurbulence-GPU CRASHED (backtraces produced)[0m
+   [32mTurbulence-GPU PASSED[0m
 
 [1mcleaning AMReX CMake directories...[0m
 
