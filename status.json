@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-06T06:51:47",
+  "timestamp": "2026-05-06T07:48:08",
   "status": "UNKNOWN_FAILURE",
-  "exit_code": 2,
+  "exit_code": 143,
   "hostname": "avatargpu.anu.edu.au",
-  "branch": "development",
-  "commit": "53e1f5a3f",
-  "error_details": "   \u001b[31mDiskGalaxy-GPU FAILED\u001b[0m\n   \u001b[31mSedovAMR-GPU FAILED\u001b[0m",
+  "branch": "chong/ci/benchmark-point-pr1830",
+  "commit": "fc37d1ba1",
+  "error_details": "",
   "log_file": "regression-run.log"
 }
