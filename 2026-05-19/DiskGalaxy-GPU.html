@@ -1,0 +1,220 @@
+
+<HTML>
+<HEAD>
+<TITLE>2026-05-19 / DiskGalaxy-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="LinearAlfvenWave-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2026-05-19</a> / DiskGalaxy-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="DiskGalaxy-GPU.DiskGalaxy.toml">DiskGalaxy.toml</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 362.033 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  DiskGalaxy</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 220.734 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.toml  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  max_timesteps=300 checkpoint_interval=-1 plotfile_interval=300</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300
+</tt>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300 CIC_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>4.101290933e-31</td><td class='highlight'>3.877182709e-06</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>5.616169837e-24</td><td class='highlight'>4.141553653e-06</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>4.414760588e-24</td><td class='highlight'>2.871615538e-06</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>5.037323276e-24</td><td class='highlight'>3.953632113e-05</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>5.090270145e-17</td><td class='highlight'>2.127235567e-06</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>2.621493094e-17</td><td class='highlight'>4.727260196e-06</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>8.293138758e-41</td><td class='highlight'>4.470960534e-06</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>4.455617229e-15</td><td class='highlight'>2.589560234e-06</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>4.580483753e-15</td><td class='highlight'>2.460115073e-06</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>1.911917764e-15</td><td class='highlight'>6.670713453e-06</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>1.717737579e-30</td><td class='highlight'>1.229954498e-06</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>3.23577e-30</td><td class='highlight'>5.744948213e-06</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.40325415e-23</td><td class='highlight'>6.085478431e-06</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>3.463995814e-23</td><td class='highlight'>5.32872894e-06</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>3.97630502e-23</td><td class='highlight'>5.49252754e-05</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>3.94215514e-16</td><td class='highlight'>3.664220428e-06</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.711648379e-16</td><td class='highlight'>7.261483595e-06</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>7.649111969e-40</td><td class='highlight'>2.768046807e-05</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.856539874e-14</td><td class='highlight'>2.875299758e-06</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>1.932613759e-14</td><td class='highlight'>3.110475184e-06</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>8.470916488e-15</td><td class='highlight'>1.12311153e-05</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>1.346848261e-29</td><td class='highlight'>2.34405225e-06</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 2</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.963902699e-29</td><td class='highlight'>1.021338453e-05</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>2.756570003e-22</td><td class='highlight'>1.284288828e-05</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.134535019e-22</td><td class='highlight'>9.711441248e-06</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.842644777e-22</td><td class='highlight'>8.007636242e-05</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>2.206988433e-15</td><td class='highlight'>8.405255828e-06</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>7.385685387e-16</td><td class='highlight'>1.083987741e-05</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>5.124856311e-39</td><td class='highlight'>7.42582253e-05</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>7.975469767e-14</td><td class='highlight'>4.485772176e-06</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>6.357862656e-14</td><td class='highlight'>3.607560064e-06</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>2.999994155e-14</td><td class='highlight'>1.891010048e-05</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>9.320353544e-29</td><td class='highlight'>4.869924823e-06</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 3</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>9.333272104e-29</td><td class='highlight'>1.595157562e-05</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.347972938e-21</td><td class='highlight'>2.390243298e-05</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.393761475e-21</td><td class='highlight'>2.492544253e-05</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.965850859e-21</td><td class='highlight'>0.000103463304</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>9.758578514e-15</td><td class='highlight'>1.725821575e-05</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>3.921841426e-15</td><td class='highlight'>2.430139431e-05</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>2.893044414e-38</td><td class='highlight'>0.0001796355252</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>3.190768751e-13</td><td class='highlight'>6.461316568e-06</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>2.773184094e-13</td><td class='highlight'>4.761994964e-06</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>1.139355092e-13</td><td class='highlight'>3.947886916e-05</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>4.845860724e-28</td><td class='highlight'>8.0492845e-06</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 4</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>4.883803432e-28</td><td class='highlight'>1.778041105e-05</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>5.276919482e-21</td><td class='highlight'>2.48760834e-05</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>9.621598563e-21</td><td class='highlight'>4.200714182e-05</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.292365277e-20</td><td class='highlight'>0.0001143691678</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.863523383e-14</td><td class='highlight'>3.184759994e-05</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.857337335e-14</td><td class='highlight'>4.629189955e-05</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>1.960574843e-37</td><td class='highlight'>0.0003184891133</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.240068371e-12</td><td class='highlight'>1.115235314e-05</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>1.052951544e-12</td><td class='highlight'>7.460024298e-06</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>1.889315444e-12</td><td class='highlight'>0.0005209755875</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>2.744298981e-27</td><td class='highlight'>1.472659213e-05</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 5</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.653471729e-27</td><td class='highlight'>1.571912191e-05</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.386219011e-20</td><td class='highlight'>2.318462121e-05</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>4.378689483e-20</td><td class='highlight'>6.661956928e-05</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.334962481e-20</td><td class='highlight'>9.580396385e-05</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.862834575e-13</td><td class='highlight'>6.869923466e-05</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>3.436914871e-15</td><td class='highlight'>1.571928351e-05</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>3.210925429e-37</td><td class='highlight'>0.000144323802</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.023884981e-11</td><td class='highlight'>4.485902408e-05</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>7.625399909e-12</td><td class='highlight'>3.056482133e-05</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>7.787798481e-12</td><td class='highlight'>0.001002163997</td></tr>
+<tr><td>temperature</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>pressure</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>entropy</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>gpot</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radius_sph</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>bfield_strength</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>radial_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td>circular_velocity</td><td colspan='2'>< variable not present in both files ></td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>8.849477558e-27</td><td class='highlight'>1.947952656e-05</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr><td class='highlight'>CIC_particles_position_x</td><td class='highlight'>2.27125942e+17</td><td class='highlight'>0.00156160483</td></tr>
+<tr><td class='highlight'>CIC_particles_position_y</td><td class='highlight'>2.13005506e+17</td><td class='highlight'>0.00058971467</td></tr>
+<tr><td class='highlight'>CIC_particles_position_z</td><td class='highlight'>1.6491797e+17</td><td class='highlight'>0.000161549453</td></tr>
+<tr><td>CIC_particles_mass</td><td>0.0</td><td>0.0</td></tr>
+<tr><td class='highlight'>CIC_particles_vx</td><td class='highlight'>1336.02488</td><td class='highlight'>7.95858826e-05</td></tr>
+<tr><td class='highlight'>CIC_particles_vy</td><td class='highlight'>1411.75732</td><td class='highlight'>0.00030359341</td></tr>
+<tr><td class='highlight'>CIC_particles_vz</td><td class='highlight'>1421.17235</td><td class='highlight'>0.00552509118</td></tr>
+<tr><td>CIC_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>CIC_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_x0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_y0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_position_z0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_mass 0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><td>StochasticStellarPop_particles_vx</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>StochasticStellarPop_particles_vy</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>StochasticStellarPop_particles_vz</td><td>0.0</td><td>0.0</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_time0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_time0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_x0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_y0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_birth_z0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_x0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_y0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_z0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_death_density0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_mass_at_birth0.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_luminosity_00.00000000e+00</th><th>0.00000000e+00</th></tr>
+<tr><td>StochasticStellarPop_particles_id</td><td>0.0</td><td>0.0</td></tr>
+<tr><td>StochasticStellarPop_particles_cpu</td><td>0.0</td><td>0.0</td></tr>
+<tr><th> </th><th>StochasticStellarPop_particles_evolution_stage0.00000000e+00</th><th>0.00000000e+00</th></tr>
+</table>
+</div>
+</div>
+<p>variables differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='DiskGalaxy-GPU_plt0000300.gasDensity.XY.png' BORDER=0></div></body>
+</html>
