@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-05-20T02:31:35",
+  "timestamp": "2026-05-20T19:00:57",
   "status": "UNKNOWN_FAILURE",
-  "exit_code": 3,
+  "exit_code": 1,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "chong/ci/benchmark-point-pr1830",
   "commit": "fc37d1ba",
