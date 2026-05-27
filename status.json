@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-27T05:13:23",
+  "timestamp": "2026-05-27T18:48:47",
   "status": "UNKNOWN_FAILURE",
-  "exit_code": 143,
+  "exit_code": 1,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "development",
   "commit": "98681491",
-  "error_details": "",
+  "error_details": "   \u001b[31mSedovAMR-GPU FAILED\u001b[0m",
   "log_file": "regression-run.log"
 }
