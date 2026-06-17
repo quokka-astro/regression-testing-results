@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-16T18:00:17",
+  "timestamp": "2026-06-17T19:03:04",
   "status": "UNKNOWN_FAILURE",
-  "exit_code": 1,
+  "exit_code": 3,
   "hostname": "avatargpu.anu.edu.au",
   "branch": "rsla-photoionization",
   "commit": "5b2a70b05",
-  "error_details": "   \u001b[31mERROR: git fetch was unsuccessful\u001b[0m",
+  "error_details": "   \u001b[31mLinearAlfvenWave-GPU FAILED\u001b[0m\n   \u001b[31mMHDBlast-GPU FAILED\u001b[0m\n   \u001b[31mSedovAMR-GPU FAILED\u001b[0m",
   "log_file": "regression-run.log"
 }
