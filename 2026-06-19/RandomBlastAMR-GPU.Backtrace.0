@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./RandomBlastAMR-GPU.ex(+0x3edbe7) [0x5647528eebe7]
+    ?? ??:0
+
+ 1: ./RandomBlastAMR-GPU.ex(+0x3f1719) [0x5647528f2719]
+    ?? ??:0
+
+ 2: ./RandomBlastAMR-GPU.ex(+0x3d9ba9) [0x5647528daba9]
+    ?? ??:0
+
+ 3: ./RandomBlastAMR-GPU.ex(+0x3db1e2) [0x5647528dc1e2]
+    ?? ??:0
+
+ 4: ./RandomBlastAMR-GPU.ex(+0x3e2d76) [0x5647528e3d76]
+    ?? ??:0
+
+ 5: ./RandomBlastAMR-GPU.ex(+0x3e3130) [0x5647528e4130]
+    ?? ??:0
+
+ 6: ./RandomBlastAMR-GPU.ex(+0x3dd2ae) [0x5647528de2ae]
+    ?? ??:0
+
+ 7: ./RandomBlastAMR-GPU.ex(+0x31e2a4) [0x56475281f2a4]
+    ?? ??:0
+
+ 8: ./RandomBlastAMR-GPU.ex(+0x90a85) [0x564752591a85]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fa6b9cb11ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fa6b9cb128b]
+
+11: ./RandomBlastAMR-GPU.ex(+0x95375) [0x564752596375]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
