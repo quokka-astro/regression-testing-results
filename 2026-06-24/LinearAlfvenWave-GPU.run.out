@@ -1,0 +1,9 @@
+Initializing AMReX (26.05-63-gc2eb6db7ee79)...
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (26.05-63-gc2eb6db7ee79) initialized
+Running Richardson convergence test for Alfven Wave:
+Resolution	Error Norm
+----------	----------
