@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./DiskGalaxy-GPU.ex(+0x466ec7) [0x560b17142ec7]
+    ?? ??:0
+
+ 1: ./DiskGalaxy-GPU.ex(+0x46a9f9) [0x560b171469f9]
+    ?? ??:0
+
+ 2: ./DiskGalaxy-GPU.ex(+0x452e89) [0x560b1712ee89]
+    ?? ??:0
+
+ 3: ./DiskGalaxy-GPU.ex(+0x4544c2) [0x560b171304c2]
+    ?? ??:0
+
+ 4: ./DiskGalaxy-GPU.ex(+0x45c056) [0x560b17138056]
+    ?? ??:0
+
+ 5: ./DiskGalaxy-GPU.ex(+0x45c410) [0x560b17138410]
+    ?? ??:0
+
+ 6: ./DiskGalaxy-GPU.ex(+0x45658e) [0x560b1713258e]
+    ?? ??:0
+
+ 7: ./DiskGalaxy-GPU.ex(+0x397354) [0x560b17073354]
+    ?? ??:0
+
+ 8: ./DiskGalaxy-GPU.ex(+0x90355) [0x560b16d6c355]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f5af08b11ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f5af08b128b]
+
+11: ./DiskGalaxy-GPU.ex(+0x94c45) [0x560b16d70c45]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+

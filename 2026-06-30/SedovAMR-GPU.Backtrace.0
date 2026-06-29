@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./SedovAMR-GPU.ex(+0x375ff7) [0x564b60f77ff7]
+    ?? ??:0
+
+ 1: ./SedovAMR-GPU.ex(+0x379b29) [0x564b60f7bb29]
+    ?? ??:0
+
+ 2: ./SedovAMR-GPU.ex(+0x361fb9) [0x564b60f63fb9]
+    ?? ??:0
+
+ 3: ./SedovAMR-GPU.ex(+0x3635f2) [0x564b60f655f2]
+    ?? ??:0
+
+ 4: ./SedovAMR-GPU.ex(+0x36b186) [0x564b60f6d186]
+    ?? ??:0
+
+ 5: ./SedovAMR-GPU.ex(+0x36b540) [0x564b60f6d540]
+    ?? ??:0
+
+ 6: ./SedovAMR-GPU.ex(+0x3656be) [0x564b60f676be]
+    ?? ??:0
+
+ 7: ./SedovAMR-GPU.ex(+0x2a64b4) [0x564b60ea84b4]
+    ?? ??:0
+
+ 8: ./SedovAMR-GPU.ex(+0x8f4f5) [0x564b60c914f5]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f48964b11ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f48964b128b]
+
+11: ./SedovAMR-GPU.ex(+0x93de5) [0x564b60c95de5]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+

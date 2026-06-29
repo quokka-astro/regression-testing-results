@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-27T19:55:06",
+  "timestamp": "2026-06-29T18:39:31",
   "status": "UNKNOWN_FAILURE",
-  "exit_code": 5,
+  "exit_code": 9,
   "hostname": "avatargpu.anu.edu.au",
-  "branch": "rsla-photoionization",
-  "commit": "5b2a70b05",
-  "error_details": "   \u001b[31mDiskGalaxy-GPU FAILED\u001b[0m\n   \u001b[31mMHDBlast-GPU FAILED\u001b[0m\n   \u001b[31mRandomBlastAMR-GPU FAILED\u001b[0m\n   \u001b[31mSedovAMR-GPU FAILED\u001b[0m",
+  "branch": "development",
+  "commit": "5f7c8d755",
+  "error_details": "",
   "log_file": "regression-run.log"
 }

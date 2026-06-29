@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./LinearAlfvenWave-GPU.ex(+0x3aecd7) [0x561c4f742cd7]
+    ?? ??:0
+
+ 1: ./LinearAlfvenWave-GPU.ex(+0x3b2809) [0x561c4f746809]
+    ?? ??:0
+
+ 2: ./LinearAlfvenWave-GPU.ex(+0x39ac99) [0x561c4f72ec99]
+    ?? ??:0
+
+ 3: ./LinearAlfvenWave-GPU.ex(+0x39c2d2) [0x561c4f7302d2]
+    ?? ??:0
+
+ 4: ./LinearAlfvenWave-GPU.ex(+0x3a3e66) [0x561c4f737e66]
+    ?? ??:0
+
+ 5: ./LinearAlfvenWave-GPU.ex(+0x3a4220) [0x561c4f738220]
+    ?? ??:0
+
+ 6: ./LinearAlfvenWave-GPU.ex(+0x39e39e) [0x561c4f73239e]
+    ?? ??:0
+
+ 7: ./LinearAlfvenWave-GPU.ex(+0x2df194) [0x561c4f673194]
+    ?? ??:0
+
+ 8: ./LinearAlfvenWave-GPU.ex(+0x8fa85) [0x561c4f423a85]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fa070b9a1ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fa070b9a28b]
+
+11: ./LinearAlfvenWave-GPU.ex(+0x94375) [0x561c4f428375]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+

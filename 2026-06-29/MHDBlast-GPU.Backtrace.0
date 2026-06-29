@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./MHDBlast-GPU.ex(+0x3a8a77) [0x55b31e504a77]
+    ?? ??:0
+
+ 1: ./MHDBlast-GPU.ex(+0x3ac5a9) [0x55b31e5085a9]
+    ?? ??:0
+
+ 2: ./MHDBlast-GPU.ex(+0x394a39) [0x55b31e4f0a39]
+    ?? ??:0
+
+ 3: ./MHDBlast-GPU.ex(+0x396072) [0x55b31e4f2072]
+    ?? ??:0
+
+ 4: ./MHDBlast-GPU.ex(+0x39dc06) [0x55b31e4f9c06]
+    ?? ??:0
+
+ 5: ./MHDBlast-GPU.ex(+0x39dfc0) [0x55b31e4f9fc0]
+    ?? ??:0
+
+ 6: ./MHDBlast-GPU.ex(+0x39813e) [0x55b31e4f413e]
+    ?? ??:0
+
+ 7: ./MHDBlast-GPU.ex(+0x2d8f34) [0x55b31e434f34]
+    ?? ??:0
+
+ 8: ./MHDBlast-GPU.ex(+0x8f335) [0x55b31e1eb335]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f5e0d4b11ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f5e0d4b128b]
+
+11: ./MHDBlast-GPU.ex(+0x93c25) [0x55b31e1efc25]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
