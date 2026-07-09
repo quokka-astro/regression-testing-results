@@ -1,0 +1,6 @@
+[ 12%] Built target yaml-cpp
+[ 75%] Built target amrex_3d
+[ 87%] Built target amrex_hydro
+[ 87%] Built target amrex_hydro_api
+[ 87%] Linking CXX executable HydroBlast3D
+[100%] Built target HydroBlast3D
