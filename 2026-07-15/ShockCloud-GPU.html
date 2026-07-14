@@ -1,0 +1,84 @@
+
+<HTML>
+<HEAD>
+<TITLE>2026-07-15 / ShockCloud-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td><< <a href="SedovAMR-GPU.html">previous test</td><td class="alignright"><a href="Turbulence-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2026-07-15</a> / ShockCloud-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="ShockCloud-GPU.ShockCloud_64_regression.toml">ShockCloud_64_regression.toml</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 173.233 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  ShockCloud</tt>
+</li>
+<li><a href="ShockCloud-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 275.905 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./ShockCloud-GPU.ex ShockCloud_64_regression.toml  plotfile_prefix=ShockCloud-GPU_plt  checkpoint_prefix=ShockCloud-GPU_chk  amr.checkpoint_files_output=0  </tt>
+</li>
+<li><a href="ShockCloud-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007733 ShockCloud-GPU_plt0007733
+</tt>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007733 ShockCloud-GPU_plt0007733 tracer_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>4.085467754e-22</td><td class='highlight'>1.67319582</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>4.305576849e-17</td><td class='highlight'>1.05576876</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.916057502e-17</td><td class='highlight'>0.9513596042</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>4.578856973e-17</td><td class='highlight'>1.410745928</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.822399349e-10</td><td class='highlight'>0.9286247325</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.242197133e-11</td><td class='highlight'>0.8499060633</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>167.3984298</td><td class='highlight'>1.675143259</td></tr>
+<tr><td class='highlight'>scalar_1</td><td class='highlight'>3.941018888e-22</td><td class='highlight'>1.675143259</td></tr>
+<tr><td class='highlight'>scalar_2</td><td class='highlight'>1.45129233e-23</td><td class='highlight'>1.619951691</td></tr>
+<tr><td class='highlight'>pressure</td><td class='highlight'>60114.0833</td><td class='highlight'>0.8363708734</td></tr>
+<tr><td class='highlight'>entropy</td><td class='highlight'>5.578876552</td><td class='highlight'>0.999999704</td></tr>
+<tr><td class='highlight'>nH</td><td class='highlight'>174.7350582</td><td class='highlight'>1.67319582</td></tr>
+<tr><td class='highlight'>temperature</td><td class='highlight'>4154983.103</td><td class='highlight'>0.9999476218</td></tr>
+<tr><td class='highlight'>cooling_length</td><td class='highlight'>112762.3845</td><td class='highlight'>0.9999992802</td></tr>
+<tr><td class='highlight'>cloud_fraction</td><td class='highlight'>0.9631871989</td><td class='highlight'>0.9998653113</td></tr>
+<tr><td class='highlight'>lab_velocity_x</td><td class='highlight'>195.2292338</td><td class='highlight'>0.9036832158</td></tr>
+<tr><td class='highlight'>mass</td><td class='highlight'>3.66420377e+35</td><td class='highlight'>1.67319582</td></tr>
+<tr><td class='highlight'>velocity_mag</td><td class='highlight'>185.4342388</td><td class='highlight'>0.9213105723</td></tr>
+<tr><td class='highlight'>c_s</td><td class='highlight'>304.8132814</td><td class='highlight'>0.9949837643</td></tr>
+</table>
+</div>
+</div>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='ShockCloud-GPU_plt0007733.temperature.XY.png' BORDER=0></div></body>
+</html>
