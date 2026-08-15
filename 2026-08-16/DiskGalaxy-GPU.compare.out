@@ -1,0 +1,112 @@
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 --rel_tol 0.002 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         2.219414386e-27             0.02098190706
+ x-GasMomentum                      3.091177784e-20             0.02279492533
+ y-GasMomentum                      3.846940917e-20             0.02502381387
+ z-GasMomentum                      3.255429961e-21             0.02554617477
+ gasEnergy                          5.310154192e-13             0.02219182429
+ gasInternalEnergy                  1.351482588e-13             0.02437012048
+ scalar_0                           2.266913326e-37             0.01222125858
+ x-BField                           3.414637657e-11             0.01928753809
+ y-BField                           3.706737201e-11             0.01927923433
+ z-BField                           9.230997712e-12             0.03060328745
+ particle.CIC.mass_density           1.977874784e-27            0.001416267603
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+ level = 1
+ gasDensity                         1.142850011e-26             0.02028994412
+ x-GasMomentum                      1.699888726e-19             0.02349254347
+ y-GasMomentum                      1.425279475e-19             0.02192637796
+ z-GasMomentum                       2.13723299e-20             0.02951388577
+ gasEnergy                          2.146923181e-12             0.01995514823
+ gasInternalEnergy                  5.273919766e-13             0.02236780648
+ scalar_0                           6.879150731e-37             0.02489382187
+ x-BField                           1.202982085e-10             0.01801380104
+ y-BField                            1.11705288e-10             0.01739174641
+ z-BField                           3.563926127e-11             0.04538543733
+ particle.CIC.mass_density           1.832893212e-26            0.003190166842
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+ level = 2
+ gasDensity                         2.675270415e-26             0.01391526458
+ x-GasMomentum                      5.200439753e-19             0.02422677224
+ y-GasMomentum                      5.032711029e-19             0.02289761832
+ z-GasMomentum                      6.220547827e-20             0.01751547317
+ gasEnergy                          5.811075381e-12             0.02213329166
+ gasInternalEnergy                   1.31510921e-12             0.01930399919
+ scalar_0                           1.830521698e-36             0.02652693635
+ x-BField                            5.83926712e-10             0.03159541353
+ y-BField                           3.426154529e-10             0.01870434921
+ z-BField                           2.143153539e-10              0.1303842057
+ particle.CIC.mass_density           8.298916537e-26             0.00433671968
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+ level = 3
+ gasDensity                         7.410720121e-26             0.01267651389
+ x-GasMomentum                      1.273787288e-18             0.02258121606
+ y-GasMomentum                      1.743096042e-18             0.03117652569
+ z-GasMomentum                      3.024648992e-19             0.01590912528
+ gasEnergy                          1.998606094e-11              0.0353458046
+ gasInternalEnergy                  6.101594474e-12             0.03785061457
+ scalar_0                           1.226307926e-35             0.07615822182
+ x-BField                           1.717133766e-09             0.03329858407
+ y-BField                           1.066141661e-09             0.01744871599
+ z-BField                           3.215748059e-10              0.1028368929
+ particle.CIC.mass_density           5.369856712e-25            0.008922258498
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+ level = 4
+ gasDensity                         3.591586044e-25             0.01307214805
+ x-GasMomentum                      3.468575409e-18             0.01636145178
+ y-GasMomentum                       4.37429361e-18             0.01910150317
+ z-GasMomentum                      2.519127542e-18             0.02227869255
+ gasEnergy                          4.896355852e-11             0.03206692861
+ gasInternalEnergy                  3.010661588e-11             0.07500323117
+ scalar_0                           2.573511406e-35             0.04179406455
+ x-BField                           3.887732603e-09             0.03356270356
+ y-BField                           3.112364029e-09             0.02088142805
+ z-BField                           5.012452733e-10              0.1328624993
+ particle.CIC.mass_density           3.261121455e-24             0.01750564305
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+ level = 5
+ gasDensity                          2.04508449e-24             0.01943302143
+ x-GasMomentum                      1.514112792e-17             0.02532099034
+ y-GasMomentum                       2.31677512e-17             0.03526563382
+ z-GasMomentum                      1.092808572e-17              0.0241390326
+ gasEnergy                          1.146619551e-10             0.04230683341
+ gasInternalEnergy                  1.125790739e-10              0.5146506824
+ scalar_0                           6.400180063e-35              0.0287538799
+ x-BField                           1.291535668e-08             0.05388978337
+ y-BField                           1.384583194e-08             0.05199690545
+ z-BField                           6.194505665e-10             0.09458614804
+ particle.CIC.mass_density           1.836115865e-23             0.04041840787
+ particle.StochasticStellarPop.birth_mass_density                         0                         0
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe --rel_tol 0.02 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300 CIC_particles
+FAIL - Particle data headers do not agree. 
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe --rel_tol 0.02 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300 StochasticStellarPop_particles
+
+-----------------------------------------------------------------------
+StochasticStellarPop_particles
+StochasticStellarPop_particles_position_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_position_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_position_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_mass 0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_vx   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_vy   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_vz   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_time0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_time0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_birth_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_x0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_y0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_z0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_death_density0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_mass_at_birth0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_luminosity_00.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_id   0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_cpu  0.00000000e+00        0.00000000e+00        
+StochasticStellarPop_particles_evolution_stage0.00000000e+00        0.00000000e+00        
+
+ PARTICLES AGREE to relative tolerance 0.02
