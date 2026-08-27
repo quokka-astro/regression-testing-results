@@ -1,0 +1,16 @@
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/RadhydroShell-GPU_plt0003440 RadhydroShell-GPU_plt0003440
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         3.074273055e-21             0.02380494653
+ x-GasMomentum                      8.550110387e-15             0.03370819373
+ y-GasMomentum                      7.275344252e-15             0.02869291735
+ z-GasMomentum                      6.750816896e-15             0.02663570897
+ gasEnergy                          1.713851222e-08             0.03444600967
+ gasInternalEnergy                  8.234921712e-12             0.02605080882
+ radEnergy-Group0                   4.406625912e-09             0.01938898071
+ x-RadFlux-Group0                       87.97159207              0.0556681321
+ y-RadFlux-Group0                       86.64104472             0.05482602633
+ z-RadFlux-Group0                       89.56785267             0.05667816992
