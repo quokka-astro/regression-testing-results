@@ -1,0 +1,48 @@
+Host Name: avatargpu.anu.edu.au
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: ./ShockCloud-GPU.ex(+0x3927a7) [0x55c87a9f47a7]
+    ?? ??:0
+
+ 1: ./ShockCloud-GPU.ex(+0x3962d9) [0x55c87a9f82d9]
+    ?? ??:0
+
+ 2: ./ShockCloud-GPU.ex(+0x37e729) [0x55c87a9e0729]
+    ?? ??:0
+
+ 3: ./ShockCloud-GPU.ex(+0x37fd62) [0x55c87a9e1d62]
+    ?? ??:0
+
+ 4: ./ShockCloud-GPU.ex(+0x387936) [0x55c87a9e9936]
+    ?? ??:0
+
+ 5: ./ShockCloud-GPU.ex(+0x387cf0) [0x55c87a9e9cf0]
+    ?? ??:0
+
+ 6: ./ShockCloud-GPU.ex(+0x381e2e) [0x55c87a9e3e2e]
+    ?? ??:0
+
+ 7: ./ShockCloud-GPU.ex(+0x2c4144) [0x55c87a926144]
+    ?? ??:0
+
+ 8: ./ShockCloud-GPU.ex(+0x8ee95) [0x55c87a6f0e95]
+    ?? ??:0
+
+ 9: /usr/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7fa6f18831ca]
+
+10: /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7fa6f188328b]
+
+11: ./ShockCloud-GPU.ex(+0x937f5) [0x55c87a6f57f5]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
