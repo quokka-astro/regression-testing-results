@@ -1,0 +1,142 @@
+
+<HTML>
+<HEAD>
+<TITLE>2026-09-28 / DiskGalaxy-GPU</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<LINK REL="stylesheet" TYPE="text/css" HREF="tests.css">
+</HEAD>
+<BODY>
+<div id="box">
+<table style="width: 100%" class="head"><br><tr><td>&nbsp;</td><td class="alignright"><a href="LinearAlfvenWave-GPU.html">next test >></td></tr></table>
+<center><h1><a href="index.html">2026-09-28</a> / DiskGalaxy-GPU</h1></center><ul>
+<li>Build/Test information:
+<ul>
+<li>Build directory: .
+</li>
+<li>Parallel run
+<ul>
+<li>MPI numprocs = 1
+</li></ul></li>
+<li>Files:
+<ul>
+<li>input file: <a href="DiskGalaxy-GPU.DiskGalaxy.toml">DiskGalaxy.toml</a>
+</li></ul></li>
+<li>Dimensionality: 3
+</li></ul></li>
+<li>Compilation:
+<ul>
+<li><h3 class="passed">Successful</h3>
+</li>
+<li>Compilation time: 43.963 s
+</li>
+<li>Compilation command:<br><tt>cmake --build /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka/builddir -j 16 --  DiskGalaxy</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.make.out">make output</a>
+</li></ul></li>
+<li>Execution:
+<ul>
+<li>Execution time: 216.675 s
+</li>
+<li>Execution command:<br><tt>mpirun -n 1 ./DiskGalaxy-GPU.ex DiskGalaxy.toml  plotfile_prefix=DiskGalaxy-GPU_plt  checkpoint_prefix=DiskGalaxy-GPU_chk  amr.checkpoint_files_output=0  max_timesteps=300 checkpoint_interval=-1 plotfile_interval=300</tt>
+</li>
+<li><a href="DiskGalaxy-GPU.run.out">execution output</a>
+</li></ul></li>
+<li>Comparison: 
+<ul>
+<li><h3 class="failed">Failed</h3>
+</li></ul></li>
+</ul>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 --rel_tol 0.002 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300
+</tt>
+<tt>/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe --rel_tol 0.02 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/DiskGalaxy-GPU_plt0000300 DiskGalaxy-GPU_plt0000300 CIC_particles
+</tt>
+<div id='summary'>
+<div id='compare'>
+<p><table>
+<tr><th>variable name</th><th>absolute error</th><th>relative error</th></tr>
+<tr><th> </th><th>(||A - B||)</th><th>(||A - B||/||A||)</th></tr>
+<tr class='special'><td colspan=3>level = 0</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>2.217268478e-27</td><td class='highlight'>0.02096162007</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>3.092255904e-20</td><td class='highlight'>0.02280287559</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>3.847159941e-20</td><td class='highlight'>0.02502523859</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>3.255497458e-21</td><td class='highlight'>0.02554670443</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>5.310129064e-13</td><td class='highlight'>0.02219171927</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.351270474e-13</td><td class='highlight'>0.0243662956</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>2.266843743e-37</td><td class='highlight'>0.01222088345</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>3.411415545e-11</td><td class='highlight'>0.01926933803</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>3.704976428e-11</td><td class='highlight'>0.01927007632</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>9.224229769e-12</td><td class='highlight'>0.03058084987</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>1.967563218e-27</td><td class='highlight'>0.001408883953</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 1</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>1.14416283e-26</td><td class='highlight'>0.02031325166</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.700495303e-19</td><td class='highlight'>0.0235009264</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.424434975e-19</td><td class='highlight'>0.02191338624</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.121601738e-20</td><td class='highlight'>0.0292980277</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>2.146997742e-12</td><td class='highlight'>0.01995584125</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>5.259776298e-13</td><td class='highlight'>0.02230782105</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>6.883558e-37</td><td class='highlight'>0.0249097706</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.201446964e-10</td><td class='highlight'>0.0179908137</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>1.116433689e-10</td><td class='highlight'>0.01738210603</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>3.56310967e-11</td><td class='highlight'>0.04537504002</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>1.825378729e-26</td><td class='highlight'>0.003177087817</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 2</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>2.659772176e-26</td><td class='highlight'>0.01383465138</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>5.200810104e-19</td><td class='highlight'>0.02422849756</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>5.031202751e-19</td><td class='highlight'>0.02289075603</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>6.222606287e-20</td><td class='highlight'>0.01752126927</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>5.810692749e-12</td><td class='highlight'>0.02213183428</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.312783144e-12</td><td class='highlight'>0.01926985572</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>1.831214314e-36</td><td class='highlight'>0.02653697337</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>5.839876676e-10</td><td class='highlight'>0.03159871174</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>3.42619005e-10</td><td class='highlight'>0.01870454313</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>2.143909444e-10</td><td class='highlight'>0.1304301931</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>8.320556093e-26</td><td class='highlight'>0.004348027746</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 3</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>7.413700389e-26</td><td class='highlight'>0.01268161183</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.27444858e-18</td><td class='highlight'>0.02259293918</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>1.743887029e-18</td><td class='highlight'>0.03119067306</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>3.006930753e-19</td><td class='highlight'>0.01581593043</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.999682416e-11</td><td class='highlight'>0.0353648396</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>6.115784284e-12</td><td class='highlight'>0.0379386396</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>1.226335074e-35</td><td class='highlight'>0.07615990781</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.717436876e-09</td><td class='highlight'>0.03330446195</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>1.065341433e-09</td><td class='highlight'>0.01743561927</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>3.216714933e-10</td><td class='highlight'>0.1028678127</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>5.454795235e-25</td><td class='highlight'>0.009063387675</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 4</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>3.580456352e-25</td><td class='highlight'>0.01303163977</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>3.455427123e-18</td><td class='highlight'>0.01629943062</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>4.375414021e-18</td><td class='highlight'>0.01910639574</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>2.504764304e-18</td><td class='highlight'>0.02215166676</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>4.898130458e-11</td><td class='highlight'>0.03207855075</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>3.009736063e-11</td><td class='highlight'>0.07498017397</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>2.573490485e-35</td><td class='highlight'>0.04179372481</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>3.889510882e-09</td><td class='highlight'>0.0335780554</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>3.112850714e-09</td><td class='highlight'>0.02088469331</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>5.01356807e-10</td><td class='highlight'>0.132892063</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>3.308927095e-24</td><td class='highlight'>0.01776226289</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+<tr class='special'><td colspan=3>level = 5</td></tr>
+<tr><td class='highlight'>gasDensity</td><td class='highlight'>2.028529663e-24</td><td class='highlight'>0.01927571238</td></tr>
+<tr><td class='highlight'>x-GasMomentum</td><td class='highlight'>1.526396972e-17</td><td class='highlight'>0.0255264226</td></tr>
+<tr><td class='highlight'>y-GasMomentum</td><td class='highlight'>2.331911701e-17</td><td class='highlight'>0.03549604079</td></tr>
+<tr><td class='highlight'>z-GasMomentum</td><td class='highlight'>1.092716876e-17</td><td class='highlight'>0.02413700713</td></tr>
+<tr><td class='highlight'>gasEnergy</td><td class='highlight'>1.146931139e-10</td><td class='highlight'>0.04231833007</td></tr>
+<tr><td class='highlight'>gasInternalEnergy</td><td class='highlight'>1.125656918e-10</td><td class='highlight'>0.5145895067</td></tr>
+<tr><td class='highlight'>scalar_0</td><td class='highlight'>6.400290963e-35</td><td class='highlight'>0.02875437814</td></tr>
+<tr><td class='highlight'>x-BField</td><td class='highlight'>1.291808079e-08</td><td class='highlight'>0.05390114979</td></tr>
+<tr><td class='highlight'>y-BField</td><td class='highlight'>1.384966787e-08</td><td class='highlight'>0.05201131096</td></tr>
+<tr><td class='highlight'>z-BField</td><td class='highlight'>6.195292918e-10</td><td class='highlight'>0.0945981689</td></tr>
+<tr><td class='highlight'>particle.CIC.mass_density</td><td class='highlight'>1.83565407e-23</td><td class='highlight'>0.04040824239</td></tr>
+<tr><td>particle.StochasticStellarPop.birth_mass_density</td><td>0.0</td><td>0.0</td></tr>
+</table>
+</div>
+</div>
+<p>number of particles differ in files</p>
+<P>&nbsp;
+<P><IMG SRC='DiskGalaxy-GPU_plt0000300.gasDensity.XY.png' BORDER=0></div></body>
+</html>

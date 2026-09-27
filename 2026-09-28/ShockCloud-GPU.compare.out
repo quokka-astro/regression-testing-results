@@ -1,0 +1,27 @@
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Plotfile//fcompare.gnu.ex --abort_if_not_all_found -n 0 /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007733 ShockCloud-GPU_plt0007733
+
+            variable name            absolute error            relative error
+                                        (||A - B||)         (||A - B||/||A||)
+ ----------------------------------------------------------------------------
+ level = 0
+ gasDensity                         4.085467754e-22                1.67319582
+ x-GasMomentum                      4.305576849e-17                1.05576876
+ y-GasMomentum                      1.916057502e-17              0.9513596042
+ z-GasMomentum                      4.578856973e-17               1.410745928
+ gasEnergy                          1.822399349e-10              0.9286247325
+ gasInternalEnergy                  1.242197133e-11              0.8499060633
+ scalar_0                               167.3984298               1.675143259
+ scalar_1                           3.941018888e-22               1.675143259
+ scalar_2                            1.45129233e-23               1.619951691
+ pressure                                60114.0833              0.8363708734
+ entropy                                5.578876552               0.999999704
+ nH                                     174.7350582                1.67319582
+ temperature                            4154983.103              0.9999476218
+ cooling_length                         112762.3845              0.9999992802
+ cloud_fraction                        0.9631871989              0.9998653113
+ lab_velocity_x                         195.2292338              0.9036832158
+ mass                                3.66420377e+35                1.67319582
+ velocity_mag                           185.4342388              0.9213105723
+ c_s                                    304.8132814              0.9949837643
+/priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/amrex/Tools/Postprocessing/C_Src//particle_compare.exe /priv/avatar/cche/azp-agent-in-docker-cuda/azp-agent-avatargpu/regression-tests/quokka-benchmarks/ShockCloud-GPU_plt0007733 ShockCloud-GPU_plt0007733 tracer_particles
+FAIL - Particle data headers do not agree. 
